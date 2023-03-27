@@ -49,7 +49,7 @@ $(document).ready(function () {
     games = games.sort((a,b) => a.name > b.name ? 1 : -1)
     for (let game of games) {
         list.append(`
-            <a class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" href="./games/${game.link}/index.html">
+            <a class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" href="./games/${game.link}">
                 <div class="mt-3 d-flex flex-column align-items-center w-50">
                     <div class="mx-auto">${game.icon}</div>
                     <p id="hover" class="fs-4 text-nowrap"><b>${game.name}</b></p>
