@@ -31,31 +31,31 @@ const lightsYaku = [
 const slipsYaku = [
     {
         name: "Red Poetry",
-        points: "5 points",
+        points: "5 points, plus 1 for each additional Slip card",
         img: "redslips"
     },
     {
         name: "Blue Poetry",
-        points: "5 points",
+        points: "5 points, plus 1 for each additional Slip card",
         img: "blueslips"
     },
     {
         name: "Slips (5 or more Slip cards)",
-        points: "5 points",
-        img: "5ormoreslips"
+        points: "1 point, plus 1 for each additional Slip card",
+        img: "slips"
     },
 ]
 
 const animalsYaku = [
     {
         name: "Boar-Deer-Butterfly",
-        points: "5 points",
+        points: "5 points, plus 1 for each additional Animal card",
         img: "boardeerbutterflies"
     },
     {
         name: "Animals (5 or more Animal cards)",
         points: "1 point, plus 1 for each additional Animal card",
-        img: "5ormoreanimals"
+        img: "animals"
     }
 ]
 
@@ -75,15 +75,13 @@ const othersYaku = [
         points: "6 points",
         img: "cherryblossomviewing"
     },
-]
-
-const chaffYaku = [
     {
         name: "Chaff (10 or more Chaff cards)",
-        points: "1 point (+ 1 for each additional Chaff card)",
+        points: "1 point, plus 1 for each additional Chaff card",
         img: "chaff"
     }
 ]
+
 
 
 for (let yaku of lightsYaku) {
@@ -100,8 +98,4 @@ for (let yaku of slipsYaku) {
 
 for (let yaku of othersYaku) {
     $("#other").append(displayYaku(yaku.name, yaku.points, yaku.img))
-}
-
-for (let yaku of chaffYaku) {
-    $("#chaff").append(displayYaku(yaku.name, yaku.points, yaku.img))
 }

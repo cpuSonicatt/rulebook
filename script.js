@@ -63,5 +63,72 @@ $(document).ready(function () {
             </a>
         `)
     }
+
+    $("#madewith").html(`<p class="smaller">Made with ${madewith()} by Jacq</p>`)
     twemoji.parse(document.body)
 })
+
+Array.prototype.sample = function() {
+    return this[Math.floor((Math.random() * this.length))]
+}
+
+function madewith() {
+    return [
+        // love
+        "love",
+        "<3",
+        "❤️", 
+        ":heart:",
+
+        // programming
+        "${RANDOM_FOOTER_PHRASE}",
+        "1337 hackzor skillz",
+        "<samp>java.lang.ArrayIndexOutOfBoundsException: " +  Math.floor(Math.random() * 9 + 3) + "</samp>",
+        "/* TODO: Add more phrases */",
+        "love'); DROP TABLE Students;--",
+        "tabs, not spaces",
+        "spaces, not tabs",
+        "/* eslint-disable-next-line */",
+        "01101100011011110111011001100101",
+        "bad programming",
+
+        // video games
+        Math.floor(Math.random() * 9 + 10) + " compile errors",
+        "MOTHERLODE",
+        "redstone",
+        "sv_cheats 1",
+        "john madden john madden john madden john madden",
+        "aeiouaeiouaeiou",
+
+        // board/card games
+        "Get Out of Jail Free cards",
+        "Free Parking",
+        "nat 1s",
+        "nat 20s",
+        "en passant",
+        "Blue-Eyes White Dragon",
+
+        // other
+        "lots of swearing",
+        "aaaaaaaaaa",
+        "confusion",
+        "bad ideas",
+        "cute cats",
+        "cute dogs",
+        "_______",
+        "HELP, I'M STUCK IN A FOOTER MESSAGE FACTORY!",
+        ".-.. --- ...- .",
+        "impending doom",
+        "����",
+        "a relevant and topical joke",
+        "Unregistered Hypercam 2",
+        "a WinRAR license",
+        "ur mum lol",
+
+        // special
+        `<a target="_blank" href="https://youtu.be/dQw4w9WgXcQ">dQw4w9WgXcQ</a>`,
+        "trans rights", "🏳️‍⚧️",
+        "rainbows", "🏳️‍🌈"
+
+    ].sample()
+}
