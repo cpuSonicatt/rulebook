@@ -5,8 +5,16 @@ a:hover #hover {
 }
 
 .callout {
-    padding: 1.25rem 1.25rem 0.5rem 1.25rem;
     margin: 1.25rem 0;
+}
+
+.callout > p, .callout > div {
+    margin-left: 0.5rem;
+    padding: 0.5rem;
+}
+
+.callout > div > * {
+    margin: 0.1rem
 }
 
 .tip {
@@ -19,6 +27,11 @@ a:hover #hover {
     border-left: 0.25rem solid var(--bs-primary);
 }
 
+.score {
+    background-color: var(--bs-danger-bg-subtle);
+    border-left: 0.25rem solid var(--bs-danger);
+}
+
 .box {
     border-radius: var(--bs-border-radius) !important;
     background-color: rgba(var(--bs-light-rgb));
@@ -27,7 +40,15 @@ a:hover #hover {
     box-shadow: 0 .5rem 1rem rgba(var(--bs-body-color-rgb),.15) !important;
 }
 
+.box h2 {
+    font-weight: 800;
+}
+
 .smaller img {
     width: 5%;
     margin: 0 0.25rem
+}
+
+._404 {
+    font-size: 18rem;
 }

@@ -13,15 +13,104 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
         <script src="https://unpkg.com/twemoji@latest/dist/twemoji.min.js" crossorigin="anonymous"></script>
     </head>
-    <body class="bg-danger container my-5">
+    <body class="bg-primary-subtle container my-5">
         <div class="col-md-8 mx-auto">
-            <div class="box shadow">
+            <div class="box">
                 <div class="d-flex justify-content-center align-items-center">
                     <div>📍</div>
                     <h1 class="m-3"><b>How to play Cribbage</b></h1>
                 </div>
                 <hr>
-                <p>Under construction...</p>
+                <p>An English card game that utilises a peg board to keep score, and is the only card game legally playable in pubs without requiring permission from local authority. Due to the nature of scoring in Cribbage being instantaneous (instead of accumulated and applied at the end of each round), a cribbage board can come in handy.</p>
+                <h2>You will need</h2>
+                <ul>
+                    <li>A standard 52-deck of cards.</li>
+                    <li>A <b>cribbage board</b>, or a pen-and-paper to keep score.</li>
+                </ul>            
+            </div>
+
+            <div class="box">
+                <h2>Terms</h2><hr>
+                <ul>
+                    <li><b>cribbage board</b> - the board used to keep score.</li>
+                    <li>the <b>Box</b> - the dealer's 2nd hand, which is revealed last. Cards in the box are usually placed near the dealer.</li>
+                </ul> 
+            </div>
+            
+            <div class="box">
+                <h2>Deal and Discard</h2><hr>
+
+                <p>Choose a dealer by whichever means.</p>
+
+                <h5>For 2 players</h5>
+                <p>Deal 6 cards to each player, and both players discard 2 cards to the box.</p>
+                <br>
+
+                <h5>For 3 players</h5>
+                <p>Deal 5 cards to each player, deal 1 card to the box, and each player discard 1 card to the box.</p>
+                <br>
+
+                <h5>For 4 players</h5>
+                <p>Deal 5 cards to each player, and each player discard 1 card to the box.</p>
+                <br>
+
+                <p>Set the rest of the cards to one side, face down.</p>
+                <p>Each player's hand, and the box, should end up with 4 cards.</p>
+            </div>
+
+            <div class="box">
+                <h2>Play</h2><hr>
+                <div class="callout note">
+                    <p><b>Note</b>: face cards are valued at 10, and aces are valued at 1.</p>
+                </div>
+                <p>Play begins with the player on the dealer's left. Scoring oppotunities are highlighted in red. The game ends as soon as a player reaches 121.</p>
+
+                <h5>Cut</h5>
+                <p>The player to the left of the dealer cuts the remaining cards, the dealer reveals the top card of the lower half, and places it face up on the remaining card pile.</p>
+                <div class="callout score">
+                    <p>If the revealed card is a Jack, the dealer gains 2 points.</p>
+                </div>
+
+                <h5>Play</h5>
+                <p>Starting with the player on the dealer's left, each player in turn places a card, and announces the count (the cumulative value of all the cards played so far). The count can't go over 31.</p>
+                <div class="callout score">
+                    <p>If a player plays a card to make the count equal 15, they gain 2 points.</p>
+                </div>
+                <div class="callout score">
+                    <p>If a player plays a card to make the count equal 31, they gain 1 point.</p>
+                </div>
+                <div class="callout score">
+                    <p>If a player plays the last card of a round, they gain 1 point.</p>
+                </div>
+                <div class="callout score">
+                    <p>If a player plays a card to make a pair, a three-of-a-kind, or four-of-a-kind, they gain 2 points, 6 points, and 12 points respectively.</p>
+                </div>
+                <div class="callout score">
+                    <p>If a player plays a card to make a run of 3 cards or more, they gain that number of cards in the run.</p>
+                </div>
+
+                <p>A player must play a card if they're able to. If a player can't play a card, they pass.</p>
+                <p>Once no more cards can be played, the count resets and the already-played cards are turned over. This continues until all cards are played.</p>
+
+                <h5>Show</h5>
+                <p>Starting with the dealer hand, going clockwise, and ending with the dealer's box, players reveal and score their cards:</p>
+                <div class="callout score">
+                    <p>Combinations of cards that add up to 15 score 2 points each.</p>
+                </div>
+                <div class="callout score">
+                    <p>Consecutve runs of 3 or more cards score 1 point per card in the run.</p>
+                </div>
+                <div class="callout score">
+                    <p>Pairs, three-of-a-kind, and four-of-a-kind scores 2, 6 and 12 points respectively.</p>
+                </div>
+                <div class="callout score">
+                    <p>Four-card flushes (all 4 cards in your hand only, excluding the box) scores 4 points. Five-card flushes (all 4 cards in your hand only plus the cut card) scores 5 points.</p>
+                </div>
+                <div class="callout score">
+                    <p>Having a Jack of the same suit as the cut card scores 1 point.</p>
+                </div>
+
+                <p>If no player has won, the dealer changes to the next player.</p>
             </div>
         </div>
         <script>twemoji.parse(document.body)</script>

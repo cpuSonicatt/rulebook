@@ -3,7 +3,7 @@ let games = [
         "icon": "📍",
         "name": "Cribbage",
         "link": "cribbage",
-        "type": ["Card (Standard 52)", "Matching", "England", "2-3 players"]
+        "type": ["Card (Standard 52)", "Matching", "England", "2-4 players"]
     },
     {
         "icon": "🎴",
@@ -94,11 +94,14 @@ function madewith() {
 
         // video games
         Math.floor(Math.random() * 9 + 10) + " compile errors",
-        "MOTHERLODE",
+        "motherlode",
         "redstone",
         "sv_cheats 1",
         "john madden john madden john madden john madden",
         "aeiouaeiouaeiou",
+        "/gamemode 1",
+        "🡹 🡹 🡻 🡻 🡸 🡺 🡸 🡺 <kbd>B</kbd> <kbd>A</kbd> <kbd>START</kbd>",
+
 
         // board/card games
         "Get Out of Jail Free cards",
@@ -122,13 +125,14 @@ function madewith() {
         "����",
         "a relevant and topical joke",
         "Unregistered Hypercam 2",
+        "www.BANDICAM.com",
         "a WinRAR license",
         "ur mum lol",
 
         // special
         `<a target="_blank" href="https://youtu.be/dQw4w9WgXcQ">dQw4w9WgXcQ</a>`,
-        "trans rights", "🏳️‍⚧️",
-        "rainbows", "🏳️‍🌈"
+        "trans rights 🏳️‍⚧️",
+        "rainbows 🏳️‍🌈"
 
     ].sample()
 }
