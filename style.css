@@ -52,3 +52,34 @@ a:hover #hover {
 ._404 {
     font-size: 18rem;
 }
+
+.m_cat ol {
+    list-style-type: none;
+    counter-reset: item;
+    margin: 0;
+    padding: 0;
+}
+
+.m_cat li {
+    display: table;
+    counter-increment: item;
+    margin-bottom: 0.6em;
+}
+
+.m_cat li:before {
+    content: counters(item, ".") ". ";
+    display: table-cell;
+    padding-right: 0.6em;   
+}
+
+.m_cat li li {
+    margin: 0;
+}
+
+.m_cat li li:before {
+    content: counters(item, ".") " ";
+}
+
+.m_cat .p:before {
+    content: "";
+}

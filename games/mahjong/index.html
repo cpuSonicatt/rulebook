@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="../../favicon/mahjong.ico" rel="icon">
+        <title>How to play Mahjong</title>
+
+        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300..800" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <link href="../../style.css" rel="stylesheet">
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/twemoji@latest/dist/twemoji.min.js" crossorigin="anonymous"></script>
+    </head>
+    <body class="bg-success container my-5">
+        <div class="col-md-8 mx-auto">
+            <div class="box shadow">
+                <div class="d-flex justify-content-center align-items-center">
+                    <div>🀄</div>
+                    <h1 class="m-3"><b>How to play Mahjong</b></h1>
+                </div>
+                <hr>
+                <p>Originally from China, Mahjong is functionally similar to Rummy, using tiles over cards. There are loads of regional variations of Mahjong and whilst the core rules are similar, each variant's scoring system is vastly different, from the simplistic nature of Zung Jung to the more complex Riichi Mahjong.</p>
+            </div>
+
+            <div class="box">
+                <h2>Terms</h2><hr>
+                <div class="callout note">
+                    <p><b>Note</b>: This ruleset uses the literal words for terms like Chows ('Runs'), Pungs ('Triplets'), and Kongs ('Quads'), for ease of learning.</p>
+                </div>
+                <ul>
+                    <li>the <b>wall</b> - the pile of undrawn tiles.</li>
+                    <li>the <b>live end</b> - the end of the wall tiles are normally drawn from.</li>
+                    <li>the <b>dead end</b> - the (other) end of the wall where supplement tiles are drawn from, when calling a "quad".</li>
+                    <li>a <b>terminal</b> - a 1 or a 9 tile.</li>
+                    <li>a <b>middle</b> - a 2 to 8 tile.</li>
+                    <li>a <b>run</b> - a set of 3 consecutive numbered tiles.</li>
+                    <li>a <b>pair</b> - a set of 2 identical tiles.</li>
+                    <li>a <b>triplet</b> - a set of 3 identical tiles.</li>
+                    <li>a <b>quad</b> - a set of 4 identical tiles.</li>
+                    <li><b>patterns</b> - a combination of tiles that make points.</li>
+                    <li><b>concealed</b> - a set made in the hand.</li>
+                    <li><b>melded</b> - a set made outside the hand.</li>
+                    <li><b>small</b> - a set of triplets/quads, where one set is a pair instead.</li>
+                    <li><b>big</b> - a set of triplets/quads, where all sets are triplets/quads.</li>
+                    <li><b>mixed</b> - a set including honours.</li>
+                    <li><b>pure</b> - a set excluding honours.</li>
+                    <li><b>branching</b> - a hand containing runs that "branches" from a terminal, e.g. "123" and "789".</li>
+                    <li><b>rooted</b> - a hand containing triplets/quads including only terminals, e.g. "111" and "999".</li>
+                </ul>
+            </div>
+
+            <div class="box">
+                <h2>Deal</h2><hr>
+                <p>Shuffle the tiles by <a href="https://en.wikipedia.org/wiki/Shuffling#Corgi" target="_blank">"washing" them</a> on the table, and choose a player to be East. Going counter-clockwise, the other players will be South, West, and North.</p>
+                <div class="callout note">
+                    <p><b>Note</b>: East South West North isn't the typical order of the cardinal directions, nor is the idea of playing counter-clockwise. This is because:
+                    <div>
+                        <ol>
+                            <li>Chinese speakers list the cardinal directions differently: dōng nán xī běi.</li>
+                            <li>Chinese philosophy plays a large part in Chinese culture, in this case: <a href="https://en.wikipedia.org/wiki/Yin_and_yang" target="_blank">Yin and yang</a>. Yin, which is on the right side, has associations with negativity and passiveness, while Yang, on the left side, has associations with positivity and activeness. You can also associate the idea of progression/movement with Yang; the left side, and thus the order goes left (from the perspective of the middle).</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <p>Make 4 walls of 17 tiles long and 2 high in a square shape.</p>
+                <p>The East seat player rolls 3d6 and, moving counter-clockwise starting with themselves, counts the sum of the roll to choose a wall to "break".</p>
+                <p>The player whose wall is chosen then rolls 3d6 again to choose a break point, counting right-to-left the sum of the roll.</p>
+                <p>At the break point each player, starting with the East seat player and moving counter-clockwise, takes chunks of 4 tiles (2 by 2) to form their hand.</p>
+                <p>Once each player has 12 tiles, each player takes 1 tile to reach 13, and the East seat player takes 1 more to reach 14. The East seat player can take both tiles at the same time, so long as the order of who would take the tiles is the same.</p>
+                <p>Play then begins when the East seat player discards a tile.</p>
+
+                <div class="callout note">
+                    <p><b>Note</b>: This is a tradional method for dealing, used in competitive play to prevent cheating. For casual games, players can just take tiles from the right-most side of the dealer's wall.</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <h2>Play (core rules)</h2><hr>
+                <p>Play starts with the South seat player and moves counter-clockwise.</p>
+                <p>Each player at the beginning of their turn may either:</p>
+                <ol>
+                    <li>Claim the most recent discarded tile to make a Melded Run, Melded Triplet, or Big Melded Quad</li>
+                    <li>Draw a tile from the live end of the wall</li>
+                </ol>
+                <p>Claiming a discarded tile is a special move, of which there are steps listed below to follow.</p>
+                <div class="callout note">
+                    <p><b>Note</b>: If there's a conflict in claims, then Mahjong beats Quads/Triplets, beats Runs. To tiebreak, the player closest to the dealer by turn order takes precedence.</p>
+                </div>
+                <p>Otherwise, a player should draw a tile from the wall. If they want to they may declare a Concealed Quad or a Small Melded Quad, which are also special moves.</p>
+                <p>If a player has a winning hand (4 quads/triplets/runs and a pair, or <a href="#irregulars">an irregular hand</a>), they may call Mahjong and win the round.</p>
+                <p>If no special move is played and the player can't or decides not to call Mahjong, then the player discards a tile to the center and their turn is over.</p>
+
+                <p>The game lasts 4 to 12 rounds, and the role of the dealer rotates counter-clockwise after every round.</p>
+            </div>
+
+            <div class="box">
+                <h2>Play (additional rules)</h2><hr>
+                <ul>
+                    <li>Only score the hand of the player that calls Mahjong, even if other players have winning hands.</li>
+                    <li>If a winning hand's value exceeds 320 points, they score 320 points or the value of the highest-valued pattern in the hand, whichever is higher.</li>
+                    <li>If a winning player claims a tile from another player, and that same tile was discarded in the same "go around" (last 4 turns), the player who first discarded that tile is "responsible", and the winning player recieves payment from that player instead. If the winner is the one who first discarded that tile, they <b>win by self-draw</b> instead.</li>
+                </ul>
+            </div>
+
+            <div class="box">
+                <h2>Calling Mahjong</h2><hr>
+                <p>As soon as a player has a winning hand, they may call Mahjong to win the round.</p>
+                <p>If you draw a tile to make a winning hand, you <b>win by self-draw</b>.</p>
+                <p>If another player discard a tile that's needed by you to make a winning hand, you <b>win by discard</b>.</p>
+                <p>If another player makes a Small Melded Quad, and you require that tile to make a winning hand, you win by <b>robbing a quad</b>.</p>
+            </div>
+
+            <div class="box">
+                <h2>Draws</h2><hr>
+                <p>If there are no more tiles to draw at the beginning of a player's turn, then no player wins and the game goes into the next round.</p>
+            </div>
+
+            <div class="box">
+                <h2>Special Moves</h2><hr>
+                <p>There are a few special moves players can make instead of drawing a tile from the wall, or before discarding a tile:</p>
+
+                <h4>Discarded</h4>
+                <p><b>Melded Triplet</b><br>
+                    If you have a concealed pair in your hand, and the discarded tile would make a triplet:</p>
+                <ol>
+                    <li>Call "Triplet"</li>
+                    <li>Take the discarded tile, and lay the triplet, face up, next to your hand</li>
+                    <li>Discard a tile</li>
+                </ol>
+                <br>
+                
+                <p><b>Melded Run</b><br>
+                    If you have a two concealed consecutive tiles in your hand, and the discarded tile would make a run:</p>
+                <ol>
+                    <li>Call "Run"</li>
+                    <li>Take the discarded tile, and lay the run, face up, next to your hand</li>
+                    <li>Discard a tile</li>
+                </ol>
+                <br>
+                
+                <p><b>Big Melded Quad</b><br>
+                    If you have a concealed triplet in your hand, and the discarded tile would make a quad:</p>
+                <ol>
+                    <li>Call "Quad"</li>
+                    <li>Take the discarded tile, and lay the quad, face up, next to your hand</li>
+                    <li>Draw a supplement tile from the dead end of the wall</li>
+                    <li><i>Optionally, call <b>Concealed Quad</b> or <b>Small Melded Quad</b>, and follow that move's steps instead</i></li>
+                    <li>Discard a tile</li>
+                </ol>
+                <br>
+
+                
+                <h4>Self-drawn</h4>
+                <p><b>Small Melded Quad</b><br>
+                    If you've played a melded triplet, and you draw a tile that would make a quad:</p>
+                <ol>
+                    <li>Call "Quad"</li>
+                    <li>Lay the quad, face up, next to your hand</li>
+                    <li>Draw a supplement tile from the dead end of the wall</li>
+                    <li><i>Optionally, call <b>Concealed Quad</b> or <b>Small Melded Quad</b>, and follow that move's steps instead</i></li>
+                    <li>Discard a tile</li>
+                </ol>
+                <br>
+                    
+                <p><b>Concealed Quad</b><br>
+                    If you have a concealed triplet in your hand, and you draw a tile that would make a quad:</p>
+                <ol>
+                    <li>Call "Quad"</li>
+                    <li>Lay the quad, with the two outside tiles face down and the two inside tiles face up, next to your hand</li>
+                    <li>Draw a supplement tile from the dead end of the wall</li>
+                    <li><i>Optionally, call <b>Concealed Quad</b> or <b>Small Melded Quad</b>, and follow that move's steps instead</i></li>
+                    <li>Discard a tile</li>
+                </ol>
+                <br>
+            </div>
+
+            <div id="pattern" class="box">
+                <h2>Patterns</h2><hr>
+                <p>Patterns are sorted into categories and series (e.g. "Three Identical Runs" is notated as 5.1.3, or 5th category, 1st series, 3rd pattern). Only the highest scoring pattern in each series counts towards a player's score. i.e. you can't score on both 4.2.1 and 4.2.2.</p>
+                <p>If the winning player <b>wins by self-draw</b>, the losing players pays the winning player the value of the winning hand.</p>
+                <p>If the winning player <b>wins by discard</b> or by <b>robbing a quad</b>, the player that discarded/melded the required tile pays the winning player 3 times the value of the winning hand.</p>
+            </div>
+
+            <div class="box">
+                <h2>Simplified Rules and Patterns</h2><hr>
+                <p>Mahjong can be quite intimidating to new players, so to aid teaching, follow these rules:</p>
+                <ul>
+                    <li>To help understand the core rules to mahjong, a winning hand (4 runs/triplets/quads and a pair) scores 1 point, and follows the same payment rules.</li>
+                    <li>Once everyone's comfortable with the core rules, you can include the following categories in turn:</li>
+                    <ul>
+                        <li>Trivial, Incidental, Irregular</li>
+                        <li>One-suit, Honour, Terminal, and above</li>
+                        <li>Triplet/Quad, and above</li>
+                        <li>Identical, Similar, Consecutive, and above</li>
+                    </ul>
+                </ul>
+            </div>
+
+            <div class="box">
+                <h2>Tile List</h2><hr>
+                <div class="callout note">
+                    <p><b>Note</b>: 1 and 9 of Bamboo, Dots, and Characters are 'Terminals'. The rest are 'middles'.</p>
+                </div>
+                <h3>Bamboo</h3>
+                <div class="container col-lg-12 my-3">
+                    <img class="w-100 mb-3" src="./resources/bamboo.png">
+                </div>
+
+                <h3>Dots</h3>
+                <div class="container col-lg-12 my-3">
+                    <img class="w-100 mb-3" src="./resources/dot.png">
+                </div>
+
+                <h3>Characters</h3>
+                <div class="container col-lg-12 my-3">
+                    <img class="w-100 mb-3" src="./resources/character.png">
+                </div>
+
+                <div class="callout note">
+                    <p><b>Note</b>: All Dragons and Winds are 'Honours'.</p>
+                </div>
+                <h3>Dragons</h3>
+                <div class="container col-lg-6 my-3">
+                    <img class="w-100 mb-3" src="./resources/dragon.png">
+                    <p class="text-center">Green • Red • White</p>
+                </div>
+
+                <h3>Winds</h3>
+                <div class="container col-lg-8 my-3">
+                    <img class="w-100 mb-3" src="./resources/wind.png">
+                    <p class="text-center">East • South • North • West</p>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.min.js"></script>
+        <script>twemoji.parse(document.body)</script>
+        <script src="./pattern.js"></script>
+    </body>
+</html>

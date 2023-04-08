@@ -13,9 +13,9 @@ let games = [
     },
     {
         "icon": "🀄",
-        "name": "Zung Jung",
-        "link": "zungjung",
-        "type": ["Tile (Mahjong)", "Matching", "Hong Kong", "4 players"]
+        "name": "Mahjong",
+        "link": "mahjong",
+        "type": ["Tile (Mahjong)", "Matching", "China", "4 players"]
     },
     {
         "icon": "👑",
