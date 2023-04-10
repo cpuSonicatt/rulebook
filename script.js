@@ -70,7 +70,7 @@ $(document).ready(function () {
             <a class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" href="./games/${game.link}">
                 <div class="mt-3 d-flex flex-column align-items-center w-50">
                     <div class="mx-auto">${game.icon}</div>
-                    <p id="hover" class="fs-4 text-nowrap"><b>${game.name}</b></p>
+                    <p id="hover" class="fs-4 text-center"><b>${game.name}</b></p>
                 </div>
 
                 <div class="me-3 d-flex flex-column align-items-end">
