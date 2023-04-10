@@ -79,3 +79,43 @@ a:hover #hover {
 .m_cat .p:before {
     content: "";
 }
+
+.bg-red {
+    background-color: var(--bs-red) !important;
+}
+
+.bg-orange {
+    background-color: var(--bs-orange) !important;
+}
+
+.bg-yellow {
+    background-color: var(--bs-yellow) !important;
+}
+
+.bg-green {
+    background-color: var(--bs-green) !important;
+}
+
+.bg-blue {
+    background-color: var(--bs-blue) !important;
+}
+
+.bg-light-blue {
+    background-color: var(--bs-primary-bg-subtle) !important;
+}
+
+.bg-purple {
+    background-color: var(--bs-purple) !important;
+}
+
+.bg-pink {
+    background-color: var(--bs-pink) !important;
+}
+
+.bg-black {
+    background-color: var(--bs-black) !important;
+}
+
+.bg-white {
+    background-color: var(--bs-white) !important;
+}

@@ -13,7 +13,7 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
         <script src="https://unpkg.com/twemoji@latest/dist/twemoji.min.js" crossorigin="anonymous"></script>
     </head>
-    <body class="bg-danger container my-5">
+    <body class="bg-purple container my-5">
         <div class="col-md-8 mx-auto">
             <div class="box shadow">
                 <div class="d-flex justify-content-center align-items-center">
@@ -21,7 +21,55 @@
                     <h1 class="m-3"><b>How to play Ricochet Poker</b></h1>
                 </div>
                 <hr>
-                <p>Under construction...</p>
+                <h2>You will need</h2>
+                <ul>
+                    <li>A standard 52-deck of cards.</li>
+                    <li>25 betting chips per player, or similar.</li>
+                </ul>
+            </div>
+
+            <div class="box">
+                <h2>Deal</h2><hr>
+                <p>Choose a dealer by whichever means.</p>
+                <p>Each player gets 25 chips.</p>
+            </div>
+
+            <div class="box">
+                <h2>Play</h2><hr>
+                <p>Each player antes one chip and the dealer deals them 1 card face up in front of them.</p>
+                <p>Play starts with the person who has the worst poker hand. They choose how many more cards they want to 'buy' (1 chip for 1 card) which goes into the pot, or if they wish to fold.</p>
+                <p>Players can only have 5 cards in their hand, and may fold at any time.</p>
+                <p>Any cards that a player has bought are dealt to their and one at a time. As soon as they no longer have the worst hand, play immediately moves to the player with the worst hand. If, after being dealt all their cards they still have the worst poker hand, they are out.</p>
+                <div class="callout note">
+                    <p><b>Note</b>: Chips are non-refundable.</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <h2>Poker hands</h2><hr>
+                <ul>
+                    <li>Ace is high</li>
+                    <li>Clubs beats Hearts, beats Diamonds, beats Spades</li>
+                </ul>
+
+                <table class="table">
+                    <thead>
+                        <tr> <th>Name</th> <th>Description</th> </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr> <td>Royal Flush</td> <td>10, J, Q, K, A in the same suit</td> </tr>
+                        <tr> <td>Straight Flush</td> <td>5 consecutive cards in the same suit</td> </tr>
+                        <tr> <td>Four-of-a-kind</td> <td>4 cards of the same value</td> </tr>
+                        <tr> <td>Full House</td> <td>A pair, and a three-of-a-kind</td> </tr>
+                        <tr> <td>Flush</td> <td>5 cards in the same suit</td> </tr>
+                        <tr> <td>Straight</td> <td>5 consecutive cards</td> </tr>
+                        <tr> <td>Three-of-a-kind</td> <td>3 cards of the same value</td> </tr>
+                        <tr> <td>Two Pair</td> <td>2 cards of the same value, twice</td> </tr>
+                        <tr> <td>Pair</td> <td>2 cards of the same value</td> </tr>
+                        <tr> <td>High Card</td> <td>The highest valued card</td> </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
         <script>twemoji.parse(document.body)</script>

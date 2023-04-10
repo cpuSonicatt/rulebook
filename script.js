@@ -27,20 +27,38 @@ let games = [
         "icon": "♠️",
         "name": "Shithead",
         "link": "shithead",
-        "type": ["Card (Standard 52)", "Shedding", "2-4 players"]
+        "type": ["Card (Standard 52)", "Shedding", "", "2-4 players"]
     },
     {
         "icon": "🔥",
         "name": "Oh Hell!",
         "link": "ohhell",
-        "type": ["Card (Standard 52)", "Trick-taking", "2-4 players"]
+        "type": ["Card (Standard 52)", "Trick-taking", "USA", "3-7 players"]
     },
     {
         "icon": "🌧️",
         "name": "Spit",
         "link": "spit",
         "type": ["Card (Standard 52)", "Shedding", "2+ players"]
-    }
+    },
+    {
+        "icon": "😋",
+        "name": "Rummy (Basic and Gin)",
+        "link": "rummy",
+        "type": ["Card (Standard 52)", "Shedding", "Mexico", "2-6 players"]
+    },
+    {
+        "icon": "🏡",
+        "name": "Fight the Landlord",
+        "link": "fightthelandlord",
+        "type": ["Card (Standard 52)", "Shedding", "China", "3 players"]
+    },
+    {
+        "icon": "🥜",
+        "name": "Nerts",
+        "link": "nerts",
+        "type": ["Card (Standard 52)", "Shedding", "England", "3+ players"]
+    },
 ]
 
 
