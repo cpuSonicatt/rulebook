@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="/favicon/nerts.ico" rel="icon">
+        <title>How to play Nerts</title>
+
+        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300..800" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <link href="/style.css" rel="stylesheet">
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/twemoji@latest/dist/twemoji.min.js" crossorigin="anonymous"></script>
+    </head>
+    <body class="bg-pink container my-5">
+        <div class="col-md-8 mx-auto">
+            <div class="box shadow">
+                <div class="d-flex justify-content-center align-items-center">
+                    <div>🥜</div>
+                    <h1 class="m-3"><b>How to play Nerts</b></h1>
+                </div>
+                <hr>
+                <h2>You will need</h2>
+                <ul>
+                    <li>Multiple distinct standard 52-decks of cards.</li>
+                </ul>
+            </div>
+
+            <div class="box">
+                <h2>Deal</h2><hr>
+                <p>Each player deals their deck of cards in front of them to form their tableau, like so:</p>
+                <ul>
+                    <li>Deal 4 cards face up side-by-side. These are the Work piles.</li>
+                    <li>Next to the work pile, deal 12 cards face down and 1 card face up on top. This is the Nerts pile.</li>
+                    <li>Below both the work piles and the Nerts pile, place the rest of the cards face down. This is the Stock pile.</li>
+                </ul>
+                <p>There should be space in the middle of the table for the Common Area, which is where foundations are placed.</p>
+            </div>
+
+            <div class="box">
+                <h2>Play</h2><hr>
+                <p>Have someone count down to start the game.</p>
+
+                <p>Nerts plays a lot like Patience solitaire, where the foundations are instead common across all players.</p>
+                <p>Players take 3 cards at a time from the Stock pile and place them face up next to the Stock pile, to make the Waste pile.</p>
+                <p>The top card of both the Nerts pile and the Waste pile are the playable cards, where they can be added to the foundations in the Common Area, or added a player's own Work piles.</p>
+                <p>To add to a Work pile, the card must be of an opposite colour and one value lower than the visible card. For example, you can place a 7 Diamonds on an 8 Spades, but not an 8 Hearts or a 9 Spades.</p>
+                <p>To add to the foundations in the Common Area, the card must be the same suit and one value higher than the visible card. Aces (low) can be played to make new foundations. For example, you can place a 7 Diamonds on a 6 Diamonds.</p>
+                <p>If the Stock pile is exhausted, then turn over the Waste pile to form a new Stock pile.</p>
+                <p>If every player is stuck (cannot, or decide not to make a legal move), then everyone places all their cards from their Waste pile on top of their Stock pile face down, and move the top card of the Stock pile to the bottom.</p>
+
+                <p>Once the player's Nerts pile is exhausted, they may call "Nerts!" to end the game.</p>
+            </div>
+
+            <div class="box">
+                <h2>Scoring</h2><hr>
+                <p>Scoring is calculated with the following formula:</p>
+                <ul>
+                    <li><b>total cards played to the foundations</b> - (2 x <b>total cards in Nerts pile</b>)</li>
+                    <li>+10 if you called Nerts!</li>
+                </ul>
+                <p>The first player to reach 150 wins.</p>
+            </div>
+        </div>
+        <script>twemoji.parse(document.body)</script>
+    </body>
+</html>
