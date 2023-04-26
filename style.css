@@ -10,6 +10,7 @@ a:hover #hover {
 
 .callout > p, .callout > div {
     margin-left: 0.5rem;
+    margin-bottom: 0;
     padding: 0.5rem;
 }
 
@@ -44,40 +45,26 @@ a:hover #hover {
     font-weight: 800;
 }
 
+.indent {
+    margin-left: 1.5rem;
+}
+
 .smaller img {
     width: 5%;
     margin: 0 0.25rem
 }
 
-.m_cat ol {
-    list-style-type: none;
-    counter-reset: item;
-    margin: 0;
-    padding: 0;
+.example {
+    width: 100%;
 }
 
-.m_cat li {
-    display: table;
-    counter-increment: item;
-    margin-bottom: 0.6em;
+.example img {
+    width: 6%;
+    margin: 0 0.1rem;
 }
 
-.m_cat li:before {
-    content: counters(item, ".") ". ";
-    display: table-cell;
-    padding-right: 0.6em;   
-}
-
-.m_cat li li {
-    margin: 0;
-}
-
-.m_cat li li:before {
-    content: counters(item, ".") " ";
-}
-
-.m_cat .p:before {
-    content: "";
+.noborder td, .noborder th {
+    border: none;
 }
 
 .bg-red {

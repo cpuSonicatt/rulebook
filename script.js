@@ -109,6 +109,7 @@ function madewith() {
         "/* eslint-disable-next-line */",
         "01101100011011110111011001100101",
         "bad programming",
+        "rm -rf /",
 
         // video games
         Math.floor(Math.random() * 9 + 10) + " compile errors",
@@ -128,6 +129,9 @@ function madewith() {
         "nat 20s",
         "en passant",
         "Blue-Eyes White Dragon",
+        "the Five Lights",
+        "the Thirteen Wonders",
+        "a Royal Flush",
 
         // other
         "lots of swearing",
