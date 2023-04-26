@@ -47,7 +47,7 @@ const categories = [
             {"id": "5.1.1", "name": "Two Identical Runs", "desc": "Two runs in the same suit, of the same numbers", "points": "10", "ex": "6? 456456p 2?"},
             {"id": "5.1.2", "name": "Double Two Identical Runs", "desc": "Two runs in the same suit, of the same numbers, twice", "points": "60", "ex": "456456p 345345b 2?"},
             {"id": "5.1.3", "name": "Three Identical Runs", "desc": "Three runs in the same suit, of the same numbers", "points": "120", "ex": "3? 456456456p 2?"},
-            {"id": "5.1.4", "name": "Four Identical Runs", "desc": "Four runs in the same suit, of the same numbers", "points": "480", "ex": "4564566456456p 2?"}
+            {"id": "5.1.4", "name": "Four Identical Runs", "desc": "Four runs in the same suit, of the same numbers", "points": "480", "ex": "456456456456p 2?"}
         ]
     },
     {
@@ -72,7 +72,7 @@ const categories = [
             {"id": "8.1.1", "name": "Mixed Branching Terminals", "desc": "All sets contain Terminals and Honours", "points": "40", "ex": "123789c 999p 123b 22w"},
             {"id": "8.1.2", "name": "Pure Branching Terminals", "desc": "All sets contain Terminals", "points": "50", "ex": "123789c 999p 123b 99b"},
             {"id": "8.1.3", "name": "Mixed Rooted Terminals", "desc": "All sets contain only Terminals and Honours", "points": "100", "ex": "111999c 999p 111b 22w"},
-            {"id": "8.1.4", "name": "Pure Rooted Terminals", "desc": "All sets contain only Terminals", "points": "400", "ex": "111999c 999p 111b 11b"}
+            {"id": "8.1.4", "name": "Pure Rooted Terminals", "desc": "All sets contain only Terminals", "points": "400", "ex": "111999c 999p 111b 11p"}
         ]
     },
     {
