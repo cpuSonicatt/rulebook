@@ -1,3 +1,14 @@
+@media (max-width: 1200px) {
+    .example-calc img {
+        width: 12% !important;
+        margin: 0 0.1rem !important;
+    }
+
+    .w-xl-100 {
+        width: 100% !important;
+    }
+}
+
 body { font-family: 'Manrope', sans-serif; }
 
 a:hover #hover {
@@ -61,6 +72,10 @@ a:hover #hover {
 .example img {
     width: 6%;
     margin: 0 0.1rem;
+}
+
+.gap {
+    margin: 0 0.25rem;
 }
 
 .noborder td, .noborder th {

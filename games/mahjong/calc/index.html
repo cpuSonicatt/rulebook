@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="/favicon/mahjong.ico" rel="icon">
+        <title>Mahjong Hand Calculator</title>
+
+        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300..800" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <link href="/style.css" rel="stylesheet">
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/twemoji@latest/dist/twemoji.min.js" crossorigin="anonymous"></script>
+    </head>
+    <body class="bg-green container my-5">
+        <div class="box shadow">
+            <div>
+                <div class="d-flex justify-content-left align-items-center">
+                    <div>🧮</div>
+                    <h2 class="m-3"><b>Mahjong Hand Calculator</b></h1>
+                </div>
+                <hr>
+                <p>Input your hand into the text box below. Your tiles will appear underneath as you type. When a valid hand is recognised, you'll see its value and the categories it scored against.</p>
+                <p>The format should follow: the numbers of the tiles in a given pair, triplet, quad, or run, followed by the first letter of the name of the suit, with an optional <b>#</b> at the end to indicate a melded set. Separate each set with a space. </p>
+                <p>For the Dragon tiles: <b>1</b> is Green, <b>2</b> is Red, and <b>3</b> is White.</p>
+                <p>For the Wind tiles: <b>1</b> is East, <b>2</b> is South, <b>3</b> is West, and <b>4</b> is North.</p>
+                <p>For example, <b>123c 444p 789b# 2222d 44w</b> denotes: a run of 1, 2, 3 Characters, a triplet of 4 Pins, a melded run of 7, 8, 9 of Bamboo, a quad of Red Dragons, and a pair of West Winds.</p>
+                <hr>
+                <div class="row mt-2 mb-5 my-5" id="handform">
+                    <div class="col col-12 col-xl-6 mx-auto">
+                        <label class="col-form-label"><b>Hand and Seat</b></label>
+                        <div class="mb-3 input-group">
+                            <input class="form-control text-center" id="hand" type="text" placeholder="123c 444p 789b# 2222d 44w" autocomplete="off"/>
+                            <button class="btn btn-outline-secondary dropdown-toggle" id="seatwind" type="button" data-bs-toggle="dropdown" aria-expanded="false">Seat...</button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item winds" id="w1" href="javascript:void(0)">East</a></li>
+                                <li><a class="dropdown-item winds" id="w2" href="javascript:void(0)">South</a></li>
+                                <li><a class="dropdown-item winds" id="w3" href="javascript:void(0)">West</a></li>
+                                <li><a class="dropdown-item winds" id="w4" href="javascript:void(0)">North</a></li>
+                            </ul> 
+                        </div> 
+                    </div>
+                    <div class="col col-12 col-xl-4 mx-auto">
+                        <div class="" id="incids">
+                            <label class="col-form-label"><b>Incidentals</b></label>
+                            <div class="col col-auto" id="last">
+                                <div class="mb-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" name="last" id="selfdraw" autocomplete="off">
+                                        <label class="form-check-label" for="selfdraw">Self-draw on last tile?</label>
+                                    </div>
+        
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" name="last" id="discard" autocomplete="off">
+                                        <label class="form-check-label" for="discard">Discard on last tile?</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col col-auto">
+                                <div class="mb-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="supp">
+                                        <label class="form-check-label" for="supp">Self-draw on supplement tile?</label>
+                                    </div>
+        
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="rob">
+                                        <label class="form-check-label" for="rob">Rob a quad?</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col col-auto" id="bless">
+                                <div class="mb-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" name="bless" id="earth">
+                                        <label class="form-check-label" for="earth">East on first self-draw?</label>
+                                    </div>
+                
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" name="bless" id="heaven">
+                                        <label class="form-check-label" for="heaven">Non-east on East's first discard?</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div id="total" class="mb-3"></div>
+
+                <div id="tiles" class="mb-4 example example-calc d-xl-flex">
+                    <img src="../resources/tiles/at.png" class="opacity-0"/>
+                </div>
+
+                <div id="desc" class="mb-3"></div>
+            </div>    
+        </div>
+    </body>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.min.js"></script>
+    <script>twemoji.parse(document.body)</script>
+    <script src="./mahjongcalc.js"></script>
+    <script>
+        $("#earth").attr("disabled", true)
+        $("#heaven").attr("disabled", true)
+        $(`#handform input[type="checkbox"]`).prop("checked", false)
+
+        $(".winds").on("click", function() {
+            $("#seatwind").html(this.innerHTML.slice(0, 1))
+            switch(getSeat()) {
+                case "1":
+                    $("#earth").removeAttr("disabled")
+                    $("#heaven").attr("disabled", true)
+                    break
+                case "2":
+                case "3":
+                case "4":
+                    $("#earth").attr("disabled", true)
+                    $("#heaven").removeAttr("disabled")
+                    break
+            }
+            $("#hand").trigger("input")
+        })
+
+        $("#hand").on("input", function() {
+            $("#total").html("")
+            $("#desc").html("")
+            try {
+                let fuck = this.value.match(/\d+[cpbdw]#?/g).map((group) => {
+                    let groupArr = group.split("").filter(s => s !== "#")
+                    let suit = groupArr.pop()
+                    groupArr = groupArr.map((tile) => `<img class='p-0' src='../resources/tiles/${tile + suit}.png' />`).join("")
+                    return groupArr + (group.split("").includes("#") ? "<span class='ms-1 fs-6 align-top'>M</span>" : "")
+                }).join("<div class='gap mb-2'></div>")
+                $("#tiles").html(fuck)
+
+                let incids = {}
+                $(`#incids input[type="checkbox"]`).each(function () {
+                    incids[this.id] = this.checked
+                })
+
+                let hand = new Mahjong(this.value, getSeat(), incids).score()
+                $("#total").html(`<h3>Total points: ${hand.total}</h3>`)
+                $("#desc").html("<h4>Breakdown</h4><ul></ul>")
+                
+                hand.bd.forEach(s => $("#desc ul").append(`<li><b>${s.desc}</b> - ${s.score}</li>`))
+                
+            } catch (e) {
+                $("#tiles").html(`<img src="../resources/tiles/at.png" class="opacity-0"/>`)
+            }
+        })
+
+        $(`#last *[type="checkbox"]`).on("click", function() {
+            $('input[name="' + this.name + '"]').not(this).prop('checked', false)
+            $("#hand").trigger("input")
+        })
+
+        $(`#bless *[type="checkbox"]`).on("click", function() {
+            $('input[name="' + this.name + '"]').not(this).prop('checked', false)
+            $("#hand").trigger("input")
+        })
+
+        function getSeat() {
+            return ("ESWN".split("").indexOf($("#seatwind").html()) + 1).toString()
+        }
+    </script>
+</html>
