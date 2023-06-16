@@ -1,11 +1,15 @@
 @media (max-width: 1200px) {
-    .example-calc img {
+    /* .example-calc img {
         width: 12% !important;
         margin: 0 0.1rem !important;
-    }
+    } */
 
     .w-xl-100 {
         width: 100% !important;
+    }
+
+    .example img {
+        width: 15% !important;
     }
 }
 
@@ -66,16 +70,25 @@ a:hover #hover {
 }
 
 .example {
-    width: 100%;
+    position: relative;
+    display: inline-block;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.meld {
+    writing-mode: vertical-lr;
+    text-orientation: upright;
 }
 
 .example img {
     width: 6%;
     margin: 0 0.1rem;
+    margin-bottom: 0.5rem;
 }
 
 .gap {
-    margin: 0 0.25rem;
+    padding: 0 0.5rem;
 }
 
 .noborder td, .noborder th {

@@ -126,29 +126,13 @@ for (let category of categories) {
 }
 
 function getExample(tiles) {
-    let hand = [`<div class='example d-flex justify-content-center align-items-center'>`]
-    tiles.match(/\d+[cpbdw]/g).forEach((group) => {
-        let groupArr = group.split("")
-        let suit = groupArr.pop()
-        if (suit === "?") {
-            for (let x = 0; x < parseInt(group); x++) {
-                hand.push(`<img src='./resources/tiles/at.png' />`)
+    return `
+        <div class="example">
+            ${
+                tiles.match(/\d+[cpbdw]/g).map((group) => 
+                    group.match(/[1-9]/g).map((tile) => `<img src='./resources/tiles/${tile + group.match(/[cpbdw]/)[0]}.png' />`).join("")
+                ).join("<span class='gap'></span>")
             }
-        } else {
-            groupArr.forEach((tile) => {
-                hand.push(`<img src='./resources/tiles/${tile + suit}.png' />`)
-            })
-        }
-        hand.push("<div class='gap'></div>")
-    })
-    hand[hand.length -1] = "</div>"
-    return hand.join("")
+        <div/>
+    `
 }
-
-$(document).ready(() => {
-    $('[data-toggle="tooltip"]').tooltip({
-        animated: 'fade',
-        placement: 'bottom',
-        html: true
-    });
-})

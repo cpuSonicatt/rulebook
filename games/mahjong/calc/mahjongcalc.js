@@ -7,7 +7,7 @@ class Mahjong {
     }
 
     isValidHand = (h) => {
-        let handLen = h.join("").split("").filter(x => /\d/.test(x)).length
+        let handLen = h.join("").match(/\d/g).length
         return handLen > 13 && handLen < 19
     }
 
@@ -270,6 +270,7 @@ class Mahjong {
     howMany = (hand, pred) => hand.filter(pred).length
 
     score() {
+        
         if (this.isValidHand(this.hand)) {
             let scoreBreakdown = []
             let total = 0
@@ -278,17 +279,21 @@ class Mahjong {
                 if (score > 0) {
                     scoreBreakdown.push({score, desc})
                     total += score
+                } else {
+                    scoreBreakdown.push({score: 0, desc: ""})
                 }
             }
             let highest = scoreBreakdown.reduce((p, c) => p.score > c.score ? p : c)
-            highest
-            scoreBreakdown
-            
             if (total >= 320) {
                 if (320 > highest.score) {
                     return {total: 320, bd: [{ score: 320, desc: "Compound Limit Hand" }]}
                 } else {
                     return {total: highest.score, bd: [ highest ]}
+                }
+            } else if (total == 0)  {
+                return {
+                    total: 1,
+                    bd: [{score: 1, desc: "Chicken Hand"}]
                 }
             }
             return {
@@ -300,6 +305,10 @@ class Mahjong {
             total: 0,
             bd: {}
         }
+    }
+
+    isValid() {
+        return this.isValidHand(this.hand)
     }
 
 }

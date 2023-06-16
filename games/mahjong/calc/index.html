@@ -27,7 +27,7 @@
                 <p>For the Wind tiles: <b>1</b> is East, <b>2</b> is South, <b>3</b> is West, and <b>4</b> is North.</p>
                 <p>For example, <b>123c 444p 789b# 2222d 44w</b> denotes: a run of 1, 2, 3 Characters, a triplet of 4 Pins, a melded run of 7, 8, 9 of Bamboo, a quad of Red Dragons, and a pair of West Winds.</p>
                 <hr>
-                <div class="row mt-2 mb-5 my-5" id="handform">
+                <div class="row mt-2 mb-5 my-2" id="handform">
                     <div class="col col-12 col-xl-6 mx-auto">
                         <label class="col-form-label"><b>Hand and Seat</b></label>
                         <div class="mb-3 input-group">
@@ -42,7 +42,7 @@
                         </div> 
                     </div>
                     <div class="col col-12 col-xl-4 mx-auto">
-                        <div class="" id="incids">
+                        <div class="row" id="incids">
                             <label class="col-form-label"><b>Incidentals</b></label>
                             <div class="col col-auto" id="last">
                                 <div class="mb-3">
@@ -92,7 +92,7 @@
             <div>
                 <div id="total" class="mb-3"></div>
 
-                <div id="tiles" class="mb-4 example example-calc d-xl-flex">
+                <div id="tiles" class="mb-4 example d-xl-flex">
                     <img src="../resources/tiles/at.png" class="opacity-0"/>
                 </div>
 
@@ -129,24 +129,29 @@
             $("#total").html("")
             $("#desc").html("")
             try {
-                let fuck = this.value.match(/\d+[cpbdw]#?/g).map((group) => {
-                    let groupArr = group.split("").filter(s => s !== "#")
-                    let suit = groupArr.pop()
-                    groupArr = groupArr.map((tile) => `<img class='p-0' src='../resources/tiles/${tile + suit}.png' />`).join("")
-                    return groupArr + (group.split("").includes("#") ? "<span class='ms-1 fs-6 align-top'>M</span>" : "")
-                }).join("<div class='gap mb-2'></div>")
-                $("#tiles").html(fuck)
+                $("#tiles").html(`
+                    ${
+                        this.value.match(/\d+[cpbdw]#?/g).map((group) => 
+                            group.match(/[1-9]/g).map(tile => 
+                                `<img class='p-0' src='../resources/tiles/${tile + group.match(/[cpbdw]/)[0]}.png' />`
+                            ).join("") + (group.split("").includes("#") ? "<span class='ms-1 fs-6 align-middle'><b>M</b></span>" : "")
+                        ).join("<span class='gap'></span>")
+                    }
+                `)
 
                 let incids = {}
                 $(`#incids input[type="checkbox"]`).each(function () {
                     incids[this.id] = this.checked
                 })
 
-                let hand = new Mahjong(this.value, getSeat(), incids).score()
-                $("#total").html(`<h3>Total points: ${hand.total}</h3>`)
-                $("#desc").html("<h4>Breakdown</h4><ul></ul>")
-                
-                hand.bd.forEach(s => $("#desc ul").append(`<li><b>${s.desc}</b> - ${s.score}</li>`))
+                let hand = new Mahjong(this.value, getSeat(), incids)
+                if (hand.isValid()) {
+                    let score = hand.score()
+                    console.log(hand.bd)
+                    $("#total").html(`<h3>Total points: ${score.total}</h3>`)
+                    $("#desc").html("<h4>Breakdown</h4><ul></ul>")
+                    score.bd.forEach(s => $("#desc ul").append(`<li><b>${s.desc}</b> - ${s.score}</li>`))
+                }
                 
             } catch (e) {
                 $("#tiles").html(`<img src="../resources/tiles/at.png" class="opacity-0"/>`)
