@@ -43,9 +43,15 @@ let games = [
     },
     {
         "icon": "😋",
-        "name": "Rummy (Basic and Gin)",
+        "name": "Rummy",
         "link": "rummy",
         "type": ["Card (Standard 52)", "Shedding", "Mexico", "2-6 players"]
+    },
+    {
+        "icon": "🥴",
+        "name": "Gin Rummy",
+        "link": "rummygin",
+        "type": ["Card (Standard 52)", "Shedding", "Mexico", "2 players"]
     },
     {
         "icon": "🏡",
@@ -64,7 +70,7 @@ let games = [
 
 $(document).ready(function () {
     let list = $("#list")
-    games = games.sort((a,b) => a.name > b.name ? 1 : -1)
+    games = games.sort((a,b) => a.link > b.link ? 1 : -1)
     for (let game of games) {
         list.append(`
             <a class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" href="./games/${game.link}">

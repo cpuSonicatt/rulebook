@@ -17,13 +17,90 @@
         <div class="col-xl-8 mx-auto">
             <div class="box shadow">
                 <div class="d-flex justify-content-center align-items-center">
-                    <div>♠️</div>
+                    <div>😋</div>
                     <h1 class="m-3"><b>How to play Rummy</b></h1>
                 </div>
                 <hr>
                 
+                <h2>You will need</h2>
+
+                <ul>
+                    <li>A standard 52-card deck.</li>
+                </ul>
             </div>
+
+            <div class="box">
+                <h2>Terms</h2><hr>
+                <ul>
+                    <li><b><b>going rummy</b></b> - winning the game by getting rid of all your cards at once.</li>
+                </ul>
+            </div>
+
+            <div class="box">
+                <h2>Deal</h2><hr>
+
+                <p>Agree between everyone if Ace is high or low.</p>
+
+                <div class="indent">
+                    <br>
+                    <h5>For 2 players</h5>
+                    <p>Deal 10 cards to each player.</p>
+                    <br>
+
+                    <h5>For 3-4 players</h5>
+                    <p>Deal 7 cards to each player.</p>
+                    <br>
+
+                    <h5>For 5-6 players</h5>
+                    <p>Deal 6 cards to each player.</p>
+                    <br>
+                </div>
+
+                <p>Place the rest of the cards in the middle to form the stock pile. Reveal the top card and place it face-up next to the pile.</p>
+            </div>
+
+            <div class="box">
+                <h2>Objective</h2><hr>
+                <p>Match and play sets of cards in sequences in the same suit or groups of 3 of the same value.</p>
+            </div>
+
+            <div class="box">
+                <h2>Play</h2><hr>
+                <p>On your turn, pick up a card, make one or more sets (if possible), and discard a card.</p>
+                <p>You must pick up one card either from the top of the stock pile, or from the most recent card from the discard pile.</p>
+                <p>To make a set, you must have 3 cards that either run in a consecutive sequence in the same suit, or a group of the same value. e.g. a run of 3♥, 4♥, 5♥ , or a group of 6♥, 6♦, 6♣.</p>
+                
+                <div class="callout note">
+                    <p><b>Note</b>: Runs of cards don't wrap around from King to Ace, or Ace to Two.</p>
+                </div>
+
+                <p>If you want to play a set from your hand, place the set out in the middle. You don't have to play any sets during your turn, even if you're able to.</p>
+                <p>You can also add a card to an existing run or group.</p>
+                <p>You then must discard a card to the discard pile, face-up. You may discard the card you picked up in the same turn.</p>
+                <p>If you run out of cards from the stock pile, place the top discarded card aside, shuffle the rest of the discarded cards and form a new stock, and start a new discard pile with the card left out.</p>
+                <p>The winner is the player who ends up with no cards in their hand at the end of their turn, or has no cards to discard.</p>
+            </div>
+
+            <div class="box">
+                <h2>Scoring</h2><hr>
+                <p>Once a player has no more cards in their hand, the round is over.</p>
+                <p>The the players then total up the value of their hand. Value cards are scored by their number (pip value). Aces are worth 1, and face cards are worth 10. Players score that amount of points.</p>
+                <p>If the winning player played all 8 of their cards at once, then they have <b>'gone rummy'</b> and the points that the others players have scored is doubled.</p>
+                <p>The player with the lowest score wins.</p>
+            </div>
+
         </div>
-        <script>twemoji.parse(document.body)</script>
+        <script>twemoji.parse(document.body, {
+            callback: function(icon, options, variant) {
+                switch(icon) {
+                    case "2665":
+                    case "2660":
+                    case "2666":
+                    case "2663":
+                        return false
+                }
+                return ''.concat(options.base, options.size, '/', icon, options.ext)
+            }
+        })</script>
     </body>
 </html>
