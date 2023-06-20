@@ -298,7 +298,7 @@ class Mahjong {
             }
             return {
                 total: total,
-                bd: scoreBreakdown
+                bd: scoreBreakdown.filter(x => x.score > 0)
             }
         }
         return {

@@ -1,9 +1,4 @@
 @media (max-width: 1200px) {
-    /* .example-calc img {
-        width: 12% !important;
-        margin: 0 0.1rem !important;
-    } */
-
     .w-xl-100 {
         width: 100% !important;
     }
@@ -133,4 +128,15 @@ a:hover #hover {
 
 .bg-white {
     background-color: var(--bs-white) !important;
+}
+
+.retbut {
+    position: absolute;
+    margin-left: -1rem;
+    margin-top: -1rem;
+    color: var(--bs-gray-600) !important;
+}
+
+.retbut:hover {
+    color: var(--bs-gray-800) !important;
 }
