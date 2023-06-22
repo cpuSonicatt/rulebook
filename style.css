@@ -199,7 +199,11 @@ p.hr span {
 
 a {
     text-decoration: none;
-    color: var(--bs-gray-900)
+}
+
+.main {
+    text-decoration: none;
+    color: var(--bs-gray-900) !important;
 }
 
 a:hover #hover {

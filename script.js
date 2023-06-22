@@ -121,7 +121,7 @@ $(document).ready(function () {
     for (let game of games) {
         $(`#${game.group}`).append(`
             <div class="col-xl-4 col-md-6 col-">
-                <a href="./games/${game.link}">
+                <a class="main" href="./games/${game.link}">
                     <div class="d-flex align-items-center my-4">
                         <div>${game.icon}</div>
                         <div class="mx-4">
@@ -149,9 +149,11 @@ function madewith() {
     return [
         // love
         "love",
+        "luv",
+        "loooooooooooooove",
         "<3",
         "💖", "❤️", "🧡", "💛", "💚", "💙", "💜", "🤍", "🖤", "🤎",
-        "🫀", // atanomical heart
+        "🫀", // anatomical heart
         ":heart:",
         ".-.. --- ...- .",
         "����",
@@ -160,7 +162,6 @@ function madewith() {
         // programming
         "${RANDOM_FOOTER_PHRASE}",
         "1337 hackzor skillz",
-        "<samp>java.lang.ArrayIndexOutOfBoundsException: " + Math.floor(Math.random() * 9 + 3) + "</samp>",
         "/* TODO: Add more phrases */",
         "love'); DROP TABLE Students;--",
         "tabs, not spaces",
@@ -203,6 +204,7 @@ function madewith() {
         "power, pleasure, and pain",
         "money, money, money",
         "all the small things",
+        "images and words",
         "scenes from a memory",
         "the sunshine of your love",
         "warm wet circles",
@@ -211,6 +213,13 @@ function madewith() {
         "hysteria",
         "moving pictures",
         "miracle shopping",
+        "a little bit of Monica in my life",
+        "a little bit of Erica by my side",
+        "a little bit of Rita's all i need",
+        "a little bit of Tina what i see",
+        "a little bit of Sandra in the sun",
+        "a little bit of Mary all night long",
+        "a little bit of Jessica, here i am",
 
         // other
         "lots of swearing",
@@ -227,6 +236,9 @@ function madewith() {
         "www.BANDICAM.com",
         "a WinRAR license",
         "ur mum lol",
+        "urrmmm...",
+        "no added sugar",
+        "no artificial colours",    
 
         // special
         `<a target="_blank" href="https://youtu.be/dQw4w9WgXcQ">dQw4w9WgXcQ</a>`,
