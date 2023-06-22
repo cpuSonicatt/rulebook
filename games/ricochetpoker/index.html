@@ -15,8 +15,8 @@
         <script src="https://unpkg.com/twemoji@latest/dist/twemoji.min.js" crossorigin="anonymous"></script>
     </head>
     <body class="bg-purple container my-5">
-        <div class="col-xl-8 mx-auto">
-            <div class="box shadow">
+        <div class="bg-light col-xl-8 mx-auto shaadow">
+            <div class="box">
                 <a href="../../"><i class="retbut bi bi-house-fill" style="font-size: 1.5rem;"></i></a>
                 <div class="d-flex justify-content-center align-items-center">
                     <div>👑</div>
@@ -56,24 +56,38 @@
 
                 <table class="table">
                     <thead>
-                        <tr> <th>Name</th> <th>Description</th> </tr>
+                        <tr> <th>Name</th> <th>Description</th> <th>Example</th> </tr>
                     </thead>
-
+<!-- ♠ <span class="r">♥</span> <span class="r">♦</span> ♣ -->
                     <tbody>
-                        <tr> <td>Royal Flush</td> <td>10, J, Q, K, A in the same suit</td> </tr>
-                        <tr> <td>Straight Flush</td> <td>5 consecutive cards in the same suit</td> </tr>
-                        <tr> <td>Four-of-a-kind</td> <td>4 cards of the same value</td> </tr>
-                        <tr> <td>Full House</td> <td>A pair, and a three-of-a-kind</td> </tr>
-                        <tr> <td>Flush</td> <td>5 cards in the same suit</td> </tr>
-                        <tr> <td>Straight</td> <td>5 consecutive cards</td> </tr>
-                        <tr> <td>Three-of-a-kind</td> <td>3 cards of the same value</td> </tr>
-                        <tr> <td>Two Pair</td> <td>2 cards of the same value, twice</td> </tr>
-                        <tr> <td>Pair</td> <td>2 cards of the same value</td> </tr>
-                        <tr> <td>High Card</td> <td>The highest valued card</td> </tr>
+                        <tr> <td>Royal Flush</td>     <td>10, J, Q, K, A in the same suit</td>      <td>10<span class="r">♥</span> J<span class="r">♥</span> Q<span class="r">♥</span> K<span class="r">♥</span> A<span class="r">♥</span></td>  </tr>
+                        <tr> <td>Straight Flush</td>  <td>5 consecutive cards in the same suit</td> <td>4♠ 5♠ 6♠ 7♠ 8♠</td>   </tr>
+                        <tr> <td>Four-of-a-kind</td>  <td>4 cards of the same value</td>            <td>3♣ 3<span class="r">♥</span> 3<span class="r">♦</span> 3♠</td>    </tr>
+                        <tr> <td>Full House</td>      <td>A pair, and a three-of-a-kind</td>        <td>7<span class="r">♥</span> 7♣ J♣ J<span class="r">♥</span> J♠</td>   </tr>
+                        <tr> <td>Flush</td>           <td>5 cards in the same suit</td>             <td>3<span class="r">♦</span> 6<span class="r">♦</span> 7<span class="r">♦</span> K<span class="r">♦</span> A<span class="r">♦</span></td>   </tr>
+                        <tr> <td>Straight</td>        <td>5 consecutive cards</td>                  <td>2♣ 3<span class="r">♥</span> 4<span class="r">♦</span> 5♣ 6<span class="r">♦</span></td>   </tr>
+                        <tr> <td>Three-of-a-kind</td> <td>3 cards of the same value</td>            <td>6♣ 6♠ 6<span class="r">♦</span></td>    </tr>
+                        <tr> <td>Two Pair</td>        <td>2 cards of the same value, twice</td>     <td>8♣ 8<span class="r">♦</span> A♠ A♣</td>    </tr>
+                        <tr> <td>Pair</td>            <td>2 cards of the same value</td>            <td>5<span class="r">♥</span> 5<span class="r">♦</span></td>    </tr>
+                        <tr> <td>High Card</td>       <td>The highest valued card</td>              <td>Q♣</td>    </tr>
                     </tbody>
                 </table>
             </div>
         </div>
-        <script>twemoji.parse(document.body)</script>
+        <script>
+        twemoji.parse(document.body, {
+            callback: function(icon, options, variant) {
+                switch(icon) {
+                    case "2665":
+                    case "2660":
+                    case "2666":
+                    case "2663":
+                        return false
+                }
+                return ''.concat(options.base, options.size, '/', icon, options.ext)
+            }
+        })
+        
+        </script>
     </body>
 </html>

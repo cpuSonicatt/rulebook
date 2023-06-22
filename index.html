@@ -14,20 +14,43 @@
         <script src="https://unpkg.com/twemoji@latest/dist/twemoji.min.js" crossorigin="anonymous"></script>
     </head>
     <body class="bg-dark container my-5">
-        <div class="row g-0 justify-content-center">
-            <div class="col col-xl-6 card rounded shadow">
-                <div class="card-header d-flex justify-content-center align-items-center">
-                    <div>📜</div>
-                    <h1 class="mx-3 my-4"><b>Rule Book</b></h1>
-                </div>
-                <div class="card-body p-0">
-                    <div id="list" class="rounded list-group list-group-flush"></div>
-                </div>
-                <div class="card-footer">
-                    <div id="madewith" class="my-2 text-center"></div>
-                </div>
+        <div class="bg-light p-5">
+            <div class="d-flex justify-content-center align-items-center mb-5">
+                <div>📜</div>
+                <h1 class="mx-3 my-4"><span class="fw-light">Jacq's</span> <b>Rule Book</b></h1>
+            </div>
+            
+            <div class="my-4">
+                <p class="hr"><span>CARD</span></p>
+                <div id="card" class="row"></div>
+            </div>
+
+            <div class="my-4">
+                <p class="hr"><span>HANAFUDA</span></p>
+                <div id="hanafuda" class="row"></div>    
+            </div>
+
+            <div class="my-4">
+                <p class="hr"><span>TILE & STONE</span></p>
+                <div id="tile" class="row"></div>
+            </div>
+
+            <div class="my-4">
+                <p class="hr"><span>PENCIL & PAPER</span></p>
+                <div id="pencilpaper" class="row"></div>
+            </div>
+
+            <hr>
+            <div class="text-center mt-5">
+                <div id="madewith"></div>
+                <p class="foot-links">
+                    <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a> • 
+                    <a href="https://twemoji.twitter.com/" target="_blank">Twemoji</a> • 
+                    <a href="https://github.com/sharanda/manrope" target="_blank">Manrope</a>
+                </p>
             </div>
         </div>
+
 
         <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.min.js"></script>
         <script src="./script.js"></script>

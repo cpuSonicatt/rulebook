@@ -3,109 +3,140 @@ let games = [
         "icon": "📍",
         "name": "Cribbage",
         "link": "cribbage",
-        "type": ["Card (Standard 52)", "Matching", "2-4 players"]
+        "group": "card",
+        "type": "Matching",
+        "players": "2-4 players",
     },
     {
         "icon": "👑",
         "name": "Ricochet Poker",
         "link": "ricochetpoker",
-        "type": ["Card (Standard 52)", "Gambling", "2-7 players"]
+        "group": "card",
+        "type": "Gambling",
+        "players": "2-7 players",
     },
     {
         "icon": "♠️",
         "name": "Shithead",
         "link": "shithead",
-        "type": ["Card (Standard 52)", "Shedding", "2-4 players"]
+        "group": "card",
+        "type": "Shedding",
+        "players": "2-4 players",
     },
     {
         "icon": "🔥",
         "name": "Oh Hell!",
         "link": "ohhell",
-        "type": ["Card (Standard 52)", "Trick-taking", "3-7 players"]
+        "group": "card",
+        "type": "Trick-taking",
+        "players": "3-7 players",
     },
     {
         "icon": "🌧️",
         "name": "Spit",
         "link": "spit",
-        "type": ["Card (Standard 52)", "Shedding", "2+ players"]
+        "type": ["Card (Standard 52)", "Shedding", "2+ players"],
+        "group": "card",
+        "type": "Shedding",
+        "players": "2+ players",
     },
     {
         "icon": "😋",
         "name": "Rummy",
         "link": "rummy",
-        "type": ["Card (Standard 52)", "Shedding", "2-6 players"]
+        "type": ["Card (Standard 52)", "Shedding", "2-6 players"],
+        "group": "card",
+        "type": "Shedding",
+        "players": "2-6 players",
     },
     {
         "icon": "🥴",
         "name": "Gin Rummy",
         "link": "rummygin",
-        "type": ["Card (Standard 52)", "Shedding", "2 players"]
+        "group": "card",
+        "type": "Shedding",
+        "players": "2 players",
     },
     {
         "icon": "🏡",
         "name": "Fight the Landlord",
         "link": "fightthelandlord",
-        "type": ["Card (Standard 52)", "Shedding", "3 players"]
+        "group": "card",
+        "type": "Shedding",
+        "players": "3 players",
     },
     {
         "icon": "🥜",
         "name": "Nerts",
         "link": "nerts",
-        "type": ["Card (Standard 52)", "Shedding", "3+ players"]
+        "group": "card",
+        "type": "Shedding",
+        "players": "3+ players",
     },
 
     {
         "icon": "🎴",
         "name": "Koi-koi",
         "link": "koikoi",
-        "type": ["Card (Hanafuda)", "Fishing", "2 players"]
+        "group": "hanafuda",
+        "type": "Fishing",
+        "players": "2 players",
     },
     {
         "icon": "💮",
         "name": "Hana-Awase",
         "link": "hanaawase",
-        "type": ["Card (Hanafuda)", "Fishing", "2-4 players"]
+        "group": "hanafuda",
+        "type": "Fishing",
+        "players": "2-4 players",
     },
     {
         "icon": "🀄",
         "name": "Mahjong",
         "link": "mahjong",
-        "type": ["Tile (Mahjong)", "Matching", "4 players"]
+        "group": "tile",
+        "type": "Matching",
+        "players": "4 players",
     },
     {
         "icon": "🏎️",
         "name": "Racetrack",
         "link": "racetrack",
-        "type": ["Pencil and Paper", "Racing", "2+ players"]
+        "group": "pencilpaper",
+        "type": "Racing",
+        "players": "2+ players",
     },
     {
         "icon": "🕳️",
         "name": "Mancala",
         "link": "mancala",
-        "type": ["Stones", "Strategy", "2 players"]
+        "group": "tile",
+        "type": "Strategy",
+        "players": "2 players",
     }
 ]
 
 $(document).ready(function () {
-    let list = $("#list")
+    games = games.sort((a,b) => a.link > b.link ? 1 : -1)
     for (let game of games) {
-        list.append(`
-            <a class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" href="./games/${game.link}">
-                <div class="mt-3 d-flex flex-column align-items-center w-50">
-                    <div class="mx-auto">${game.icon}</div>
-                    <p id="hover" class="fs-4 text-center"><b>${game.name}</b></p>
-                </div>
-
-                <div class="me-3 d-flex flex-column align-items-end">
-                    ${game.type.map((e) => `
-                        <p class="my-1 fs-6">${e}</p>
-                    `).join(" ")}
-                </div> 
-            </a>
+        $(`#${game.group}`).append(`
+            <div class="col-xl-4 col-md-6 col-">
+                <a href="./games/${game.link}">
+                    <div class="d-flex align-items-center my-4">
+                        <div>${game.icon}</div>
+                        <div class="mx-4">
+                            <p id="hover" class="fs-4 mb-0"><b>${game.name}</b></p>
+                            <p class="mb-0">${game.type} • ${game.players}</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
         `)
     }
 
     $("#madewith").html(`<p class="smaller">Made with ${madewith()} by Jacq</p>`)
+    // $("#madewith").append(`<p class="smaller mt-5">Made with ❤️ by Jacq</p>`)
+
     twemoji.parse(document.body)
 })
 
