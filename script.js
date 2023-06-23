@@ -1,118 +1,117 @@
 let games = [
     {
-        "icon": "📍",
+        "icon": "round-pushpin",
         "name": "Cribbage",
         "link": "cribbage",
         "group": "card",
         "type": "Matching",
-        "players": "2-4 players",
+        "players": "2-4 players"
     },
     {
-        "icon": "👑",
+        "icon": "crown",
         "name": "Ricochet Poker",
         "link": "ricochetpoker",
         "group": "card",
         "type": "Gambling",
-        "players": "2-7 players",
+        "players": "2-7 players"
     },
     {
-        "icon": "♠️",
+        "icon": "spade-suit",
         "name": "Shithead",
         "link": "shithead",
         "group": "card",
         "type": "Shedding",
-        "players": "2-4 players",
+        "players": "2-4 players"
     },
     {
-        "icon": "🔥",
+        "icon": "fire",
         "name": "Oh Hell!",
         "link": "ohhell",
         "group": "card",
         "type": "Trick-taking",
-        "players": "3-7 players",
+        "players": "3-7 players"
     },
     {
-        "icon": "🌧️",
+        "icon": "cloud-with-rain",
         "name": "Spit",
         "link": "spit",
         "type": ["Card (Standard 52)", "Shedding", "2+ players"],
         "group": "card",
         "type": "Shedding",
-        "players": "2+ players",
+        "players": "2+ players"
     },
     {
-        "icon": "😋",
+        "icon": "face-savoring-food",
         "name": "Rummy",
         "link": "rummy",
         "type": ["Card (Standard 52)", "Shedding", "2-6 players"],
         "group": "card",
         "type": "Shedding",
-        "players": "2-6 players",
+        "players": "2-6 players"
     },
     {
-        "icon": "🥴",
+        "icon": "woozy-face",
         "name": "Gin Rummy",
         "link": "rummygin",
         "group": "card",
         "type": "Shedding",
-        "players": "2 players",
+        "players": "2 players"
     },
     {
-        "icon": "🏡",
+        "icon": "house-with-garden",
         "name": "Fight the Landlord",
         "link": "fightthelandlord",
         "group": "card",
         "type": "Shedding",
-        "players": "3 players",
+        "players": "3 players"
     },
     {
-        "icon": "🥜",
+        "icon": "peanuts",
         "name": "Nerts",
         "link": "nerts",
         "group": "card",
         "type": "Shedding",
-        "players": "3+ players",
+        "players": "3+ players"
     },
-
     {
-        "icon": "🎴",
+        "icon": "flower-playing-cards",
         "name": "Koi-koi",
         "link": "koikoi",
         "group": "hanafuda",
         "type": "Fishing",
-        "players": "2 players",
+        "players": "2 players"
     },
     {
-        "icon": "💮",
+        "icon": "white-flower",
         "name": "Hana-Awase",
         "link": "hanaawase",
         "group": "hanafuda",
         "type": "Fishing",
-        "players": "2-4 players",
+        "players": "2-4 players"
     },
     {
-        "icon": "🀄",
+        "icon": "mahjong-red-dragon",
         "name": "Mahjong",
         "link": "mahjong",
         "group": "tile",
         "type": "Matching",
-        "players": "4 players",
+        "players": "4 players"
     },
     {
-        "icon": "🏎️",
+        "icon": "racing-car",
         "name": "Racetrack",
         "link": "racetrack",
         "group": "pencilpaper",
         "type": "Racing",
-        "players": "2+ players",
+        "players": "2+ players"
     },
     {
-        "icon": "🕳️",
+        "icon": "hole",
         "name": "Mancala",
         "link": "mancala",
         "group": "tile",
         "type": "Strategy",
-        "players": "2 players",
+        "players": "2 players"
     }
 ]
 
@@ -123,7 +122,8 @@ $(document).ready(function () {
             <div class="col-xl-4 col-md-6 col-">
                 <a class="main" href="./games/${game.link}">
                     <div class="d-flex align-items-center my-4">
-                        <div>${game.icon}</div>
+                        
+                        <i class="twa-5x twa-${game.icon}"></i>
                         <div class="mx-4">
                             <p id="hover" class="fs-4 mb-0"><b>${game.name}</b></p>
                             <p class="mb-0">${game.type} • ${game.players}</p>
@@ -134,8 +134,7 @@ $(document).ready(function () {
         `)
     }
 
-    $("#madewith").html(`<p class="smaller">Made with ${madewith()} by Jacq</p>`)
-    // $("#madewith").append(`<p class="smaller mt-5">Made with ❤️ by Jacq</p>`)
+    $("#madewith").html(`<p class="d-flex justify-content-center align-items-center">Made with ${madewith()} by Jacq</p>`)
 
     twemoji.parse(document.body)
 })
@@ -152,8 +151,17 @@ function madewith() {
         "luv",
         "loooooooooooooove",
         "<3",
-        "💖", "❤️", "🧡", "💛", "💚", "💙", "💜", "🤍", "🖤", "🤎",
-        "🫀", // anatomical heart
+        `<i class="mx-2 twa-lg twa-sparkling-heart"></i>`,
+        `<i class="mx-2 twa-lg twa-red-heart"></i>`,
+        `<i class="mx-2 twa-lg twa-orange-heart"></i>`,
+        `<i class="mx-2 twa-lg twa-yellow-heart"></i>`,
+        `<i class="mx-2 twa-lg twa-green-heart"></i>`,
+        `<i class="mx-2 twa-lg twa-blue-heart"></i>`,
+        `<i class="mx-2 twa-lg twa-purple-heart"></i>`,
+        `<i class="mx-2 twa-lg twa-white-heart"></i>`,
+        `<i class="mx-2 twa-lg twa-black-heart"></i>`,
+        `<i class="mx-2 twa-lg twa-brown-heart"></i>`,
+        `<i class="mx-2 twa-lg twa-anatomical-heart"></i>`,
         ":heart:",
         ".-.. --- ...- .",
         "����",
@@ -216,7 +224,7 @@ function madewith() {
         "a little bit of Monica in my life",
         "a little bit of Erica by my side",
         "a little bit of Rita's all i need",
-        "a little bit of Tina what i see",
+        "a little bit of Tina's what i see",
         "a little bit of Sandra in the sun",
         "a little bit of Mary all night long",
         "a little bit of Jessica, here i am",
@@ -242,8 +250,8 @@ function madewith() {
 
         // special
         `<a target="_blank" href="https://youtu.be/dQw4w9WgXcQ">dQw4w9WgXcQ</a>`,
-        "trans rights 🏳️‍⚧️",
-        "rainbows 🏳️‍🌈"
+        `trans rights <i class="mx-2 twa-lg twa-transgender-flag"></i>`,
+        `rainbows <i class="mx-2 twa-lg twa-rainbow-flag"></i>`
 
     ].sample()
 }
