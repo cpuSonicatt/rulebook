@@ -1,18 +1,10 @@
 @media (max-width: 1200px) {
-    .w-xl-100 {
-        width: 100% !important;
-    }
-
     .example img {
         width: 15% !important;
     }
 }
 
 body { font-family: 'Manrope', sans-serif; }
-
-.w-33 {
-    width: 33.333%;
-}
 
 a:hover #hover {
     text-decoration: underline;
@@ -70,6 +62,11 @@ a:hover #hover {
     display: inline-block;
     overflow-x: auto;
     white-space: nowrap;
+    scrollbar-width: thin;
+}
+
+.fadex {
+    mask-image: linear-gradient(90deg, transparent 1%, rgba(0, 0, 0, 1) 2%, rgba(0, 0, 0, 1) 99%, transparent 100%);
 }
 
 .meld {
@@ -159,6 +156,74 @@ a:hover #hover {
     background-color: var(--bs-white) !important;
 }
 
+.c-red {
+    color: var(--bs-red) !important;
+}
+
+.c-light-red {
+    color: var(--bs-danger-bg-subtle) !important;
+}
+
+.c-orange {
+    color: var(--bs-orange) !important;
+}
+
+.c-yellow {
+    color: var(--bs-yellow) !important;
+}
+
+.c-light-yellow {
+    color: var(--bs-warning-bg-subtle) !important;
+}
+
+.c-green {
+    color: var(--bs-green) !important;
+}
+
+.c-light-green {
+    color: var(--bs-success-bg-subtle) !important;
+}
+
+.c-teal {
+    color: var(--bs-teal) !important;
+}
+
+.c-blue {
+    color: var(--bs-blue) !important;
+}
+
+.c-cyan {
+    color: var(--bs-cyan) !important;
+}
+
+.c-light-cyan {
+    color: var(--bs-info-bg-subtle) !important;
+}
+
+.c-light-blue {
+    color: var(--bs-primary-bg-subtle) !important;
+}
+
+.c-indigo {
+    color: var(--bs-indigo) !important;
+}
+
+.c-purple {
+    color: var(--bs-purple) !important;
+}
+
+.c-pink {
+    color: var(--bs-pink) !important;
+}
+
+.c-black {
+    color: var(--bs-black) !important;
+}
+
+.c-white {
+    color: var(--bs-white) !important;
+}
+
 .retbut {
     position: absolute;
     margin-left: -1rem;
@@ -172,7 +237,7 @@ a:hover #hover {
 
 .hr {
     color: var(--bs-gray-600);
-    padding-left: 5em;
+    padding-left: 3em;
     font-weight: bold;
 }
 

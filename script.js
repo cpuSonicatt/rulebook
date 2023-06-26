@@ -136,7 +136,7 @@ $(document).ready(function () {
 
     $("#madewith").html(`<p class="d-flex justify-content-center align-items-center">Made with ${madewith()} by Jacq</p>`)
 
-    twemoji.parse(document.body)
+    
 })
 
 
