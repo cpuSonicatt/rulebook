@@ -128,7 +128,7 @@ for (let category of categories) {
 function getExample(tiles) {
     return `
         <div class="fadex">
-            <div class="example px-4">
+            <div class="fadex example px-1">
                 ${
                     tiles.match(/\d+[cpbdw]/g).map((group) => 
                         group.match(/[1-9]/g).map((tile) => `<img src='./resources/tiles/${tile + group.match(/[cpbdw]/)[0]}.png' />`).join("")
