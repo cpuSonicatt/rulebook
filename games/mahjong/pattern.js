@@ -127,15 +127,14 @@ for (let category of categories) {
 
 function getExample(tiles) {
     return `
-        <div class="fadex">
-            <div class="fadex example px-1">
-                ${
-                    tiles.match(/\d+[cpbdw]/g).map((group) => 
-                        group.match(/[1-9]/g).map((tile) => `<img src='./resources/tiles/${tile + group.match(/[cpbdw]/)[0]}.png' />`).join("")
-                    ).join("<span class='gap'></span>")
-                }
-                <span class='gap'></span>
-            </div>
+        <div class="fadex example">
+            <span class='gap'></span>
+            ${
+                tiles.match(/\d+[cpbdw]/g).map((group) => 
+                    group.match(/[1-9]/g).map((tile) => `<img src='./resources/tiles/${tile + group.match(/[cpbdw]/)[0]}.png' />`).join("")
+                ).join("<span class='gap-sm'></span>")
+            }
+            <span class='gap'></span>
         </div>
     `
 }
