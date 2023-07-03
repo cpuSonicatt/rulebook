@@ -5,7 +5,7 @@ let games = [
         "link": "cribbage",
         "group": "card",
         "type": "Matching",
-        "players": "2-4 players"
+        "players": "2-4"
     },
     {
         "icon": "crown",
@@ -13,7 +13,7 @@ let games = [
         "link": "ricochetpoker",
         "group": "card",
         "type": "Gambling",
-        "players": "2-7 players"
+        "players": "2-7"
     },
     {
         "icon": "spade-suit",
@@ -21,7 +21,7 @@ let games = [
         "link": "shithead",
         "group": "card",
         "type": "Shedding",
-        "players": "2-4 players"
+        "players": "2-4"
     },
     {
         "icon": "fire",
@@ -29,7 +29,7 @@ let games = [
         "link": "ohhell",
         "group": "card",
         "type": "Trick-taking",
-        "players": "3-7 players"
+        "players": "3-7"
     },
     {
         "icon": "cloud-with-rain",
@@ -38,7 +38,7 @@ let games = [
         "type": ["Card (Standard 52)", "Shedding", "2+ players"],
         "group": "card",
         "type": "Shedding",
-        "players": "2+ players"
+        "players": "2+"
     },
     {
         "icon": "face-savoring-food",
@@ -47,7 +47,7 @@ let games = [
         "type": ["Card (Standard 52)", "Shedding", "2-6 players"],
         "group": "card",
         "type": "Shedding",
-        "players": "2-6 players"
+        "players": "2-6"
     },
     {
         "icon": "woozy-face",
@@ -55,7 +55,7 @@ let games = [
         "link": "rummygin",
         "group": "card",
         "type": "Shedding",
-        "players": "2 players"
+        "players": "2"
     },
     {
         "icon": "house-with-garden",
@@ -63,7 +63,7 @@ let games = [
         "link": "fightthelandlord",
         "group": "card",
         "type": "Shedding",
-        "players": "3 players"
+        "players": "3"
     },
     {
         "icon": "peanuts",
@@ -71,7 +71,7 @@ let games = [
         "link": "nerts",
         "group": "card",
         "type": "Shedding",
-        "players": "3+ players"
+        "players": "3+"
     },
     {
         "icon": "flower-playing-cards",
@@ -79,7 +79,7 @@ let games = [
         "link": "koikoi",
         "group": "hanafuda",
         "type": "Fishing",
-        "players": "2 players"
+        "players": "2"
     },
     {
         "icon": "white-flower",
@@ -87,7 +87,7 @@ let games = [
         "link": "hanaawase",
         "group": "hanafuda",
         "type": "Fishing",
-        "players": "2-4 players"
+        "players": "2-4"
     },
     {
         "icon": "mahjong-red-dragon",
@@ -95,7 +95,7 @@ let games = [
         "link": "mahjong",
         "group": "tile",
         "type": "Matching",
-        "players": "4 players"
+        "players": "4"
     },
     {
         "icon": "racing-car",
@@ -103,7 +103,7 @@ let games = [
         "link": "racetrack",
         "group": "pencilpaper",
         "type": "Racing",
-        "players": "2+ players"
+        "players": "2+"
     },
     {
         "icon": "hole",
@@ -111,7 +111,15 @@ let games = [
         "link": "mancala",
         "group": "tile",
         "type": "Strategy",
-        "players": "2 players"
+        "players": "2"
+    },
+    {
+        "icon": "bowling",
+        "name": "Bowling Solitaire",
+        "link": "bowling",
+        "group": "solitaire",
+        "type": "Card",
+        "players": "1"
     }
 ]
 
@@ -126,7 +134,7 @@ $(document).ready(function () {
                         <i class="twa-5x twa-${game.icon}"></i>
                         <div class="mx-4">
                             <p id="hover" class="fs-4 mb-0"><b>${game.name}</b></p>
-                            <p class="mb-0">${game.type} • ${game.players}</p>
+                            <p class="mb-0">${[game.type, getPlayers(game.players)].join(" • ")}</p>
                         </div>
                     </div>
                 </a>
@@ -135,9 +143,11 @@ $(document).ready(function () {
     }
 
     $("#madewith").html(`<p class="d-flex justify-content-center align-items-center">Made with ${madewith()} by Jacq</p>`)
-
-    
 })
+
+function getPlayers(num) {
+    return `${num} player${num == "1" ? "" : "s"}`
+}
 
 
 Array.prototype.sample = function() {
@@ -183,9 +193,9 @@ function madewith() {
         `System.out.println("love")`,
         `console.log("love")`,
         `puts "love"`,
+        Math.floor(Math.random() * 9 + 10) + " compile errors",
 
         // video games
-        Math.floor(Math.random() * 9 + 10) + " compile errors",
         "motherlode",
         "redstone",
         "sv_cheats 1",
@@ -246,7 +256,7 @@ function madewith() {
         "ur mum lol",
         "urrmmm...",
         "no added sugar",
-        "no artificial colours",    
+        "no artificial colours",
 
         // special
         `<a target="_blank" href="https://youtu.be/dQw4w9WgXcQ">dQw4w9WgXcQ</a>`,
