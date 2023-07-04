@@ -127,10 +127,9 @@ $(document).ready(function () {
     games = games.sort((a,b) => a.link > b.link ? 1 : -1)
     for (let game of games) {
         $(`#${game.group}`).append(`
-            <div class="col-xl-4 col-md-6 col-">
+            <div class="col-xxl-4 col-lg-6 col-sm-12">
                 <a class="main" href="./games/${game.link}">
-                    <div class="d-flex align-items-center my-4">
-                        
+                    <div class="d-flex flex-sm-row flex-column align-items-center text-center text-sm-start my-4">
                         <i class="twa-5x twa-${game.icon}"></i>
                         <div class="mx-4">
                             <p id="hover" class="fs-4 mb-0"><b>${game.name}</b></p>
@@ -142,7 +141,7 @@ $(document).ready(function () {
         `)
     }
 
-    $("#madewith").html(`<p class="d-flex justify-content-center align-items-center">Made with ${madewith()} by Jacq</p>`)
+    $("#madewith").html(`<p class="d-flex flex-sm-row flex-column justify-content-center align-items-center">Made with ${madewith()} by Jacq</p>`)
 })
 
 function getPlayers(num) {
