@@ -2,85 +2,55 @@ let games = {
     "card": {
         "Cribbage": {
             "icon": "round-pushpin",
-        "link": "cribbage",
-        "link": "cribbage",
-        "group": "card",
             "link": "cribbage",
-        "group": "card",
             "type": "Matching",
             "players": "2-4"
         },
         "Ricochet Poker": {
             "icon": "crown",
-        "link": "ricochetpoker",
-        "link": "ricochetpoker",
-        "group": "card",
             "link": "ricochetpoker",
-        "group": "card",
             "type": "Gambling",
             "players": "2-7"
         },
         "Shithead": {
             "icon": "spade-suit",
-        "link": "shithead",
-        "link": "shithead",
-        "group": "card",
             "link": "shithead",
-        "group": "card",
             "type": "Shedding",
             "players": "2-4"
         },
         "Oh Hell!": {
             "icon": "fire",
-        "link": "ohhell",
-        "link": "ohhell",
-        "group": "card",
             "link": "ohhell",
-        "group": "card",
             "type": "Trick-taking",
             "players": "3-7"
         },
        "Spit": {
             "icon": "cloud-with-rain",
             "link": "spit",
-            "type": ["Card (Standard 52)", "Shedding", "2+ players"],
             "type": "Shedding",
             "players": "2+"
         },
         "Rummy": {
             "icon": "face-savoring-food",
             "link": "rummy",
-            "type": ["Card (Standard 52)", "Shedding", "2-6 players"],
             "type": "Shedding",
             "players": "2-6"
         },
         "Gin Rummy": {
             "icon": "woozy-face",
-        "link": "rummygin",
-        "link": "rummygin",
-        "group": "card",
             "link": "rummygin",
-        "group": "card",
             "type": "Shedding",
             "players": "2"
         },
         "Fight the Landlord": {
             "icon": "house-with-garden",
-        "link": "fightthelandlord",
-        "link": "fightthelandlord",
-        "group": "card",
             "link": "fightthelandlord",
-        "group": "card",
             "type": "Shedding",
             "players": "3"
         },
         "Nerts": {
             "icon": "peanuts",
-        "link": "nerts",
-        "link": "nerts",
-        "group": "card",
             "link": "nerts",
-        "group": "card",
             "type": "Shedding",
             "players": "3+"
         }
@@ -88,21 +58,13 @@ let games = {
     "hanafuda": {
         "Koi-koi": {
             "icon": "flower-playing-cards",
-        "link": "koikoi",
-        "link": "koikoi",
-        "group": "hanafuda",
             "link": "koikoi",
-        "group": "hanafuda",
             "type": "Fishing",
             "players": "2"
         },
         "Hana-Awase": {
             "icon": "white-flower",
-        "link": "hanaawase",
-        "link": "hanaawase",
-        "group": "hanafuda",
             "link": "hanaawase",
-        "group": "hanafuda",
             "type": "Fishing",
             "players": "2-4"
         }
@@ -110,11 +72,7 @@ let games = {
     "tile": {
         "Mahjong": {
             "icon": "mahjong-red-dragon",
-        "link": "mahjong",
-        "link": "mahjong",
-        "group": "tile",
             "link": "mahjong",
-        "group": "tile",
             "type": "Matching",
             "players": "4"
         },
@@ -128,11 +86,7 @@ let games = {
     "pencilpaper": {
         "Racetrack": {
             "icon": "racing-car",
-        "link": "racetrack",
-        "link": "racetrack",
-        "group": "pencilpaper",
             "link": "racetrack",
-        "group": "pencilpaper",
             "type": "Racing",
             "players": "2+"
         }
