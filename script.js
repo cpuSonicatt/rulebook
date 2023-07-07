@@ -172,7 +172,7 @@ $(document).ready(function () {
         }
     }
 
-    $("#madewith").html(`<p class="d-flex justify-content-center align-items-center">Made with ${madewith()} by Jacq</p>`)
+    $("#madewith").html(`<p class="d-flex flex-sm-row flex-column justify-content-center align-items-center">Made with ${madewith()} by Jacq</p>`)
 })
 
 function getPlayers(num) {
