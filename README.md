@@ -10,6 +10,8 @@ A collection of rules for various board/card games. Made with Bootstrap.
   - Hana-Awase
   - Mancala
   - Racetrack
+  - Bowling Solitaire
+  - Golf Solitaire
 - Proof-read/grammar check
 - Clean up HTML headers
 - Remove `twemoji.parse(...)`

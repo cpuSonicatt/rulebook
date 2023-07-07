@@ -1,145 +1,175 @@
-let games = [
-    {
-        "icon": "round-pushpin",
-        "name": "Cribbage",
+let games = {
+    "card": {
+        "Cribbage": {
+            "icon": "round-pushpin",
+        "link": "cribbage",
         "link": "cribbage",
         "group": "card",
-        "type": "Matching",
-        "players": "2-4"
-    },
-    {
-        "icon": "crown",
-        "name": "Ricochet Poker",
+            "link": "cribbage",
+        "group": "card",
+            "type": "Matching",
+            "players": "2-4"
+        },
+        "Ricochet Poker": {
+            "icon": "crown",
+        "link": "ricochetpoker",
         "link": "ricochetpoker",
         "group": "card",
-        "type": "Gambling",
-        "players": "2-7"
-    },
-    {
-        "icon": "spade-suit",
-        "name": "Shithead",
+            "link": "ricochetpoker",
+        "group": "card",
+            "type": "Gambling",
+            "players": "2-7"
+        },
+        "Shithead": {
+            "icon": "spade-suit",
+        "link": "shithead",
         "link": "shithead",
         "group": "card",
-        "type": "Shedding",
-        "players": "2-4"
-    },
-    {
-        "icon": "fire",
-        "name": "Oh Hell!",
+            "link": "shithead",
+        "group": "card",
+            "type": "Shedding",
+            "players": "2-4"
+        },
+        "Oh Hell!": {
+            "icon": "fire",
+        "link": "ohhell",
         "link": "ohhell",
         "group": "card",
-        "type": "Trick-taking",
-        "players": "3-7"
-    },
-    {
-        "icon": "cloud-with-rain",
-        "name": "Spit",
-        "link": "spit",
-        "type": ["Card (Standard 52)", "Shedding", "2+ players"],
+            "link": "ohhell",
         "group": "card",
-        "type": "Shedding",
-        "players": "2+"
-    },
-    {
-        "icon": "face-savoring-food",
-        "name": "Rummy",
-        "link": "rummy",
-        "type": ["Card (Standard 52)", "Shedding", "2-6 players"],
-        "group": "card",
-        "type": "Shedding",
-        "players": "2-6"
-    },
-    {
-        "icon": "woozy-face",
-        "name": "Gin Rummy",
+            "type": "Trick-taking",
+            "players": "3-7"
+        },
+       "Spit": {
+            "icon": "cloud-with-rain",
+            "link": "spit",
+            "type": ["Card (Standard 52)", "Shedding", "2+ players"],
+            "type": "Shedding",
+            "players": "2+"
+        },
+        "Rummy": {
+            "icon": "face-savoring-food",
+            "link": "rummy",
+            "type": ["Card (Standard 52)", "Shedding", "2-6 players"],
+            "type": "Shedding",
+            "players": "2-6"
+        },
+        "Gin Rummy": {
+            "icon": "woozy-face",
+        "link": "rummygin",
         "link": "rummygin",
         "group": "card",
-        "type": "Shedding",
-        "players": "2"
-    },
-    {
-        "icon": "house-with-garden",
-        "name": "Fight the Landlord",
+            "link": "rummygin",
+        "group": "card",
+            "type": "Shedding",
+            "players": "2"
+        },
+        "Fight the Landlord": {
+            "icon": "house-with-garden",
+        "link": "fightthelandlord",
         "link": "fightthelandlord",
         "group": "card",
-        "type": "Shedding",
-        "players": "3"
-    },
-    {
-        "icon": "peanuts",
-        "name": "Nerts",
+            "link": "fightthelandlord",
+        "group": "card",
+            "type": "Shedding",
+            "players": "3"
+        },
+        "Nerts": {
+            "icon": "peanuts",
+        "link": "nerts",
         "link": "nerts",
         "group": "card",
-        "type": "Shedding",
-        "players": "3+"
+            "link": "nerts",
+        "group": "card",
+            "type": "Shedding",
+            "players": "3+"
+        }
     },
-    {
-        "icon": "flower-playing-cards",
-        "name": "Koi-koi",
+    "hanafuda": {
+        "Koi-koi": {
+            "icon": "flower-playing-cards",
+        "link": "koikoi",
         "link": "koikoi",
         "group": "hanafuda",
-        "type": "Fishing",
-        "players": "2"
-    },
-    {
-        "icon": "white-flower",
-        "name": "Hana-Awase",
+            "link": "koikoi",
+        "group": "hanafuda",
+            "type": "Fishing",
+            "players": "2"
+        },
+        "Hana-Awase": {
+            "icon": "white-flower",
+        "link": "hanaawase",
         "link": "hanaawase",
         "group": "hanafuda",
-        "type": "Fishing",
-        "players": "2-4"
+            "link": "hanaawase",
+        "group": "hanafuda",
+            "type": "Fishing",
+            "players": "2-4"
+        }
     },
-    {
-        "icon": "mahjong-red-dragon",
-        "name": "Mahjong",
+    "tile": {
+        "Mahjong": {
+            "icon": "mahjong-red-dragon",
+        "link": "mahjong",
         "link": "mahjong",
         "group": "tile",
-        "type": "Matching",
-        "players": "4"
+            "link": "mahjong",
+        "group": "tile",
+            "type": "Matching",
+            "players": "4"
+        },
+        "Mancala": {
+            "icon": "hole",
+            "link": "mancala",
+            "type": "Strategy",
+            "players": "2"
+        }
     },
-    {
-        "icon": "racing-car",
-        "name": "Racetrack",
+    "pencilpaper": {
+        "Racetrack": {
+            "icon": "racing-car",
+        "link": "racetrack",
         "link": "racetrack",
         "group": "pencilpaper",
-        "type": "Racing",
-        "players": "2+"
+            "link": "racetrack",
+        "group": "pencilpaper",
+            "type": "Racing",
+            "players": "2+"
+        }
     },
-    {
-        "icon": "hole",
-        "name": "Mancala",
-        "link": "mancala",
-        "group": "tile",
-        "type": "Strategy",
-        "players": "2"
-    },
-    {
-        "icon": "bowling",
-        "name": "Bowling Solitaire",
-        "link": "bowling",
-        "group": "solitaire",
-        "type": "Card",
-        "players": "1"
+    "solitaire": {
+        "Bowling Solitaire": {
+            "icon": "bowling",
+            "link": "bowling",
+            "type": "Card",
+            "players": "1"
+        },
+        "Golf Solitaire": {
+            "icon": "flag-in-hole",
+            "link": "golf",
+            "type": "Card",
+            "players": "1"
+        }
     }
-]
+}
 
 $(document).ready(function () {
-    games = games.sort((a,b) => a.link > b.link ? 1 : -1)
-    for (let game of games) {
-        $(`#${game.group}`).append(`
-            <div class="col-xl-4 col-md-6 col-">
-                <a class="main" href="./games/${game.link}">
-                    <div class="d-flex align-items-center my-4">
-                        
-                        <i class="twa-5x twa-${game.icon}"></i>
-                        <div class="mx-4">
-                            <p id="hover" class="fs-4 mb-0"><b>${game.name}</b></p>
-                            <p class="mb-0">${[game.type, getPlayers(game.players)].join(" • ")}</p>
+    for (let group of Object.keys(games)) {
+        for (let [name, info] of Object.entries(games[group])) {
+            $(`#${group}`).append(`
+                <div class="col-xxl-4 col-lg-6 col-sm-12">
+                    <a class="main" href="./games/${info.link}">
+                        <div class="d-flex flex-sm-row flex-column align-items-center text-center text-sm-start my-4">
+                            <i class="twa-5x twa-${info.icon}"></i>
+                            <div class="mx-4">
+                                <p id="hover" class="fs-4 mb-0"><b>${name}</b></p>
+                                <p class="mb-0">${[info.type, getPlayers(info.players)].join(" • ")}</p>
+                            </div>
                         </div>
-                    </div>
-                </a>
-            </div>
-        `)
+                    </a>
+                </div>
+            `)
+        }
     }
 
     $("#madewith").html(`<p class="d-flex justify-content-center align-items-center">Made with ${madewith()} by Jacq</p>`)
@@ -161,17 +191,17 @@ function madewith() {
         "luv",
         "loooooooooooooove",
         "<3",
-        `<i class="mx-2 twa-lg twa-sparkling-heart"></i>`,
-        `<i class="mx-2 twa-lg twa-red-heart"></i>`,
-        `<i class="mx-2 twa-lg twa-orange-heart"></i>`,
-        `<i class="mx-2 twa-lg twa-yellow-heart"></i>`,
-        `<i class="mx-2 twa-lg twa-green-heart"></i>`,
-        `<i class="mx-2 twa-lg twa-blue-heart"></i>`,
-        `<i class="mx-2 twa-lg twa-purple-heart"></i>`,
-        `<i class="mx-2 twa-lg twa-white-heart"></i>`,
-        `<i class="mx-2 twa-lg twa-black-heart"></i>`,
-        `<i class="mx-2 twa-lg twa-brown-heart"></i>`,
-        `<i class="mx-2 twa-lg twa-anatomical-heart"></i>`,
+        `<i class="mx-2 twa twa-lg twa-sparkling-heart"></i>`,
+        `<i class="mx-2 twa twa-lg twa-red-heart"></i>`,
+        `<i class="mx-2 twa twa-lg twa-orange-heart"></i>`,
+        `<i class="mx-2 twa twa-lg twa-yellow-heart"></i>`,
+        `<i class="mx-2 twa twa-lg twa-green-heart"></i>`,
+        `<i class="mx-2 twa twa-lg twa-blue-heart"></i>`,
+        `<i class="mx-2 twa twa-lg twa-purple-heart"></i>`,
+        `<i class="mx-2 twa twa-lg twa-white-heart"></i>`,
+        `<i class="mx-2 twa twa-lg twa-black-heart"></i>`,
+        `<i class="mx-2 twa twa-lg twa-brown-heart"></i>`,
+        `<i class="mx-2 twa twa-lg twa-anatomical-heart"></i>`,
         ":heart:",
         ".-.. --- ...- .",
         "����",
