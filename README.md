@@ -14,7 +14,4 @@ A collection of rules for various board/card games. Made with Bootstrap.
   - Golf Solitaire
 - Proof-read/grammar check
 - Clean up HTML headers
-- Remove `twemoji.parse(...)`
 - More footer phrases :)
-- Add Koi-koi calc page
-- Update 404 page
