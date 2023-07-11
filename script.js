@@ -215,6 +215,11 @@ function madewith() {
         "hysteria",
         "moving pictures",
         "miracle shopping",
+        "the man machine",
+        "giant steps",
+        "99 red balloons",
+        "a kiss from a rose",
+        "breakfast in america",
         "a little bit of Monica in my life",
         "a little bit of Erica by my side",
         "a little bit of Rita's all i need",
@@ -243,7 +248,7 @@ function madewith() {
         "no artificial colours",
 
         // special
-        `<a target="_blank" href="https://youtu.be/dQw4w9WgXcQ">dQw4w9WgXcQ</a>`,
+        `<a class="mx-2" target="_blank" href="https://youtu.be/dQw4w9WgXcQ">dQw4w9WgXcQ</a>`,
         `trans rights <i class="mx-2 twa-lg twa-transgender-flag"></i>`,
         `rainbows <i class="mx-2 twa-lg twa-rainbow-flag"></i>`
 

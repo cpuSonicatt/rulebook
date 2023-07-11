@@ -5,8 +5,6 @@ A collection of rules for various board/card games. Made with Bootstrap.
 - Write...
   - Fight the Landlord
   - Gin Rummy
-  - Shithead
-  - Spit
   - Hana-Awase
   - Mancala
   - Racetrack
