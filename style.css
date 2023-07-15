@@ -116,15 +116,15 @@ body { font-family: 'Manrope', sans-serif; }
 }
 
 
-/* Content divisions in "boxes" with extra padding on the bottom. Have division titles in bold. */
+/* Content divisions in "boxes" with extra padding on the bottom. Have division titles, and any specifically bolded elements at font-weight 700. */
 
 .box {
     padding: 1.5rem 2rem 0.5rem 2rem !important;
     margin-bottom: 0.25rem !important;
 }
 
-.box h2 {
-    font-weight: 800;
+.box h2, b {
+    font-weight: 700;
 }
 
 .indent {

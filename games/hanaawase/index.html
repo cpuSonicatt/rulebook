@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -17,10 +17,10 @@
     <body class="bg-light-pink container my-5">
         <div class="bg-light col-xl-8 mx-auto pb-2 shaadow">
             <div class="box">
-                <a href="../../"><i class="retbut bi bi-house-fill" style="font-size: 1.5rem;"></i></a>
+                <a href="../../"><i class="retbut bi bi-house-fill" style="font-size: 1.5rem;"><span class="visually-hidden">Return home</span></i></a>
                 <div class="d-flex flex-sm-row flex-column justify-content-center align-items-center">
                     <i class="twa-5x twa-white-flower"></i>
-                    <h1 class="m-3 text-start"><span class="fw-light">How to play</span><br><b>Hana-Awase</b></h1>
+                    <h1 class="m-4 text-start fw-light">How to play<br><b>Hana-Awase</b></h1>
                 </div>
                 <hr>
                 <h2>You will need</h2>
@@ -28,7 +28,7 @@
                     <li>A set of <b>hanafuda</b>.</li>
                 </ul>
                 <div class="callout note">
-                    <p><b>Note</b>: The rules to Hana-Awase are similar to <a target="_blank" href="../koikoi/index.html">Koi-koi</a>.</p>
+                    <p><b>Note</b>: The rules to Hana-Awase are similar to <a href="../koikoi/index.html">Koi-koi</a>.</p>
                 </div>
             </div>
 
@@ -61,22 +61,19 @@
                 <p>The <b>Oya</b> deals out the cards:</p>
 
                 <div class="indent">
-                    <br>
-                    <h5>For 2 players</h5>
-                    <p>Deal 10 cards to each player, and 8 cards to the <b>field</b>.</p>
-
-                    <br>
-                    <h5>For 3 players</h5>
-                    <p>Deal 7 cards to each player, and 6 cards to the <b>field</b>.</p>
-
-                    <br>
-                    <h5>For 4 players</h5>
-                    <p>Deal 5 cards to each player, and 8 cards to the <b>field</b>.</p>
-                    <br>
+                    <p><b>For 2 players</b>: Deal 10 cards to each player, and 8 cards to the <b>field</b>.</p>
+                    <p><b>For 3 players</b>: Deal 7 cards to each player, and 6 cards to the <b>field</b>.</p>
+                    <p><b>For 4 players</b>: Deal 5 cards to each player, and 8 cards to the <b>field</b>.</p>
                 </div>
+
                 <p>Set the rest of the cards aside to form the <b>draw pile</b></p>
 
                 <p>Before starting the round, check for <a href="#misdeals">misdeals</a>.</p>
+            </div>
+
+            <div class="box">
+                <h2 id="misdeals">Misdeals</h2><hr>
+                <p>If 4 cards of the same month are dealt to the <b>field</b>, re-deal the round.</p>
             </div>
 
             <div class="box">
@@ -108,11 +105,6 @@
             </div>
 
             <div class="box">
-                <h2 id="misdeals">Misdeals</h2><hr>
-                <p>If 4 cards of the same month are dealt to the <b>field</b>, re-deal the round.</p>
-            </div>
-
-            <div class="box">
                 <h2>Scoring</h2><hr>
                 <p>A player's score for the round is calculated by adding up the <b>card points</b>, plus the <b>yaku points</b> in that player's <b>point pile</b>.</p>
 
@@ -136,7 +128,7 @@
                 <h2 id="yaku"><b>Yaku</b></h2>
                 <hr>
                 <div class="callout note">
-                    <p><b>Note</b>: the Light <b>yaku</b>, the Seven Slips and Six Slips, and the Viewing vaku are each mutually exclusive, meaning only the highest-valued <b>yaku</b> in each of those groups counts towards scoring.</p>
+                    <p><b>Note</b>: the Light <b>yaku</b>, the Seven Slips and Six Slips <b>yaku</b>, and the Viewing <b>yaku</b> are each mutually exclusive, meaning only the highest-valued <b>yaku</b> in each of those groups counts towards scoring.</p>
                 </div>
 
                 <div id="lights"><br>
@@ -172,21 +164,17 @@
                 <h2>Note-worthy cards</h2><hr>
                 <p>There are 3 note-worthy cards:</p>
                 <div class="container col-lg-8">
-                    <img class="w-100 mx-auto mb-3" src="./resources/noteworthy.png">
+                    <img class="w-100 mx-auto mb-3" src="./resources/noteworthy.png" alt="3 hanafuda cards: the Bush Warbler, the Eight-Plank Bridge, and the Lightning">
                 </div>
                 <ul>
-                    <li>The Bush Warbler ascts as a pseuodo-Light card for the Spring <b>yaku</b>, but isn't counted as a Light card.</li>
+                    <li>The Bush Warbler acts as a pseudo-Light card for the Spring <b>yaku</b>, but isn't counted as a Light card.</li>
                     <li>The Eight-Plank-Bridge is an Animal card, despite it not depicting one.</li>
                     <li>The Lightning card is in the November suit, despite it appearing not to depict any willow at a glance.</li>
                 </ul>
             </div>
-
         </div>
         <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.min.js"></script>
         <script src="./yaku.js"></script>
         <script src="./list.js"></script>
-
-        
-        
     </body>
 </html>

@@ -104,7 +104,7 @@ function madewith() {
         "scenes from a memory",
         "the sunshine of your love",
         "warm wet circles",
-        "the ecstacy of gold",
+        "the ecstasy of gold",
         "tubular bells",
         "hysteria",
         "moving pictures",
@@ -142,7 +142,7 @@ function madewith() {
         "no artificial colours",
 
         // special
-        `<a class="mx-2" target="_blank" href="https://youtu.be/dQw4w9WgXcQ">dQw4w9WgXcQ</a>`,
+        `<a class="mx-2" href="https://youtu.be/dQw4w9WgXcQ">dQw4w9WgXcQ</a>`,
         `trans rights <i class="mx-2 twa-lg twa-transgender-flag"></i>`,
         `rainbows <i class="mx-2 twa-lg twa-rainbow-flag"></i>`
 
