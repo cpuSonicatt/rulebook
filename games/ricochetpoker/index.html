@@ -50,10 +50,9 @@
 
             <div class="box">
                 <h2>Poker hands</h2><hr>
-                <ul>
-                    <li>Ace is high</li>
-                    <li>Clubs beats Hearts, beats Diamonds, beats Spades</li>
-                </ul>
+                <div class="callout note">
+                    <p><b>Note</b>: Ace is high, and in the event of a tie: Clubs beats Hearts, beats Diamonds, beats Spades.</p>
+                </div>
 
                 <table class="table">
                     <thead>
@@ -61,7 +60,7 @@
                     </thead>
 
                     <tbody>
-                        <tr> <td>Royal Flush</td>     <td>10, J, Q, K, A in the same suit</td>      <td>10<span class="r">♥</span> J<span class="r">♥</span> Q<span class="r">♥</span> K<span class="r">♥</span> A<span class="r">♥</span></td>  </tr>
+                        <tr class="table-group-divider"> <td>Royal Flush</td>     <td>10, J, Q, K, A in the same suit</td>      <td>10<span class="r">♥</span> J<span class="r">♥</span> Q<span class="r">♥</span> K<span class="r">♥</span> A<span class="r">♥</span></td>  </tr>
                         <tr> <td>Straight Flush</td>  <td>5 consecutive cards in the same suit</td> <td>4♠ 5♠ 6♠ 7♠ 8♠</td>   </tr>
                         <tr> <td>Four-of-a-kind</td>  <td>4 cards of the same value</td>            <td>3♣ 3<span class="r">♥</span> 3<span class="r">♦</span> 3♠</td>    </tr>
                         <tr> <td>Full House</td>      <td>A pair, and a three-of-a-kind</td>        <td>7<span class="r">♥</span> 7♣ J♣ J<span class="r">♥</span> J♠</td>   </tr>
@@ -75,20 +74,5 @@
                 </table>
             </div>
         </div>
-        <script>
-        twemoji.parse(document.body, {
-            callback: function(icon, options, variant) {
-                switch(icon) {
-                    case "2665":
-                    case "2660":
-                    case "2666":
-                    case "2663":
-                        return false
-                }
-                return ''.concat(options.base, options.size, '/', icon, options.ext)
-            }
-        })
-        
-        </script>
     </body>
 </html>

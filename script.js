@@ -1,118 +1,12 @@
-let games = {
-    "card": {
-        "Cribbage": {
-            "icon": "round-pushpin",
-            "link": "cribbage",
-            "type": "Matching",
-            "players": "2-4"
-        },
-        "Ricochet Poker": {
-            "icon": "crown",
-            "link": "ricochetpoker",
-            "type": "Gambling",
-            "players": "2-7"
-        },
-        "Shithead": {
-            "icon": "spade-suit",
-            "link": "shithead",
-            "type": "Shedding",
-            "players": "2-4"
-        },
-        "Oh Hell!": {
-            "icon": "fire",
-            "link": "ohhell",
-            "type": "Trick-taking",
-            "players": "3-7"
-        },
-       "Spit": {
-            "icon": "cloud-with-rain",
-            "link": "spit",
-            "type": "Shedding",
-            "players": "2+"
-        },
-        "Rummy": {
-            "icon": "face-savoring-food",
-            "link": "rummy",
-            "type": "Shedding",
-            "players": "2-6"
-        },
-        "Gin Rummy": {
-            "icon": "woozy-face",
-            "link": "rummygin",
-            "type": "Shedding",
-            "players": "2"
-        },
-        "Fight the Landlord": {
-            "icon": "house-with-garden",
-            "link": "fightthelandlord",
-            "type": "Shedding",
-            "players": "3"
-        },
-        "Nerts": {
-            "icon": "peanuts",
-            "link": "nerts",
-            "type": "Shedding",
-            "players": "3+"
-        }
-    },
-    "hanafuda": {
-        "Koi-koi": {
-            "icon": "flower-playing-cards",
-            "link": "koikoi",
-            "type": "Fishing",
-            "players": "2"
-        },
-        "Hana-Awase": {
-            "icon": "white-flower",
-            "link": "hanaawase",
-            "type": "Fishing",
-            "players": "2-4"
-        }
-    },
-    "tile": {
-        "Mahjong": {
-            "icon": "mahjong-red-dragon",
-            "link": "mahjong",
-            "type": "Matching",
-            "players": "4"
-        },
-        "Mancala": {
-            "icon": "hole",
-            "link": "mancala",
-            "type": "Strategy",
-            "players": "2"
-        }
-    },
-    "pencilpaper": {
-        "Racetrack": {
-            "icon": "racing-car",
-            "link": "racetrack",
-            "type": "Racing",
-            "players": "2+"
-        }
-    },
-    "solitaire": {
-        "Bowling Solitaire": {
-            "icon": "bowling",
-            "link": "bowling",
-            "type": "Card",
-            "players": "1"
-        },
-        "Golf Solitaire": {
-            "icon": "flag-in-hole",
-            "link": "golf",
-            "type": "Card",
-            "players": "1"
-        }
-    }
-}
+$(document).ready(async function () {
 
-$(document).ready(function () {
+    games = await (await fetch("./games.json")).json()
+
     for (let group of Object.keys(games)) {
         for (let [name, info] of Object.entries(games[group])) {
             $(`#${group}`).append(`
                 <div class="col-xxl-4 col-lg-6 col-sm-12">
-                    <a class="main" href="./games/${info.link}">
+                    <a class="a-reg-colour" href="./games/${info.link}">
                         <div class="d-flex flex-sm-row flex-column align-items-center text-center text-sm-start my-4">
                             <i class="twa-5x twa-${info.icon}"></i>
                             <div class="mx-4">

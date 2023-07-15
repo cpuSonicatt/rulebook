@@ -1,7 +1,7 @@
 const displayYaku = (n, p, i) => `
     <p ${i === "moonviewing" ? `id="moon"` : ``}><b>${n}</b><br>${p}</p>
-    <div class="container">
-        <img class="w-100 mb-3" src="./resources/yaku/${i}.png">
+    <div class="container mb-5">
+        <img class="w-100" src="./resources/yaku/${i}.png">
     </div>
 `
 
