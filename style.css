@@ -84,7 +84,7 @@ body { font-family: 'Manrope', sans-serif; }
 }
 
 
-/* Callouts for tips, notes, scoring oppotunities, etc */
+/* Callouts for tips, notes, scoring opportunities, etc */
 
 .callout {
     margin: 1.25rem 0;
@@ -225,7 +225,7 @@ body { font-family: 'Manrope', sans-serif; }
 }
 
 
-/* Horizonal rules for categorising games on the main menu, requires special styling because of the text. */
+/* Horizontal rules for categorising games on the main menu, requires special styling because of the text. */
 
 .hr {
     color: var(--dark-grey);
@@ -281,4 +281,10 @@ a:hover #hover {
 
 .r {
     color: var(--red)
+}
+
+
+/* Disable the ligature Manrope applies to certain combinations of letters, like '<3' or '...ffi...' */
+.nolig {
+    font-variant-ligatures: none;
 }

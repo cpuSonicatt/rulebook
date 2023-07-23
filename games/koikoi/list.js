@@ -76,15 +76,15 @@ const cards = [
 
 
 $("#cards").append(cards.map((suit) => `
-  <p><b>${suit.month}</b><br>${suit.plant}</p>
-  <div class="container">
-      <img class="w-100 mb-3" src="./resources/list/${suit.img}.png">
-  </div>
-  <div class="container text-center">
-  ${suit.cards.map((c) => 
-    `<span>${c}</span>`
-  ).join(" • ")}
-  </div>
-  <br>
-`
+    <p><b>${suit.month}</b><br>${suit.plant}</p>
+    <div class="container">
+        <img alt="" class="w-100 mb-3" src="./resources/list/${suit.img}.png">
+    </div>
+    <div class="container text-center">
+      ${suit.cards.map((c) => 
+        `<span>${c}</span>`
+      ).join(" • ")}
+    </div>
+    <br>
+  `
 ))

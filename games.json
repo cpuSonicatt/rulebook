@@ -1,114 +1,131 @@
 {
-  "card": {
-    "Cribbage": {
+  "card": [
+    {
+      "name": "Cribbage",
       "icon": "round-pushpin",
       "link": "cribbage",
       "type": "Matching",
       "players": "2-4"
     },
-    "Ricochet Poker": {
+    {
+      "name": "Ricochet Poker",
       "icon": "crown",
       "link": "ricochetpoker",
       "type": "Gambling",
       "players": "2-7"
     },
-    "Shithead": {
+    {
+      "name": "Shithead",
       "icon": "spade-suit",
       "link": "shithead",
       "type": "Shedding",
       "players": "2-4"
     },
-    "Oh Hell!": {
+    {
+      "name": "Oh Hell!",
       "icon": "fire",
       "link": "ohhell",
       "type": "Trick-taking",
       "players": "3-7"
     },
-    "Spit": {
+    {
+      "name": "Spit",
       "icon": "cloud-with-rain",
       "link": "spit",
       "type": "Shedding",
       "players": "2+"
     },
-    "Rummy": {
+    {
+      "name": "Rummy",
       "icon": "face-savoring-food",
       "link": "rummy",
       "type": "Shedding",
       "players": "2-6"
     },
-    "Gin Rummy": {
+    {
+      "name": "Gin Rummy",
       "icon": "woozy-face",
       "link": "rummygin",
       "type": "Shedding",
       "players": "2"
     },
-    "Fight the Landlord": {
+    {
+      "name": "Fight the Landlord",
       "icon": "house-with-garden",
       "link": "fightthelandlord",
       "type": "Shedding",
       "players": "3"
     },
-    "Nerts": {
+    {
+      "name": "Nerts",
       "icon": "peanuts",
       "link": "nerts",
       "type": "Shedding",
       "players": "3+"
     }
-  },
-  "hanafuda": {
-    "Koi-koi": {
+  ],
+  "hanafuda": [
+    {
+      "name": "Koi-koi",
       "icon": "flower-playing-cards",
       "link": "koikoi",
       "type": "Fishing",
       "players": "2"
     },
-    "Hana-Awase": {
-      "icon": "white-flower",
+    {
+      "name": "Hana-Awase",
+      "icon": "cherry-blossom",
       "link": "hanaawase",
       "type": "Fishing",
       "players": "2-4"
     }
-  },
-  "tile": {
-    "Mahjong": {
+  ],
+  "tile": [
+    {
+      "name": "Mahjong",
       "icon": "mahjong-red-dragon",
       "link": "mahjong",
       "type": "Matching",
       "players": "4"
     },
-    "Mancala": {
+    {
+      "name": "Mancala",
       "icon": "hole",
       "link": "mancala",
       "type": "Strategy",
       "players": "2"
     }
-  },
-  "pencilpaper": {
-    "Racetrack": {
+  ],
+  "pencilpaper": [
+    {
+      "name": "Racetrack",
       "icon": "racing-car",
       "link": "racetrack",
       "type": "Racing",
       "players": "2+"
     }
-  },
-  "solitaire": {
-    "Bowling Solitaire": {
+  ],
+  "solitaire": [
+    {
+      "name": "Bowling Solitaire",
       "icon": "bowling",
       "link": "bowling",
       "type": "Card",
       "players": "1"
     },
-    "Golf Solitaire": {
+    {
+      "name": "Golf Solitaire",
       "icon": "flag-in-hole",
       "link": "golf",
       "type": "Card",
       "players": "1"
     },
-    "Nonograms": {
+    {
+      "name": "Nonograms",
       "icon": "cross-mark",
       "link": "nonograms",
       "type": "Logic",
       "players": "1+"
     }
-  }
+  ]
 }

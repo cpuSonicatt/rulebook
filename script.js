@@ -3,15 +3,15 @@ $(document).ready(async function () {
     games = await (await fetch("./games.json")).json()
 
     for (let group of Object.keys(games)) {
-        for (let [name, info] of Object.entries(games[group])) {
+        for (let game of games[group].sort((a,b) => a.link > b.link ? 1 : -1)) {
             $(`#${group}`).append(`
                 <div class="col-xxl-4 col-lg-6 col-sm-12">
-                    <a class="a-reg-colour" href="./games/${info.link}">
+                    <a class="a-reg-colour" href="./games/${game.link}">
                         <div class="d-flex flex-sm-row flex-column align-items-center text-center text-sm-start my-4">
-                            <i class="twa-5x twa-${info.icon}"></i>
+                            <i class="twa-5x twa-${game.icon}"></i>
                             <div class="mx-4">
-                                <p id="hover" class="fs-4 mb-0"><b>${name}</b></p>
-                                <p class="mb-0">${[info.type, getPlayers(info.players)].join(" • ")}</p>
+                                <p id="hover" class="fs-4 mb-0"><b>${game.name}</b></p>
+                                <p class="mb-0">${[game.type, getPlayers(game.players)].join(" • ")}</p>
                             </div>
                         </div>
                     </a>
@@ -20,7 +20,7 @@ $(document).ready(async function () {
         }
     }
 
-    $("#madewith").html(`<p class="d-flex justify-content-center align-items-center">Made with ${madewith()} by Jacq</p>`)
+    $("#madewith").html(`<p class="nolig d-flex justify-content-center align-items-center">Made with ${madewith()} by Jacq</p>`)
 })
 
 function getPlayers(num) {
@@ -81,7 +81,7 @@ function madewith() {
         "aeiouaeiouaeiou",
         "/gamemode 1",
         "/give @a diamond_block 64",
-        "🡹 🡹 🡻 🡻 🡸 🡺 🡸 🡺 <kbd>B</kbd> <kbd>A</kbd> <kbd>START</kbd>",
+        "🡹 🡹 🡻 🡻 🡸 🡺 🡸 🡺 <span class='mx-2'><kbd>B</kbd> <kbd>A</kbd> <kbd>START</kbd></span>",
         "E X T E N D",
 
         // board/card games

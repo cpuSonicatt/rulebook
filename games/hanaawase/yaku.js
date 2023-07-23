@@ -68,7 +68,7 @@ const viewingYaku = [
     {
         name: "Drinking",
         points: "40 points",
-        img: "moonviewing"
+        img: "drinking"
     },
     {
         name: "Flower Viewing",
