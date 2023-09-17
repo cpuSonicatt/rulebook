@@ -6,6 +6,8 @@ class Mahjong {
         return this
     }
 
+    zero = [0, ""]
+
     isValidHand = (h) => {
         let handLen = h.join("").match(/\d/g).length
         return handLen > 13 && handLen < 19
@@ -31,6 +33,9 @@ class Mahjong {
     isPins = (s) => /p/.test(s)
     isBamboo = (s) => /b/.test(s)
 
+    // consecutive conditions
+    isNineStraight = (s) => [/123[cpb]|456[cpb]|789[cpb]/.test(s)].filter(x => x).length == 3
+
     // terminal conditions
     isTerminals = (s) => /(1+\d+|\d+9+)[cpb]/.test(s)
 
@@ -40,21 +45,21 @@ class Mahjong {
     isWinds = (s) => /w/.test(s)
     isSeatWinds = (s) => new RegExp(this.seat + "+w", "").test(s)
 
-    // irregular conditiosn
+    // irregular conditions
     isThirtWond = (s) => /(11?99?)[cpb]|(11?22?33?)d|(11?22?33?44?)w/.test(s)
 
 
     // trivials
     tRuns = (h) =>
-        this.howMany(h, this.isRun) == 4 ? [5, "All Runs"] : [0, ""]
+        this.howMany(h, this.isRun) == 4 ? [5, "All Runs"] : this.zero
 
 
     tConcealed = (h) =>
-        this.howMany(h, this.isMelded) == 0 ? [5, "Concealed Hand"] : [0, ""]
+        this.howMany(h, this.isMelded) == 0 ? [5, "Concealed Hand"] : this.zero
 
 
     tNoTerHon = (h) =>
-        this.howMany(h, (h) => this.isDragons(h) || this.isHonours((h)) || this.isTerminals(h)) == 0 ? [5, "No Terminals or Honours"] : [0, ""]
+        this.howMany(h, (h) => this.isDragons(h) || this.isHonours((h)) || this.isTerminals(h)) == 0 ? [5, "No Terminals or Honours"] : this.zero
 
 
     //one-suits
@@ -66,11 +71,11 @@ class Mahjong {
                 return [40, "Mixed One-suit"]
             }
         }
-        return [0, ""]
+        return this.zero
     }
 
     osNGates = (h) =>
-        this.isSingleSuit(h) && this.isNineGates(h.join("").split("").filter(s => s > 0).join("")) && !this.isHonours(h) ? [480, "Nine Gates"] : [0, ""]
+        this.isSingleSuit(h) && this.isNineGates(h.join("").split("").filter(s => s > 0).join("")) && !this.isHonours(h) ? [480, "Nine Gates"] : this.zero
 
 
     // honours
@@ -89,7 +94,7 @@ class Mahjong {
                 return [40, "Small Three Dragons"]
             }
         }
-        return [0, ""]
+        return this.zero
     }
 
     hSmBgThrFouWind = (h) => {
@@ -105,23 +110,23 @@ class Mahjong {
                 return [30, "Big Four Winds"]
             }
         }
-        return [0, ""]
+        return this.zero
     }
 
     hHonsOnly = (h) =>
-        this.howMany(h, this.isHonours) == h.length ? [320, "All Honours"] : [0, ""]
+        this.howMany(h, this.isHonours) == h.length ? [320, "All Honours"] : this.zero
 
 
     // trips/quads
     tqTrips = (h) =>
-        this.howMany(h, this.isTriQuad) == 4 ? [30, "All Triplets"] : [0, ""]
+        this.howMany(h, this.isTriQuad) == 4 ? [30, "All Triplets"] : this.zero
 
     tqTwoThrFourConcTrips = (h) => {
         switch (this.howMany(h, (h) => this.isTriQuad(h) && !this.isMelded(h))) {
             case 2: return [5, "Two Concealed Triplets"]
             case 3: return [30, "Three Concealed Triplets"]
             case 4: return [125, "Four Concealed Triplets"]
-            default: return [0, ""]
+            default: return this.zero
         }
     }
 
@@ -131,7 +136,7 @@ class Mahjong {
             case 2: return [20, "Two Quads"]
             case 3: return [120, "Three Quads"]
             case 4: return [480, "Four Quads"]
-            default: return [0, ""]
+            default: return this.zero
         }
     }
 
@@ -150,7 +155,7 @@ class Mahjong {
         if (this.howMany(counts, this.isRun) == 2 && h.length == 4) return [60, "Double Two Identical Runs"]
         if (this.howMany(counts, this.isRun) == 1 && h.length == 3) return [120, "Three Identical Runs"]
         if (this.howMany(counts, this.isRun) == 1 && h.length == 4) return [480, "Four Identical Runs"]
-        return [0, ""]
+        return this.zero
     }
 
     // similars
@@ -164,7 +169,7 @@ class Mahjong {
         counts = Object.keys(counts).filter((k) => counts[k] == 3)
         runs = runs.filter(x => x.includes(counts[0]))
 
-        return this.isAllSuit(runs) ? [35, "Three Similar Runs"] : [0, ""]
+        return this.isAllSuit(runs) ? [35, "Three Similar Runs"] : this.zero
     }
 
     sSmBgSimTrips = (h) => {
@@ -184,7 +189,7 @@ class Mahjong {
                 return [30, "Big Three Similar Triplets"]
             }
         }
-        return [0, ""]
+        return this.zero
     }
 
     // consecutives
@@ -197,7 +202,7 @@ class Mahjong {
         }
         counts = Object.keys(counts).filter((k) => counts[k] == 3)
         runs = runs.filter(x => x.includes(counts[0]))
-        return (this.isSingleSuit(runs)) ? [40, "Nine-tile Straight"] : [0, ""]
+        return (this.isSingleSuit(runs) && runs.join("").split(/[cpb]/).join("") == "123456789") ? [40, "Nine-tile Straight"] : this.zero
     }
 
 
@@ -205,7 +210,7 @@ class Mahjong {
         h = h.filter(this.isTriQuad).map(s => s.slice(0, 1)).join("")
         if (this.isQuadRun(h)) return [200, "Three Consecutive Triplets"]
         if (this.isRun(h)) return [100, "Four Consecutive Triplets"]
-        return [0, ""]
+        return this.zero
     }
 
     // terminals
@@ -221,23 +226,23 @@ class Mahjong {
             }
             return [100, "Pure Branching Terminals"]
         }
-        return [0, ""]
+        return this.zero
     }
 
     // incidentals
-    iFinalDrawDiscard = () => this.incids.selfdraw || this.incids.discard ? [10, this.incids.selfdraw ? "Final Draw" : "Final Discard"] : [0, ""]
+    iFinalDrawDiscard = () => this.incids.selfdraw || this.incids.discard ? [10, this.incids.selfdraw ? "Final Draw" : "Final Discard"] : this.zero
     
-    iWinOnQuad = () => this.incids.supp ? [10, "Win on Quad"] : [0, ""]
-    iRobQuad = () => this.incids.rob ? [10, "Robbing a Quad"] : [0, ""]
-    iBlessings = () => this.incids.earth || this.incids.heaven ? [155, this.incids.earth ? "Blessing of Earth" : "Blessing of Heaven"] : [0, ""]
+    iWinOnQuad = () => this.incids.supp ? [10, "Win on Quad"] : this.zero
+    iRobQuad = () => this.incids.rob ? [10, "Robbing a Quad"] : this.zero
+    iBlessings = () => this.incids.earth || this.incids.heaven ? [155, this.incids.earth ? "Blessing of Earth" : "Blessing of Heaven"] : this.zero
 
 
     // irregulars
     iThirtWond = (h) =>
-        this.isThirtWond(h) && /(\d)\1/.test(h) ? [160, "Thirteen Wonders"] : [0, ""]
+        this.isThirtWond(h) && /(\d)\1/.test(h) ? [160, "Thirteen Wonders"] : this.zero
 
     iSevenPairs = (h) => 
-        this.howMany(h, this.isPair) == 7 ? [30, "Seven Pairs"] : [0, ""]
+        this.howMany(h, this.isPair) == 7 ? [30, "Seven Pairs"] : this.zero
     
 
     scoreFuncs = [

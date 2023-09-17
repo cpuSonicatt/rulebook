@@ -43,13 +43,6 @@
       "players": "2-6"
     },
     {
-      "name": "Gin Rummy",
-      "icon": "woozy-face",
-      "link": "rummygin",
-      "type": "Shedding",
-      "players": "2"
-    },
-    {
       "name": "Fight the Landlord",
       "icon": "house-with-garden",
       "link": "fightthelandlord",
@@ -62,6 +55,13 @@
       "link": "nerts",
       "type": "Shedding",
       "players": "3+"
+    },
+    {
+      "name": "Poch",
+      "icon": "eight-spoked-asterisk",
+      "link": "poch",
+      "type": "Gambling",
+      "players": "3-6"
     }
   ],
   "hanafuda": [
@@ -96,15 +96,6 @@
       "players": "2"
     }
   ],
-  "pencilpaper": [
-    {
-      "name": "Racetrack",
-      "icon": "racing-car",
-      "link": "racetrack",
-      "type": "Racing",
-      "players": "2+"
-    }
-  ],
   "solitaire": [
     {
       "name": "Bowling Solitaire",
@@ -119,13 +110,6 @@
       "link": "golf",
       "type": "Card",
       "players": "1"
-    },
-    {
-      "name": "Nonograms",
-      "icon": "cross-mark",
-      "link": "nonograms",
-      "type": "Logic",
-      "players": "1+"
     }
   ]
 }

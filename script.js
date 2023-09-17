@@ -83,6 +83,9 @@ function madewith() {
         "/give @a diamond_block 64",
         "🡹 🡹 🡻 🡻 🡸 🡺 🡸 🡺 <span class='mx-2'><kbd>B</kbd> <kbd>A</kbd> <kbd>START</kbd></span>",
         "E X T E N D",
+        "\"BOY!\"",
+        "\"Hello, Gordon!\"",
+        "an 18-carat run of bad luck",
 
         // board/card games
         "a Get Out of Jail Free card",

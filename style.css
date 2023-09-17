@@ -14,6 +14,7 @@
     --orange: #fd7e14;
     --dark-orange: #984c0c;
 
+    --lighter-yellow: #fff3cd;
     --light-yellow: #ffe69c;
     --yellow: #ffc107;
     --dark-yellow: #997404;
@@ -115,6 +116,11 @@ body { font-family: 'Manrope', sans-serif; }
     border-left: 0.25rem solid var(--red);
 }
 
+.c-example {
+    background-color: var(--lighter-yellow);
+    border-left: 0.25rem solid var(--yellow);
+}
+
 
 /* Content divisions in "boxes" with extra padding on the bottom. Have division titles, and any specifically bolded elements at font-weight 700. */
 
@@ -207,6 +213,10 @@ body { font-family: 'Manrope', sans-serif; }
 .bg-light-purple { background-color: var(--light-purple) !important; }
 .bg-purple { background-color: var(--purple) !important; }
 .bg-dark-purple { background-color: var(--dark-purple) !important; }
+
+.bg-light-grey { background-color: var(--light-grey) !important; }
+.bg-grey { background-color: var(--grey) !important; }
+.bg-dark-grey { background-color: var(--dark-grey) !important; }
 
 .bg-dark { background-color: var(--dark) !important; }
 
