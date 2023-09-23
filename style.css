@@ -226,7 +226,6 @@ body { font-family: 'Manrope', sans-serif; }
 
 .retbut {
     position: absolute;
-    margin-bottom: -1rem;
     color: var(--dark-grey) !important;
 }
 

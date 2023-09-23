@@ -62,6 +62,13 @@
       "link": "poch",
       "type": "Gambling",
       "players": "3-6"
+    },
+    {
+      "name": "Bourré",
+      "icon": "package",
+      "link": "bourre",
+      "type": "Trick-taking",
+      "players": "5-7"
     }
   ],
   "hanafuda": [
