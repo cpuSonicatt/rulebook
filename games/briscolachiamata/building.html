@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href='/favicon/briscolachiamata.ico' rel="icon">
+        <title>How to play Briscola Chiamata</title>
+
+        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300..800" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <link href="/style.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+        <link href="https://cdn.jsdelivr.net/gh/SebastianAigner/twemoji-amazing/twemoji-amazing.css" rel="stylesheet">
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    </head>
+    <body class="bg-light-teal container my-5">
+        <div class="bg-light col-xl-8 mx-auto pb-2 shaadow">
+            <div class="box">
+                <a href="../../"><i class="retbut bi bi-house-fill" style="font-size: 1.5rem;"><span class="visually-hidden">Return home</span></i></a>
+                <div class="d-flex flex-sm-row flex-column justify-content-center align-items-center">
+                    <i class="twa-5x twa-telephone"></i>
+                    <h1 class="m-4 text-start fw-light">How to play<br><b>Briscola Chiamata</b></h1>
+                </div>
+                <hr>
+                <h2>You will need</h2>
+                <ul>
+                    <li>A standard 52-card deck.</li>
+                </ul>
+            </div>
+
+            <div class="box">
+                <h2>Deal</h2><hr>
+                <div class="callout note">
+                    <p><b>Note</b>: Cards rank 2, 3, 4, 5, 6, J, Q, K, 10, A.</p>
+                </div>
+                <p>Discard all 7's, 8's, and 9's from the deck. These cards aren't required for play.</p>
+                <p>Choose a dealer by whichever means.</p>
+                <p>The dealer deals out all cards to every player.</p>
+            </div>
+
+            <div class="box">
+                <h2>Auction</h2><hr>
+                <p>The player left of the dealer starts the bidding by naming the rank of a card. Subsequent bids must be lower in rank. If a player bids '2', its subsequent bids must be '2', along with a number between 60 and 120, which represents the number of points your team needs to win. These point values then go up.</p>
+                <p>Players may also pass, and sit out the rest of the auction.</p>
+                <p>The player that wins the auction gets to name the trump suit for the round.</p>
+                <p>The players are then split into 2 teams, where the other players against the auction winner and whoever has the card that matches the rank of the winning bid and the suit that the auction winner named. The player that has this card, which may also be the auction winner, must not reveal themselves. They are secretly opposing the other team.</p>
+            </div>
+
+            <div class="box">
+                <h2>Play</h2><hr>
+                <p>The auction winner starts the first trick by placing a card from their hand to the center of the table. This card is the turn suit.</p>
+                <p>Each player then, in turn going clockwise, places a card from their hand to the center of the table in an attempt to win the trick.</p>
+                <div class="callout note">
+                    <p><b>Note</b>: Unlike other trick-taking games, any card can be played following the lead card.</p>
+                </div>
+                <p>Once everyone has placed 1 card, determine the winner of that round's trick:</p>
+                <ol>
+                    <li>The player who played the highest-ranking trump suited card.</li>
+                    <li>If no trump suited cards were played, the player who played the highest-ranking turn suited card.</li>
+                </ol>
+                <p>The winner of the trick takes the cards and places them nearby, and play continues into the next turn for a total of 8 rounds.</p>
+            </div>
+
+            <div class="box">
+                <h2>Scoring</h2><hr>
+                <p>Once 8 rounds have been played, players reveal themselves as to which team they were on, and score their tricks. The amount of tricks doesn't matter. Instead scoring is based on the card ranks in the tricks:</p>
+                <table class="table">
+                    <tr><th>Rank</th> <th>Points</th></tr>
+                    <tr><td>Ace</td> <td>11</td></tr>
+                    <tr><td>Ten</td> <td>10</td></tr>
+                    <tr><td>King</td> <td>4</td></tr>
+                    <tr><td>Queen</td> <td>3</td></tr>
+                    <tr><td>Jack</td> <td>2</td></tr>
+                </table>
+                <p>All other ranks score 0.</p>
+
+                <p>The total amount of points in a deck is 120, so the team with a combined trick score of at least 61 points, or the number of points bid, scores game points. The winning team scores positive points, and the losing team scores negative points.</p>
+                <table class="table">
+                      <tr><th>Bid Points</th> <th colspan="2">AW's team (with a teammate)*</th> <th colspan="2">AW's team (alone)*</th> <th colspan="2">Other team</th></tr>
+                      <tr><td></td> <td>Wins</td> <td>Loses</td> <td>Wins</td> <td>Loses</td> <td>Wins</td> <td>Loses</td></tr>
+                      <tr> <td>61-70</td> <td>+2</td> <td>-2</td> <td>+4</td> <td>-4</td> <td>+1</td> <td>-1</td></tr>
+                      <tr> <td>71-80<br></td> <td>+4</td> <td>-4</td> <td>+8</td> <td>-8</td> <td>+2</td> <td>-2</td></tr>
+                      <tr> <td>81-90</td> <td>+6<br></td> <td>-6</td> <td>+12</td> <td>-12</td> <td>+3</td> <td>-3</td></tr>
+                      <tr> <td>91-100</td> <td>+8</td> <td>-8</td> <td>+16</td> <td>-16</td> <td>+4</td> <td>-4</td></tr>
+                      <tr> <td>101+</td> <td>+10</td> <td>-10</td> <td>+20</td> <td>-20</td> <td>+5</td> <td>-5</td></tr>
+                </table>
+                <div class="callout note">
+                    <p><b>Note</b>: *AW = Auction Winner.</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

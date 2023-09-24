@@ -69,6 +69,13 @@
       "link": "bourre",
       "type": "Trick-taking",
       "players": "5-7"
+    },
+    {
+      "name": "Briscola Chiamata",
+      "icon": "telephone",
+      "link": "briscolachiamata",
+      "type": "Trick-taking",
+      "players": "5"
     }
   ],
   "hanafuda": [
