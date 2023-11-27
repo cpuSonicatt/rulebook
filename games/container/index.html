@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href='/favicon/container.ico' rel="icon">
+        <title>How to play Container</title>
+
+        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300..800" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <link href="/style.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+        <link href="https://cdn.jsdelivr.net/gh/SebastianAigner/twemoji-amazing/twemoji-amazing.css" rel="stylesheet">
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    </head>
+    <body class="bg-dark-blue container my-5">
+        <div class="bg-light col-xl-8 mx-auto pb-2 shaadow">
+            <div class="box">
+                <a href="../../"><i class="retbut bi bi-house-fill" style="font-size: 1.5rem;"><span class="visually-hidden">Return home</span></i></a>
+                <div class="d-flex flex-sm-row flex-column justify-content-center align-items-center">
+                    <i class="twa-5x twa-ferry"></i>
+                    <h1 class="m-4 text-start fw-light">How to play<br><b>Container</b></h1>
+                </div>
+                <hr>
+                <h2>You will need</h2>
+                <ul>
+                    <li>A copy of Container</li>
+                </ul>
+            </div>
+
+            <div class="box">
+                <h2>Set-up</h2><hr>
+                <p>Place the Auction Island in the center of the table. Place each Player Island such that the harbour faces out toward the center/other players. The rest of your table is 'open sea'.</p>
+                <p>Sort the containers by colour, and make a pile of them to one side. For each colour, the supply should be 4 times the number of players. i.e. with 3 players, each supply is 12; with 4 players, each supply is 16.</p>
+                <p>Assign a player to be the banker, and place the money and loan cards near them.</p>
+                <p>Each player receives $20 (5x $1, 1x $5, and 1x $10), 1 warehouse, and 1 uniquely-coloured starting factory at random. No two players should have the same coloured starting factory. This factory immediately produces 1 container, so place 1 container of corresponding colour in the factory store at $2.</p>
+                <p>Deal 1 score card to each player. This card should remain hidden from others.</p>
+            </div>
+
+            <div class="box">
+                <h2>Play</h2><hr>
+                <p>Before any action, the player must pay interest of any outstanding loans ($1 per loan card). Interest must be paid before repaying any outstanding loans, which must be done in full.</p>
+                <div class="callout note">
+                    <p><b>Note</b>: see <a href="#piol">Paying Interest on Loans</a>.</p>
+                </div>
+                <p>Each turn, players perform 2 actions from the following list, in any order, with 2 caveats:</p>
+                <ul>
+                    <li>You may only produce new containers once per turn (2nd action).</li>
+                    <li>The auction action always ends your turn immediately (6th action).</li>
+                </ul>
+
+                <h4>1. Buy a Factory/Warehouse</h4>
+                <p>Pay the bank the next amount listed on your island. You must not own two factories of the same colour.</p>
+                <br>
+
+                <h4>2. Produce containers for your factory store, and set/adjust their prices</h4>
+                <p>Pay $1 to your boss, the player on your right.</p>
+                <p>Your must produce 1 container per factory, in its matching colour, up to the factory storage limit of 2 times the number of factories on the Island. If this action would produce over your limit, you may choose which factory remains idle. If the container supply for a particular factory is exhausted, that factory does nothing.</p>
+                <p>Place each newly-produced containers in any factory store space. The number represents how much you're willing to sell that container to others.</p>
+                <p>You may optionally reprice any container in the factory store <i>after</i> producing. You may also reprice if the containers of your sole factory are exhausted, or if your factory store is full.</p>
+                <p>Containers cannot be discarded.</p>
+                <br>
+
+                <h4>3. Buy containers for your harbour store, and set/adjust their prices</h4>
+                <p>You may only purchase from another player's factory store, never your own.</p>
+                <p>You may only purchase from 1 player per action, and they may not refuse sale.</p>
+                <p>You may purchase any number or colour of container, provided you have space for them in your harbour store.</p>
+                <p>Pay the player the listed price of each container. Once purchased, containers may be priced at any value in the harbour store. The number represents how much you're willing to sell that container to others.</p>
+                <p>You may optionally reprice any container in the harbour store, even without purchasing anything.</p>
+                <br>
+
+                <h4>4. Move from open sea to another player's harbour to buy containers.</h4>
+                <p>You may only purchase from another player's harbour store, never your own.</p>
+                <p>You may purchase any number or colour of container, provided you have space for them in your boat, and they may not refuse sale.</p>
+                <p>If you begin your turn in another player's harbour and wish to purchase more goods, you may do so without moving to the open sea.</p>
+                <p>This action ends once goods are loaded onto your boat.</p>
+                <br>
+
+                <h4>5. Move from another player's harbour to open sea.</h4>
+                <p></p>
+                <br>
+
+                <h4>6. Move your ship from open sea to the Auction Island to hold an auction.</h4>
+                <p>You may not bid on your own cargo.</p>
+                <p>You may not visit the Auction Island with an empty boat.</p>
+                <p>All other players secretly bid for the entire cargo, and reveal their bid at the same time. The highest bidder wins the bid. The auction holder may then accept or reject the bid.</p>
+                <p>If accepted, the auction holder collects the bid from the winner, and the bank contributes an equal amount. Deposit the containers in the winner's division on the Auction Island.</p>
+                <p>If rejected, the auction holder pays the highest bid to the bank. Deposit the containers in the action holder's division on the Auction Island.</p>
+                <p>If all bids are $0, the auction holder purchases the cargo (for $0), and deposits the containers in the action holder's division on the Auction Island.</p>
+                <p>In case of a tie, the ties bids make an extra bid. If there's another tie, the auction holder chooses a winner by whichever means.</p>
+                <br>
+
+                <h4>7. Pass</h4>
+            </div>
+
+            <div class="box">
+                <h2 id="piol">Paying Interest on Loans</h2><hr>
+                <p>For each loan a player has, they must pay $1 interest before any action. Paying off your loan, which must be done in full, is a free action but still must be done after paying interest.</p>
+                <p>If a player cannot pay interest on their loans, the bank seizes one or more of their containers in the following manner for each loan:</p>
+                <ul>
+                    <li>The bank seizes 1 container from their Auction Island's division area.</li>
+                    <li>The bank seizes 2 containers from their harbour store.</li>
+                    <li>The bank seizes 1 container from their factory store for each container not in their harbour store (i.e. if they have 1 container in their harbour store, then 1 should be taken from their factory store). If the player has only 1 container in their harbour store or their factory store, then that 1 container is seized.</li>
+                    <li>The bank seizes either 1 warehouse or 1 factory. A loan may be returned in this instance. "-" and "$4" warehouses, and "-" and "$6" factories cannot be seized.</li>
+                </ul>
+                <p>Players must take the action that first applied to them. i.e. if a player has a container in their Auction Island division, they may not opt to lose a warehouse.</p>
+                <p>If none of the conditions apply, the player may avoid paying interest for the current turn only.</p>
+                <p>Choice of which <b>containers</b> are seized is decided by the player's boss (the player to their right). The player may decide if they lose a factory or a warehouse, but the player's boss may decide which colour factory to seize.</p>
+            </div>
+
+            <div class="box">
+                <h2>Ending and Scoring</h2><hr>
+                <p>The game ends when the second container colour is exhausted. The ending player finishes their turn.</p>
+                <p>The player with the most money wins. Net worth is calculated as follows:</p>
+                <ul>
+                    <li>Determine the value of your 10/5 colour. If your Auction Island division has at least 1 of each colour container, then the colour is worth $10. If not, it's worth $5.</li>
+                    <li>Discard all containers of whatever colour you have the most of in your Auction Island division. If there's a tie, choose which colour to discard (probably the least valuable).</li>
+                    <li>Add the value of your Auction Island division based on your score card.</li>
+                    <li>Add $2 for each container in your harbour store.</li>
+                    <li>Add $3 for each container on your boat.</li>
+                    <li>Subtract $11 for each outstanding loan.</li>
+                </ul>
+            </div>
+
+        </div>
+    </body>
+</html>

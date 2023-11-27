@@ -125,5 +125,14 @@
       "type": "Card",
       "players": "1"
     }
+  ],
+  "board": [
+    {
+      "name": "Container",
+      "icon": "ferry",
+      "link": "container",
+      "type": "Economy",
+      "players": "3-5"
+    }
   ]
 }
