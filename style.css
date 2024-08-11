@@ -41,6 +41,7 @@
     --indigo: #6610f2;
     --dark-indigo: #3d0a91;
 
+    --lighter-purple:#e2d9f3;
     --light-purple: #c5b3e6;
     --purple: #6f42c1;
     --dark-purple: #432874;
@@ -116,24 +117,33 @@ body { font-family: 'Manrope', sans-serif; }
     border-left: 0.25rem solid var(--red);
 }
 
+.rank {
+    background-color: var(--lighter-purple);
+    border-left: 0.25rem solid var(--purple);
+}
+
 .c-example {
     background-color: var(--lighter-yellow);
     border-left: 0.25rem solid var(--yellow);
 }
 
 
-/* Content divisions in "boxes" with extra padding on the bottom. Have division titles, and any specifically bolded elements at font-weight 700. */
+/* Content division is in a  "box" with extra padding on the bottom. Have subtitles, and any specifically bolded elements at font-weight 700. */
 
 .box {
     padding: 1.5rem 2rem 0.5rem 2rem !important;
     margin-bottom: 0.25rem !important;
 }
 
+.box h2:not(:first-child) {
+    margin-top: 3rem !important;
+}
+
 .box h2, b {
     font-weight: 700;
 }
 
-.indent {
+p.indent {
     margin-left: 1.5rem;
 }
 

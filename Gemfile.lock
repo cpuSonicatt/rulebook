@@ -1,0 +1,15 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    cgi (0.4.1)
+    erb (4.0.4)
+      cgi (>= 0.3.3)
+
+PLATFORMS
+  x64-mingw32
+
+DEPENDENCIES
+  erb
+
+BUNDLED WITH
+   2.4.8

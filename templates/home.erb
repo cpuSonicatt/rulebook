@@ -1,0 +1,59 @@
+<html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="./favicon/rules.ico" rel="icon">
+        <title>Rule Book</title>
+
+        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300..800" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <link href="./style.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/gh/SebastianAigner/twemoji-amazing/twemoji-amazing.css" rel="stylesheet">
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    </head>
+    <body class="bg-dark container my-5">
+        <div class="bg-light p-4 px-5 shaadow">
+            <div class="d-flex flex-sm-row flex-column justify-content-center align-items-center">
+                <i class="twa-5x twa-scroll"></i>
+                <h1 class="m-4 text-start fw-light">Jacqueline's<br><b>Rule Book</b></h1>
+            </div>
+<% categories.each do |id,pretty| %>
+            <div class="my-4">
+                <p class="hr"><span><%= pretty %></span></p>
+                <div class="row">
+<% games.select { |g| g["category"] == id }.sort_by { |e| e["link"]}.each do |game| %>
+                    <div class="col-xxl-4 col-lg-6 col-sm-12">
+                        <a class="a-reg-colour" href="./games/<%= game["link"] %>">
+                            <div class="d-flex flex-sm-row flex-column align-items-center text-center text-sm-start my-4">
+                                <i class="twa-5x twa-<%= game["icon"] %>"></i>
+                                <div class="mx-4">
+                                    <p id="hover" class="fs-4 mb-0"><b><%= game["name"] %></b></p>
+                                    <p class="mb-0"><%= [game["type"], game["players"] + " player" + (game["players"] == "1" ? "" : "s")].join(" • ") %></p>
+                                    
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+<% end %>
+                </div>
+            </div>
+<% end %>
+            <hr>
+            <div class="text-center mt-5 fs-5">
+                <div id="madewith">
+                    <p class="nolig d-flex justify-content-center align-items-center">Made with <%= made_with %> by Jacq</p>
+                </div>
+                <p class="foot-links fs-5">
+                    <a href="https://getbootstrap.com/">Bootstrap</a> • 
+                    <a href="https://twemoji.twitter.com/">Twemoji</a> • 
+                    <a href="https://github.com/SebastianAigner/twemoji-amazing/tree/master">Twemoji Amazing</a> • 
+                    <a href="https://www.gent.media/manrope">Manrope</a>
+                </p>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.min.js"></script>
+        <script src="./script.js"></script>
+    </body>
+</html>
