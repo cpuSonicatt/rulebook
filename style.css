@@ -136,7 +136,11 @@ body { font-family: 'Manrope', sans-serif; }
 }
 
 .box h2:not(:first-child) {
-    margin-top: 3rem !important;
+    margin-top: 3rem;
+}
+
+.box h4 {
+    margin-top: 2rem;
 }
 
 .box h2, b {

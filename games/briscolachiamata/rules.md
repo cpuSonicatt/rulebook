@@ -10,7 +10,7 @@ Choose a dealer by whichever means.
 
 The dealer deals out all cards to every player.
 
-!rank: 2, 3, 4, 5, 6, J, Q, K, 10, A
+!rank: 2, 3, 4, 5, 6, J, Q, K, 10, A.
 
 !note: This game is usually played with an Italian 40-card deck, where there are no 8's, 9's, or 10's.
 

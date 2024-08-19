@@ -9,11 +9,11 @@ class Game
         @pretty = pretty
         @icon = icon
         @colour = colour
+        @rc = Redcarpet::Markdown.new(HTMLWithCallouts, tables: true)
     end
 
     def make_page()
-        rc = Redcarpet::Markdown.new(HTMLWithCallouts, tables: true)
-        render = rc.render(File.read("games/#{id}/rules.md"))
+        render = @rc.render(File.read("games/#{id}/rules.md"))
         template = ERB.new(File.read("templates/game.erb"))
         File.open("games/#{id}/index.html", "w") do |f|
             f.write(template.result(binding))
@@ -23,55 +23,47 @@ end
 
 class HTMLWithCallouts < Redcarpet::Render::HTML
 
-    @@note = /!note: /
-    def to_note(t)
-        %{
-        <div class="callout note">
-            <p><b>Note</b>: #{t.gsub(@@note, "")}</p>
+    @@note = /!note: / # blue
+    @@score = /!score: / # red
+    @@rank = /!rank: / # purple
+    @@example = /!example: / # yellow
+    @@tip = /!tip: / # green
+    def to_callout(t, reg, type, pretty)
+        %_
+        <div class="callout #{type}">
+            <p><b>#{pretty}</b>: #{t.gsub(reg, "")}</p>
         </div>
-        }
-    end
-
-    @@score = /!score: /
-    def to_score(t)
-        %{
-        <div class="callout score">
-            <p><b>Score</b>: #{t.gsub(@@score, "")}</p>
-        </div>
-        }
-    end
-
-    @@rank = /!rank: /
-    def to_rank(t)
-        %{
-        <div class="callout rank">
-            <p><b>Card ranks (low to high)</b>: #{t.gsub(@@rank, "")}</p>
-        </div>
-        }
-    end
-
-    @@example = /!example: /
-    def to_example(t)
-        %{
-        <div class="callout c-example">
-            <p><b>Example</b>: #{t.gsub(@@example, "")}</p>
-        </div>
-        }
+        _
     end
 
     @@indent = /~ /
     def to_indent(t)
-        %{<p class='indent'>#{t.gsub(@@indent, "")}</p>}
+        %_<p class='indent'>#{t.gsub(@@indent, "")}</p>_
     end
 
+    @@center = /!center: /
+
     def paragraph(text)
+        text.gsub!("♥", "<span class='r'>♥</span>")
+        text.gsub!("♦", "<span class='r'>♦</span>")
+
         case text
-        when @@note then to_note(text)
-        when @@score then to_score(text)
-        when @@rank then to_rank(text)
-        when @@example then to_example(text)
+        when @@note then to_callout(text, @@note, "note", "Note")
+        when @@score then to_callout(text, @@score, "score", "Score")
+        when @@rank then to_callout(text, @@rank, "rank", "Cards rank (from low to high)")
+        when @@example then to_callout(text, @@example, "c-example", "Example")
+        when @@tip then to_callout(text, @@tip, "tip", "Tip")
         when @@indent then to_indent(text)
+        when @@center then "<p class='text-center mb-4'>#{text.gsub(@@center, "")}</p>"
         else "<p>#{text}</p>"
+        end
+    end
+
+    @@hf = /hf: /
+    def image(link, title, alt_text)
+        case title
+        when @@hf then "<img class='w-100 mx-auto mb-3' src='#{link}' alt='#{alt_text}' title='#{title.gsub(@@hf, "")}'>"
+        else "<img src='#{link}' alt='#{alt_text}' title='#{title}'>"
         end
     end
 
@@ -80,12 +72,14 @@ class HTMLWithCallouts < Redcarpet::Render::HTML
     end
 
     def table(header, body)
-        %{
+        body.gsub!("♥", "<span class='r'>♥</span>")
+        body.gsub!("♦", "<span class='r'>♦</span>")
+        %_
         <table class="table">
             #{header}
             #{body}
         </table>
-        }
+        _
     end
 end
 
@@ -99,7 +93,13 @@ def categories(games)
 end
 
 def games()
-    JSON.parse(File.read("games.json"))
+    games = []
+    Dir.each_child("games/") do |f|
+        g = JSON.parse(File.read("games/#{f}/meta.json"))
+        g["id"] = f
+        games.push(g)
+    end
+    return games
 end
 
 def heart(flav)
@@ -235,9 +235,10 @@ File.open("index.html", "w") do |f|
     f.write(home_template.result(binding))
 end
 
+# write games
 rc = Redcarpet::Markdown.new(HTMLWithCallouts, extensions = {})
 
 games.each do |g|
-    Game.new(g["link"], g["name"], g["icon"], g["colour"]).make_page
+    Game.new(g["id"], g["name"], g["icon"], g["colour"]).make_page
 end
 
