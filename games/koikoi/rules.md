@@ -68,15 +68,6 @@ A player's score for the round is based on all the yaku in the point pile. There
 
 Both of these conditions may apply, meaning a score could be quadrupled.
 
-## Note-worthy cards
-There are 3 note-worthy cards:
-
-![Three hanafuda cards: the Eight-Plank Bridge, the Sake Cup, and the Lightning](./resources/noteworthy.png "hf: Noteworthy cards")
-
-- The Eight-Plank-Bridge is an Animal card, despite it not depicting one.
-- The Sake Cup card is both an Animal card and a Chaff card.
-- The Lightning card is in the November suit, despite it appearing not to depict any willow at a glance.
-
 ## Yaku
 !note: The Light yaku is the only group where its yaku are mutually exclusive, meaning only the highest-valued Light yaku counts towards scoring. This doesn't apply to Slip, Animal, or Other yaku.
 
@@ -97,10 +88,12 @@ There are 3 note-worthy cards:
 
 ![Three hanafuda cards: the Crane, the Curtain, and the Moon](./resources/yaku/3lights.png "hf: Three Lights")
 
-#### Slip Yaku
+---
+
+### Slip Yaku
 **Red Poetry** - 5 points, plus 1 for each additional Slip card
 
-![Three hanafuda cards, each with red poetry slips behind various plants](./resources/yaku/redslips.png "hf: Red Poetry")
+![Three hanafuda cards, each with red poetry slips with writing behind various plants](./resources/yaku/redslips.png "hf: Red Poetry")
 
 **Blue Poetry** - 5 points, plus 1 for each additional Slip card
 
@@ -110,7 +103,9 @@ There are 3 note-worthy cards:
 
 ![Five hanafuda cards, each with different coloured poetry slips behind various plants](./resources/yaku/slips.png "hf: Slips")
 
-#### Animal Yaku
+---
+
+### Animal Yaku
 **Boar-Deer-Butterfly** - 5 points, plus 1 for each additional Animal card
 
 ![Three hanafuda cards, one with a Boar, one with a Deer, and one with Butterflies behind various plants](./resources/yaku/bdb.png "hf: Boar-Deer-Butterfly")
@@ -119,8 +114,9 @@ There are 3 note-worthy cards:
 
 ![Five hanafuda cards, each with different animals behind various plants](./resources/yaku/blueslips.png "hf: Animals")
 
+---
 
-#### Other Yaku
+### Other Yaku
 
 **Monthly (4 cards of the same month in the corresponding round)** - 4 points
 
@@ -128,11 +124,11 @@ There are 3 note-worthy cards:
 
 **Moon Viewing** - 6 points
 
-![Two hanafuda cards, the Moon and the Sake cup](./resources/yaku/moonviewing.png "hf: Moon Viewing")
+![Two hanafuda cards, the Moon, and the Sake cup](./resources/yaku/moonviewing.png "hf: Moon Viewing")
 
 **Cherry Blossom Viewing** - 6 points
 
-![Two hanafuda cards, the Cherry Blossom and the Sake cup](./resources/yaku/cherryblossomviewing.png "hf: Cherry Blossom Viewing")
+![Two hanafuda cards, the Cherry Blossom, and the Sake cup](./resources/yaku/cherryblossomviewing.png "hf: Cherry Blossom Viewing")
 
 **Chaff (10 or more Chaff cards)** - 1 point, plus 1 for each additional Chaff card
 
@@ -199,3 +195,12 @@ There are 3 note-worthy cards:
 
 ![Four hanafuda cards, each with pawlownia plants](./resources/list/dec.png "hf: December")
 !center: Light (Dragon) • Chaff • Chaff • Chaff
+
+## Note-worthy cards
+There are 3 note-worthy cards:
+
+![Three hanafuda cards: the Eight-Plank Bridge, the Sake Cup, and the Lightning](./resources/noteworthy.png "hf: Noteworthy cards")
+
+- The Eight-Plank-Bridge is an Animal card, despite it not depicting one.
+- The Sake Cup card is both an Animal card and a Chaff card.
+- The Lightning card is in the November suit, despite it appearing not to depict any willow at a glance.

@@ -1,10 +1,8 @@
 require "json"
 
-games = []
-Dir.each_child("games/") do |f|
-    g = JSON.parse(File.read("games/#{f}/meta.json"))
-    g.delete("id")
-    File.open("games/#{f}/meta.json", "w") do |w|
-        w.write(JSON.pretty_generate(g))
-    end
+JSON.parse(File.read("yaku.json")).each do |y|
+    puts %_
+    **#{y["name"]}** - #{y["points"]}
+    ![](./resources/yaku/#{y["img"]}.png "hf: #{y["name"]}")
+    _
 end
