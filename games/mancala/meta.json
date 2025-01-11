@@ -1,8 +1,0 @@
-{
-  "name": "Mancala",
-  "category": "tile_and_stone",
-  "icon": "hole",
-  "type": "Strategy",
-  "players": "2",
-  "colour": "yellow"
-}

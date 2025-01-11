@@ -1,8 +1,0 @@
-{
-  "name": "Mahjong",
-  "category": "tile_and_stone",
-  "icon": "mahjong-red-dragon",
-  "type": "Matching",
-  "players": "4",
-  "colour": "green"
-}

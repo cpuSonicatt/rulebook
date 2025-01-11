@@ -1,8 +1,0 @@
-{
-  "name": "Bowling Solitaire",
-  "category": "solitaire",
-  "icon": "bowling",
-  "type": "Card",
-  "players": "1",
-  "colour": "dark-orange"
-}

@@ -18,9 +18,9 @@ class Game
 
     def make_page()
         puts "building [#{id}]"
-        render = @rc.render(File.read("games/#{id}/rules.md"))
+        render = @rc.render(File.read("out/games/#{id}/rules.md"))
         template = ERB.new(File.read("templates/game.erb"))
-        File.open("games/#{id}/index.html", "w") do |f|
+        File.open("out/games/#{id}/index.html", "w") do |f|
             f.write(template.result(binding))
         end
     end
@@ -118,8 +118,8 @@ end
 
 def games()
     games = []
-    Dir.each_child("games/") do |f|
-        g = JSON.parse(File.read("games/#{f}/meta.json"))
+    Dir.each_child("out/games/") do |f|
+        g = JSON.parse(File.read("out/games/#{f}/meta.json"))
         g["id"] = f
         games.push(g)
     end
@@ -269,7 +269,7 @@ categories = categories(games)
 made_with = made_with()
 
 home_template = ERB.new(File.read("templates/home.erb"))
-File.open("index.html", "w") do |f|
+File.open("out/index.html", "w") do |f|
     f.write(home_template.result(binding))
 end
 

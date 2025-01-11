@@ -1,8 +1,0 @@
-{
-  "name": "Container",
-  "category": "board_games",
-  "icon": "ferry",
-  "type": "Economy",
-  "players": "3-5",
-  "colour": "dark-blue"
-}
