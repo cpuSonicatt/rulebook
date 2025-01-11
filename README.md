@@ -11,3 +11,9 @@ A collection of rules for various games.
 - Proof-read/grammar check
 - Clean up HTML headers
 - More footer phrases :)
+- Add House Rules
+  - Yathzee with bluffing
+- Poker section 
+  - Texas Hold 'em
+  - Seven Card Stub
+  - Ricochet
