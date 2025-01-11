@@ -1,0 +1,8 @@
+{
+  "name": "Briscola Chiamata",
+  "category": "card",
+  "icon": "telephone",
+  "type": "Trick-taking ",
+  "players": "5",
+  "colour": "light-teal"
+}

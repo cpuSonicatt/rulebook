@@ -1,0 +1,8 @@
+{
+  "name": "Cribbage",
+  "category": "card",
+  "icon": "round-pushpin",
+  "type": "Matching",
+  "players": "2-4",
+  "colour": "light-blue"
+}
