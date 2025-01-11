@@ -1,6 +1,6 @@
 ## You will need
 - A standard 52-card deck, with 2 different-coloured jokers
-- _Optional_: Coins/chips/tokens to represent bids (around 25 units per player), or a pen-and-pape
+- _Optional_: Coins/chips/tokens to represent bids (around 25 units per player), or a pen-and-paper
 
 ## Deal
 !rank: 3, 4, 5, 6, 7, 8, 9, 10, J, Q, K, A, 2, Black Joker, Red Joker.

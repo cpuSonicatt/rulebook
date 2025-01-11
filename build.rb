@@ -9,10 +9,15 @@ class Game
         @pretty = pretty
         @icon = icon
         @colour = colour
-        @rc = Redcarpet::Markdown.new(HTMLWithCallouts, tables: true)
+        if id == "mahjong"
+            @rc = Redcarpet::Markdown.new(Mahjong, tables: true)
+        else
+            @rc = Redcarpet::Markdown.new(Style, tables: true)
+        end
     end
 
     def make_page()
+        puts "building [#{id}]"
         render = @rc.render(File.read("games/#{id}/rules.md"))
         template = ERB.new(File.read("templates/game.erb"))
         File.open("games/#{id}/index.html", "w") do |f|
@@ -21,7 +26,7 @@ class Game
     end
 end
 
-class HTMLWithCallouts < Redcarpet::Render::HTML
+class Style < Redcarpet::Render::HTML
 
     @@note = /!note: / # blue
     @@score = /!score: / # red
@@ -80,6 +85,25 @@ class HTMLWithCallouts < Redcarpet::Render::HTML
             #{body}
         </table>
         _
+    end
+end
+
+class Mahjong < Style
+    def table(_, body)
+        %_
+        <table class="table mb-5">
+            <th class='col-1'>#</th><th class='col-9'>Name</th><th class='col-2'>Points</th>
+            #{body}
+        </table>
+        _
+    end
+
+    @@hf = /hf: /
+    def image(link, title, alt_text)
+        case title
+        when @@hf then "<div class='row align-items-center my-3'><img class='w-75 mx-auto mb-3' src='#{link}' alt='#{alt_text}' title='#{title.gsub(@@hf, "")}'></div>"
+        else "<img src='#{link}' alt='#{alt_text}' title='#{title}'>"
+        end
     end
 end
 
@@ -145,6 +169,9 @@ def made_with()
         "System.out.println(\"love\")",
         "console.log(\"love\")",
         "puts \"love\"",
+        "fmt.Println(\"love\")",
+        "println(\"love\")",
+        "print(\"love\")",
         (3..15).map(&:to_s).to_a.sample + " compile errors",
 
         # video games
@@ -155,11 +182,18 @@ def made_with()
         "aeiouaeiouaeiou",
         "/gamemode 1",
         "/give @a diamond_block 64",
+        "/give @a netherite_block 64",
         "🡹 🡹 🡻 🡻 🡸 🡺 🡸 🡺 <span class='mx-2'><kbd>B</kbd> <kbd>A</kbd> <kbd>START</kbd></span>",
         "E X T E N D",
         "\"BOY!\"",
         "\"Hello, Gordon!\"",
+        "unforeseen consequences",
         "an 18-carat run of bad luck",
+        "Majima Everywhere",
+        "golds in every license test",
+        "golds in every coffee break",
+        "BOOM! Tetris for Jeff",
+        "a one deag",
 
         # board/card games
         "a Get Out of Jail Free card",
@@ -172,6 +206,8 @@ def made_with()
         "the Thirteen Wonders",
         "a Royal Flush",
         "pegging",
+        "a triple word score",
+        "NERTS!",
 
         # music
         "power, pleasure, and pain",
@@ -191,6 +227,7 @@ def made_with()
         "99 red balloons",
         "a kiss from a rose",
         "breakfast in america",
+        "the concept of love",
         "a little bit of Monica in my life",
         "a little bit of Erica by my side",
         "a little bit of Rita's all i need",
@@ -206,6 +243,7 @@ def made_with()
         "bad ideas",
         "cute cats",
         "cute dogs",
+        "cute pets",
         "_______",
         "HELP, I'M STUCK IN A FOOTER MESSAGE FACTORY!",
         "impending doom",
@@ -236,7 +274,7 @@ File.open("index.html", "w") do |f|
 end
 
 # write games
-rc = Redcarpet::Markdown.new(HTMLWithCallouts, extensions = {})
+rc = Redcarpet::Markdown.new(Style, extensions = {})
 
 games.each do |g|
     Game.new(g["id"], g["name"], g["icon"], g["colour"]).make_page
