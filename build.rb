@@ -276,7 +276,40 @@ end
 # write games
 rc = Redcarpet::Markdown.new(Style, extensions = {})
 
+root = {"light-pink" => [],
+    "pink" => [],
+    "dark-pink" => [],
+    "light-red" => [],
+    "red" => [],
+    "dark-red" => [],
+    "light-orange" => [],
+    "orange" => [],
+    "dark-orange" => [],
+    "light-yellow" => [],
+    "yellow" => [],
+    "light-green" => [],
+    "green" => [],
+    "dark-green" => [],
+    "light-teal" => [],
+    "teal" => [],
+    "dark-teal" => [],
+    "light-cyan" => [],
+    "cyan" => [],
+    "dark-cyan" => [],
+    "light-blue" => [],
+    "blue" => [],
+    "dark-blue" => [],
+    "light-indigo" => [],
+    "indigo" => [],
+    "dark-indigo" => [],
+    "light-purple" => [],
+    "purple" => [],
+    "dark-purple" => []
+}
+
 games.each do |g|
+    root[g["colour"]].push(g["name"])
     Game.new(g["id"], g["name"], g["icon"], g["colour"]).make_page
 end
 
+puts "available colours: #{root.select {|k, v| v.empty?}.keys}"

@@ -5,7 +5,7 @@
 ## Deal
 !rank: 3, 4, 5, 6, 7, 8, 9, 10, J, Q, K, A, 2, Black Joker, Red Joker.
 
-Choose a dealer by any means.
+Choose a dealer by whichever means.
 
 Shuffle and deal 17 cards to each player. Place the remaining 3 cards aside face-down for later.
 

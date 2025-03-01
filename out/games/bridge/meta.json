@@ -1,0 +1,8 @@
+{
+  "name": "Bridge",
+  "category": "card",
+  "icon": "bridge-at-night",
+  "type": "Trick-taking",
+  "players": "4",
+  "colour": "dark-teal"
+}

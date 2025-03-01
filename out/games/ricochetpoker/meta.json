@@ -1,8 +1,8 @@
 {
   "name": "Ricochet Poker",
-  "category": "card",
+  "category": "poker",
   "icon": "crown",
-  "type": "Gambling",
+  "type": "Poker",
   "players": "2-7",
   "colour": "purple"
 }

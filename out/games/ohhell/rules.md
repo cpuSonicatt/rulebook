@@ -24,6 +24,8 @@ For each subsequent round, players are dealt 1 less card than the previous round
 ## Bidding
 Before play begins there is a bidding round, where each player starting left of the dealer estimates how many tricks they think they can win in the round. Non-dealers can bid between 0 (losing all tricks) and the amount of cards in their hand (winning all tricks). The dealer, who bids last, must not bid an amount that would make the total amount of bids be equal to the amount of cards in the round.
 
+!example: On the first round of a three player game (10 cards/tricks available), if Alice bids 3, and Bob bids 2, Charlie (the dealer) cannot bid 5, but can bid 1-4 or 6-10.
+
 ## Play
 Play begins with each player starting with the dealer placing 1 card; leading the trick.
 
