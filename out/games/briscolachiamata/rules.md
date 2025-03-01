@@ -16,7 +16,7 @@ The dealer deals out all cards to every player.
 
 ## Auction
 
-The player left of the dealer starts the bidding by naming any rank. Subsequent bids must be lower in rank. If a player bids '2', players may bid '2' with a point value between 60 and 120. This number represents the number of points a player thinks their team will win (which they will then need to achieve in order to win). When bidding with these numbers. These subsequent bids must be higher in value.
+The player left of the dealer starts the bidding by naming any rank. Subsequent bids must be lower in rank. If a player bids '2', players may bid '2' with a point value between 60 and 120. This number represents the number of points a player thinks their team will win (which they will then need to achieve in order to win). These subsequent point bids must be higher in value.
 
 Players may also pass, and sit out the rest of the auction.
 
