@@ -1,7 +1,7 @@
 {
   "name": "German Whist",
   "category": "card",
-  "icon": "",
+  "icon": "flag-germany",
   "type": "Trick-taking",
   "players": "2",
   "colour": "dark-red"
