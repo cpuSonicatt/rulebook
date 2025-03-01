@@ -21,7 +21,7 @@ Any cards that a player has bought are dealt to their and one at a time. As soon
 ## Poker Hands
 !rank: 2, 3, 4, 5, 6, 7, 8, 9, 10, J, Q, K, A. In the event of a tie, Clubs beats Hearts, beats Diamonds, beats Spades.
 
-| Name            | Description                          | Example         |
+| Hand            | Description                          | Example         |
 |-----------------|--------------------------------------|-----------------|
 | Royal Flush     | 10, J, Q, K, A in the same suit      | 10♥ J♥ Q♥ K♥ A♥ |
 | Straight Flush  | 5 consecutive cards in the same suit | 4♠ 5♠ 6♠ 7♠ 8♠  |
