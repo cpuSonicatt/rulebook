@@ -40,4 +40,4 @@ Once all cards in a round have been played, you can calculate each player's scor
 
 Every player gets 1 point per trick they won.
 
-If a player bid the exact amount of tricks (not under or over) they won, they gain a bonus 10 points.
+If a player bid the exact amount of tricks (not under or over), they gain a bonus 10 points.
