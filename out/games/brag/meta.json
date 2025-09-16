@@ -1,0 +1,8 @@
+{
+  "name": "Brag",
+  "category": "poker",
+  "icon": "speaking-head",
+  "type": "Poker",
+  "players": "2-8",
+  "colour": "dark-pink"
+}
