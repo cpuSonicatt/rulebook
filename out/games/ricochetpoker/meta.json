@@ -1,7 +1,7 @@
 {
   "name": "Ricochet Poker",
-  "category": "poker",
-  "icon": "crown",
+  "category": "card",
+  "icon": "👑",
   "type": "Poker",
   "players": "2-7",
   "colour": "purple"

@@ -1,7 +1,7 @@
 {
   "name": "Golf Solitaire",
   "category": "solitaire",
-  "icon": "flag-in-hole",
+  "icon": "⛳",
   "type": "Card",
   "players": "1",
   "colour": "light-green"

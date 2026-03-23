@@ -57,34 +57,15 @@
 
 body { font-family: 'Manrope', sans-serif; }
 
+/* icons throughout */
 
-/* Set image width for example hands, i.e. Mahjong hands. Some need to be smaller generally, or to fit on smaller screens. */
-
-.example {
-    position: relative;
-    display: inline-block;
-    overflow-x: auto;
-    white-space: nowrap;
-    scrollbar-width: thin;
+.icon {
+    font-size: 5.5em;
 }
 
-.example img {
-    width: 6%;
-    margin: 0 0.1rem;
-    margin-bottom: 0.5rem;
+._404 h1 {
+    font-size: 16vw;
 }
-
-@media (max-width: 1200px) {
-    .example img {
-        width: 15% !important;
-    }
-}
-
-.smaller img {
-    width: 1.5em;
-    margin: 0 0.25rem
-}
-
 
 /* Callouts for tips, notes, scoring opportunities, etc */
 
@@ -150,41 +131,6 @@ body { font-family: 'Manrope', sans-serif; }
 p.indent {
     margin-left: 1.5rem;
 }
-
-
-/* Have a fade-out style to denote overflow on the x-axis. Used for Mahjong hands. */
-
-.fadex {
-    mask-image: linear-gradient(90deg, transparent 0%, rgba(0, 0, 0, 1) 2%, rgba(0, 0, 0, 1) 97%, transparent 100%);
-    -webkit-mask-image: linear-gradient(90deg, transparent 0%, rgba(0, 0, 0, 1) 2%, rgba(0, 0, 0, 1) 97%, transparent 100%);
-}
-
-
-/* Denote a Mahjong hand is a meld. Text is vertical to save horizontal space */
-
-.meld {
-    writing-mode: vertical-lr;
-    text-orientation: upright;
-}
-
-
-/* Add gaps between Mahjong sets within hands, normal and small */
-
-.gap {
-    padding: 0 0.5rem;
-}
-
-.gap-sm {
-    padding: 0 0.25rem
-}
-
-
-/* Set some table rows to have no border; "connects" two rows together. Used for example Mahjong hands. */
-
-.noborder td, .noborder th {
-    border: none;
-}
-
 
 /* Background and content colours as better-named classes. */
 

@@ -5,7 +5,7 @@ A collection of rules for various games.
 - Rules for games are written in a slightly-modified Markdown syntax.
 - Those Markdowns are converted to HTML using [Redcarpet](https://github.com/vmg/redcarpet).
 - HTML templating with [ERB](https://github.com/ruby/erb).
-- Styled using [Bootstrap 5](https://getbootstrap.com/), with emoji from [Twemoji](https://github.com/twitter/twemoji) via [Twemoji Amazing](https://github.com/SebastianAigner/twemoji-amazing), and using the [Manrope](https://www.gent.media/manrope) font.
+- Styled using [Bootstrap v5](https://getbootstrap.com/) using the [Manrope](https://fonts.google.com/specimen/Manrope) font.
 
 ### TODO
 - Proof-read/grammar check
