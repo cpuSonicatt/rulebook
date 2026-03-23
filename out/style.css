@@ -63,10 +63,6 @@ body { font-family: 'Manrope', sans-serif; }
     font-size: 5.5em;
 }
 
-._404 h1 {
-    font-size: 16vw;
-}
-
 /* Callouts for tips, notes, scoring opportunities, etc */
 
 .callout {
