@@ -21,5 +21,7 @@ The trick is won by the player who played the best card. If both cards are of th
 
 The winner of the trick then takes the upturned card from the talon and leads the next trick. The other player takes the next card from the talon, which is kept hidden, and flips the top card.
 
-When the talon is exhausted, and cards cannot be replenished, won tricks are counted. The winner of the game is the player who wins the most tricks from this point.
+When the talon is exhausted, play continues with the card in each player's hand until all cards have been played.
+
+The winner of the game is the player who wins the most tricks from this point.
 
