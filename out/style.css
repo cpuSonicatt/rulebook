@@ -86,14 +86,6 @@ body { font-family: 'Manrope', sans-serif; }
 
 .icon { font-family: 'Noto Color Emoji', sans-serif }
 
-/* background pattern styling */
-
-#back {
-    position: fixed;
-    inset: 0;
-    z-index: -1;
-}
-
 /* icons throughout */
 
 .icon {
