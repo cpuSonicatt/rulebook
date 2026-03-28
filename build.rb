@@ -4,11 +4,12 @@ require "redcarpet"
 
 class Game
     attr_accessor :id, :pretty, :icon, :colour
-    def initialize(id, pretty, icon, colour)
+    def initialize(id, pretty, icon, colour, accent)
         @id = id
         @pretty = pretty
         @icon = icon
         @colour = colour
+        @accent = accent
         @rc = Redcarpet::Markdown.new(Style, tables: true)
         if id == "mahjong"
             # mahjong has some special cases that require an override to the usual styling
@@ -170,7 +171,19 @@ root = {"light-pink" => [],
 
 games.each do |g|
     root[g["colour"]].push(g["name"])
-    Game.new(g["id"], g["name"], g["icon"], g["colour"]).make_page
+    colour = g["colour"]
+    accent = ""
+
+    case
+    when colour.include?("dark")
+        accent = colour.sub("dark", "darker")
+    when colour.include?("light")
+        accent = colour.sub("light", "lighter")
+    else
+        accent = "accent-#{colour}"
+    end
+
+    Game.new(g["id"], g["name"], g["icon"], colour, accent).make_page
 end
 
 puts "available colours: #{root.select {|k, v| v.empty?}.keys}"

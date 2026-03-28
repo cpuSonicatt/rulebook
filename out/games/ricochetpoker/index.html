@@ -6,21 +6,31 @@
         <meta charset="UTF-8">
 
         <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👑</text></svg>">
-
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300..800" rel="stylesheet">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap" rel="stylesheet">
+        <link href="../../assets/bootstrap.min.css" rel="stylesheet">
         <link href="../../style.css" rel="stylesheet">
-
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     </head>
     <body class="bg-purple container my-5">
+        <svg id="back" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <pattern id="bg" patternUnits="userSpaceOnUse"patternContentUnits="userSpaceOnUse" width="40" height="40">
+                    <g fill="var(--accent-purple)" fill-opacity='0.4' fill-rule='evenodd'><path d='M0 40L40 0H20L0 20M40 40V20L20 40'/></g>
+                </pattern>
+            </defs>
+            <rect fill="url(#bg)" width="100%" height="100%"></rect>
+        </svg>
+
         <div class="bg-light col-xl-8 mx-auto pb-2 shaadow">
+            <div class="ps-4 mb-2">
+                <a href="../../"><span class="retbut" style="font-size: 3em;"><b>⤦</b><span class="visually-hidden">Return home</span></span></a>
+            </div>
             <div class="box">
-                <a href="../../"><i class="retbut bi bi-house-fill" style="font-size: 1.5rem;"><span class="visually-hidden">Return home</span></i></a>
-                <div class="d-flex flex-sm-row flex-column justify-content-center align-items-center">
+                <div class="d-flex flex-row justify-content-center align-items-center m-4">
                     <div class="icon">👑</div>
-                    <h1 class="m-4 text-start fw-light">How to play<br><b>Ricochet Poker</b></h1>
+                    <h1 class="text-start fw-light ms-2">How to play<br><b>Ricochet Poker</b></h1>
                 </div>
 
                 <h2>You will need</h2><hr>

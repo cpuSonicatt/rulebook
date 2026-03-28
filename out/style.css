@@ -1,52 +1,79 @@
 /* Set colour variables based on Bootstrap's pallette */
-/* Lighter: x-100; Light: x-200; Normal: x-500; Dark: x-700 */
+/* https://getbootstrap.com/docs/5.3/customize/color/#all-colors */
+/* Lighter: x-100; Light: x-200; Accent: x-400; Normal: x-500; Dark: x-700; Darker: x-800 */
 :root {
+    --lighter-pink: #f7d6e6;
     --light-pink: #efadce;
+    --accent-pink: #de5c9d;
     --pink: #d63384;
     --dark-pink: #801f4f;
+    --darker-pink: #561435;
 
     --lighter-red: #f8d7da;
     --light-red: #f1aeb5;
+    --accent-red: #e35d6a;
     --red: #dc3545;
     --dark-red: #842029;
+    --darker-red: #58151c;
 
+    --lighter-orange: #fd7e14;
     --light-orange: #fecba1;
+    --accent-orange: #fd9843;
     --orange: #fd7e14;
     --dark-orange: #984c0c;
+    --darker-orange: #653208;
 
     --lighter-yellow: #fff3cd;
     --light-yellow: #ffe69c;
+    --accent-yellow: #ffcd39;
     --yellow: #ffc107;
     --dark-yellow: #997404;
+    --darker-yellow: #664d03;
 
     --lighter-green: #d1e7dd;
     --light-green: #a3cfbb;
+    --accent-green: #479f76;
     --green: #198754;
     --dark-green: #0f5132;
-    
+    --darker-green: #0a3622;
+
+    --lighter-teal: #d2f4ea;
     --light-teal: #a6e9d5;
+    --accent-teal: #4dd4ac;
     --teal: #20c997;
     --dark-teal: #13795b;
+    --darker-teal: #0d503c;
 
+    --lighter-cyan: #cff4fc;
     --light-cyan: #9eeaf9;
+    --accent-cyan: #3dd5f3;
     --cyan: #0dcaf0;
     --dark-cyan: #087990;
+    --darker-cyan: #055160;
 
     --lighter-blue: #cfe2ff;
     --light-blue: #9ec5fe;
+    --accent-blue: #3d8bfd;
     --blue: #0d6efd;
     --dark-blue: #084298;
+    --darker-blue: #052c65;
 
+    --lighter-indigo: #e0cffc;
     --light-indigo: #c29ffa;
+    --accent-indigo: #8540f5;
     --indigo: #6610f2;
     --dark-indigo: #3d0a91;
+    --darker-indigo: #290661;
 
     --lighter-purple:#e2d9f3;
     --light-purple: #c5b3e6;
+    --accent-purple: #8c68cd;
     --purple: #6f42c1;
     --dark-purple: #432874;
+    --darker-purple: #2c1a4d;
 
     --dark: #212529;
+    --accent-dark: #343a40;
     --light-grey: #e9ecef;
     --grey: #adb5bd;
     --dark-grey: #495057;
@@ -56,6 +83,16 @@
 /* Set site-wide font */
 
 body { font-family: 'Manrope', sans-serif; }
+
+.icon { font-family: 'Noto Color Emoji', sans-serif }
+
+/* background pattern styling */
+
+#back {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+}
 
 /* icons throughout */
 
