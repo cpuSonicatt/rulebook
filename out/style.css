@@ -262,7 +262,7 @@ a {
     color: var(--dark) !important;
 }
 
-a:hover #hover {
+a:hover .hover {
     text-decoration: underline;
 }
 
@@ -284,8 +284,4 @@ a:hover #hover {
 /* Disable the ligature Manrope applies to certain combinations of letters, like '<3' or '...ffi...' */
 .nolig {
     font-variant-ligatures: none;
-}
-
-.w-75 {
-    width: 75% !important;
 }

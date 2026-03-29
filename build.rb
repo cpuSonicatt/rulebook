@@ -1,6 +1,7 @@
 require "erb"
 require "json"
 require "redcarpet"
+require "htmlbeautifier"
 
 class Game
     attr_accessor :id, :pretty, :icon, :colour
@@ -22,7 +23,8 @@ class Game
         render = @rc.render(File.read("out/games/#{id}/rules.md"))
         template = ERB.new(File.read("templates/game.erb"))
         File.open("out/games/#{id}/index.html", "w") do |f|
-            f.write(template.result(binding))
+            r = template.result(binding)
+            f.write(HtmlBeautifier.beautify(r, indent: "    ") + "\n")
         end
     end
 end
@@ -30,10 +32,6 @@ end
 class Style < Redcarpet::Render::HTML
 
     @@indent = /~ /
-    def to_indent(t)
-        %_<p class="indent">#{t.gsub(@@indent, "")}</p>_
-    end
-
     @@center = /!center: /
     def paragraph(text)
         text.gsub!("♥", "<span class=\"r\">♥</span>")
@@ -45,7 +43,7 @@ class Style < Redcarpet::Render::HTML
         when @@rank then to_callout(text, @@rank, "rank", "Cards rank (from low to high)")
         when @@example then to_callout(text, @@example, "c-example", "Example")
         when @@tip then to_callout(text, @@tip, "tip", "Tip")
-        when @@indent then to_indent(text)
+        when @@indent then "<p class=\"indent\">#{text.gsub(@@indent, "")}</p>"
         when @@center then "<p class=\"text-center mb-4\">#{text.gsub(@@center, "")}</p>"
         else "<p>#{text}</p>"
         end
@@ -101,7 +99,7 @@ def categories(games)
     categories = {}
     games.map { |game|
         c = game["category"]
-        categories[c] = c.gsub("_", " ").gsub("and", "&").upcase
+        categories[c] = c.gsub("_", " ").gsub("and", "&amp;").upcase
     }
     return categories
 end
