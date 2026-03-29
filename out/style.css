@@ -235,6 +235,20 @@ p.hr {
     z-index: 1;
 }
 
+@media (max-width:576px) {
+    .hr {
+        color: var(--dark-grey);
+        padding-left: 0;
+        font-weight: bold;
+    }
+
+    p.hr {
+        text-align: center;
+        position: relative;
+        z-index: 1;
+    }
+}
+
 p.hr:before {
     border-top: 1px solid var(--dark);
     opacity: 0.25;
@@ -247,8 +261,8 @@ p.hr:before {
 }
 
 p.hr span {
-    background: var(--light); 
-    padding: 0 15px; 
+    background: var(--light);
+    padding: 0 15px;
 }
 
 
