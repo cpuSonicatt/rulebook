@@ -13,10 +13,11 @@
         <link href="../../assets/bootstrap.min.css" rel="stylesheet">
         <link href="../../style.css" rel="stylesheet">
     </head>
+
     <body class="bg-dark-orange container my-5">
-        <svg style="position: fixed; inset: 0; z-index: -1;" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+        <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
             <defs>
-                <pattern id="bg" patternUnits="userSpaceOnUse"patternContentUnits="userSpaceOnUse" width="40" height="40">
+                <pattern id="bg" patternUnits="userSpaceOnUse" patternContentUnits="userSpaceOnUse" width="40" height="40">
                     <g fill="var(--darker-orange)" fill-opacity='0.4' fill-rule='evenodd'><path d='M0 40L40 0H20L0 20M40 40V20L20 40'/></g>
                 </pattern>
             </defs>
@@ -25,7 +26,7 @@
 
         <div class="bg-light col-xl-8 mx-auto pb-2 shaadow">
             <div class="ps-4 mb-2">
-                <a href="../../"><span class="retbut" style="font-size: 3em;"><b>⤦</b><span class="visually-hidden">Return home</span></span></a>
+                <a href="../../"><span class="retbut"><b>⤦</b><span class="visually-hidden">Return home</span></span></a>
             </div>
             <div class="box">
                 <div class="d-flex flex-row justify-content-center align-items-center m-4">
@@ -38,10 +39,9 @@
 <li>A standard 52 card deck</li>
 </ul>
 <h2>Cards</h2><hr><p>Pick a pair of suits to play with that are the same colour (Hearts and Diamonds, or Clubs and Spades) and discard the others. Then,  discard the face cards so that you&#39;re left with 20 red or black cards.</p><p>The Ace is 1, and the rest of the cards are worth their face value.</p><h2>Deal</h2><hr><p>At the beginning of each frame, shuffle the cards and deal out 10 pin cards face-up, and 8 ball cards face-down. Place the remaining 2 cards face-down elsewhere; they won&#39;t be used in the frame.</p><p>Arrange the 10 pin cards so that they form an upside-down triangle, similar to a bowling pin arrangement, with 4 cards at the top, then 3 cards underneath, then 2 cards, then 1, making sure all rows of cards are aligned in the middle.</p><p>Split the ball cards into two piles without looking at them. Both piles must have at least 2 cards, but don&#39;t have to be equal. These are your two &quot;bowling balls&quot;; each number combined represents the overall &quot;power&quot; of each ball.</p><h2>Play</h2><hr><p>The object of the game is to get the highest bowling score across 10 frames by &quot;knocking down pins&quot;, or removing cards from play with cards, with the &quot;ball&quot;, or cards from your hand.</p><p>Choose a ball pile as your first throw and reveal those cards to yourself.</p><p>To knock down pins, you must use a combination of ball cards that add up to one or more adjacent pin cards, so long as one of the pin cards has an empty space to the left or right.</p>
-        <div class="callout note">
-            <p><b>Note</b>: This means that the middle 2 pins on the row of 4, and the middle pin on the row of 3 can&#39;t be knocked over on their own.</p>
-        </div>
-        <p>If one of your ball cards has the same value as one of the pin cards, you can use it to make a collateral shot on to one other pin either to the directly to the side, or behind.</p><p>Discard used ball cards and knocked over pin cards, and repeat.</p><p>When you&#39;re unable to make a legal play, make a note of the number of knocked over pins. If you&#39;ve knocked over all 10 pins (a Strike), mark an X instead and start the next frame. If not, mark the number and continue the frame with the remaining pins, and with the 2nd ball pile.</p><p>When you&#39;re unable to make a legal play after your 2nd ball, make a note of the number of knocked over pins on this 2nd throw. If at this point you&#39;ve knocked over all 10 pins (a Spare), mark a / instead and go onto the next frame.</p><p>The last frame works slightly differently to the previous frames:</p>
+<div class="callout note">
+<p><b>Note</b>: This means that the middle 2 pins on the row of 4, and the middle pin on the row of 3 can&#39;t be knocked over on their own.</p>
+</div><p>If one of your ball cards has the same value as one of the pin cards, you can use it to make a collateral shot on to one other pin either to the directly to the side, or behind.</p><p>Discard used ball cards and knocked over pin cards, and repeat.</p><p>When you&#39;re unable to make a legal play, make a note of the number of knocked over pins. If you&#39;ve knocked over all 10 pins (a Strike), mark an X instead and start the next frame. If not, mark the number and continue the frame with the remaining pins, and with the 2nd ball pile.</p><p>When you&#39;re unable to make a legal play after your 2nd ball, make a note of the number of knocked over pins on this 2nd throw. If at this point you&#39;ve knocked over all 10 pins (a Spare), mark a / instead and go onto the next frame.</p><p>The last frame works slightly differently to the previous frames:</p>
 <ul>
 <li>If you get a strike on the 1st bowl, you can play 2 extra throws.</li>
 <li>If you get a spare on the 2nd bowl, you can play 1 extra throw.</li>
@@ -52,3 +52,10 @@
         </div>
     </body>
 </html>
+<style>
+    svg {
+        position: fixed;
+        inset: 0;
+        z-index: -1;
+    }
+</style>

@@ -232,21 +232,24 @@ If the winning player wins by discard or by robbing a quad, the player that disc
 
 ## Tile list
 
-#### Characters
+**Characters**
+
 ![9 Mahjong tiles: the 1 to 9 of Characters](./resources/character.png "hf: 9 Mahjong tiles: the 1 to 9 of Characters")
 
-#### Pins
+**Pins**
+
 ![9 Mahjong tiles: the 1 to 9 of Pins](./resources/pin.png "hf: 9 Mahjong tiles: the 1 to 9 of Pins")
 
-#### Bamboo
+**Bamboo**
+
 ![9 Mahjong tiles: the 1 to 9 of Bamboo](./resources/bamboo.png "hf: 9 Mahjong tiles: the 1 to 9 of Bamboo")
 
-#### Dragons
-![3 Mahjong tiles: the Green, Red, and White Dragon](./resources/dragon.png "hf: 3 Mahjong tiles: the Green, Red, and White Dragon")
+**Dragons**
 
+![3 Mahjong tiles: the Green, Red, and White Dragon](./resources/dragon.png "hf: 3 Mahjong tiles: the Green, Red, and White Dragon")
 !center: Green • Red • White
 
-#### Winds
-![4 Mahjong tiles: East, South, North, and West Winds](./resources/wind.png "hf: 4 Mahjong tiles: East, South, North, and West Winds")
+**Winds**
 
+![4 Mahjong tiles: East, South, North, and West Winds](./resources/wind.png "hf: 4 Mahjong tiles: East, South, North, and West Winds")
 !center: East • South • North • West

@@ -13,10 +13,11 @@
         <link href="../../assets/bootstrap.min.css" rel="stylesheet">
         <link href="../../style.css" rel="stylesheet">
     </head>
+
     <body class="bg-dark-indigo container my-5">
-        <svg style="position: fixed; inset: 0; z-index: -1;" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+        <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
             <defs>
-                <pattern id="bg" patternUnits="userSpaceOnUse"patternContentUnits="userSpaceOnUse" width="40" height="40">
+                <pattern id="bg" patternUnits="userSpaceOnUse" patternContentUnits="userSpaceOnUse" width="40" height="40">
                     <g fill="var(--darker-indigo)" fill-opacity='0.4' fill-rule='evenodd'><path d='M0 40L40 0H20L0 20M40 40V20L20 40'/></g>
                 </pattern>
             </defs>
@@ -25,7 +26,7 @@
 
         <div class="bg-light col-xl-8 mx-auto pb-2 shaadow">
             <div class="ps-4 mb-2">
-                <a href="../../"><span class="retbut" style="font-size: 3em;"><b>⤦</b><span class="visually-hidden">Return home</span></span></a>
+                <a href="../../"><span class="retbut"><b>⤦</b><span class="visually-hidden">Return home</span></span></a>
             </div>
             <div class="box">
                 <div class="d-flex flex-row justify-content-center align-items-center m-4">
@@ -40,14 +41,14 @@
 <li>A pen and paper to keep score</li>
 </ul>
 <h2>Setup</h2><hr><p>Draw a Yacht Dice scoring table on your paper:</p>
-        <table class="table">
-            <tr>
+<table class="table">
+<tbody><tr>
 <th></th>
 <th><em>&lt;Player 1&gt;</em></th>
 <th><em>&lt;Player 2&gt;</em></th>
 </tr>
-
-            <tr>
+</tbody>
+<tbody><tr>
 <td>Aces</td>
 <td></td>
 <td></td>
@@ -112,16 +113,15 @@
 <td></td>
 <td></td>
 </tr>
-
-        </table>
-        <p>Choose a starting player by any means.</p><h2>Play</h2><hr><p>The game follows the same rules as regular Yacht Dice.</p><p>Each player, on their turn, has 3 attempts to make the best dice hand they can, and score the value of the dice on the score sheet.</p><p>Players must roll 5 dice on their first turn, then either roll 1 or more, or, if they&#39;re happy with their score, submit their score to the sheet early.</p><p>Once a player has scored a category, they may not score that category again.</p><h2>Scores</h2><hr><p>Each category scores different points:</p>
-        <table class="table">
-            <tr>
+</tbody>
+</table><p>Choose a starting player by any means.</p><h2>Play</h2><hr><p>The game follows the same rules as regular Yacht Dice.</p><p>Each player, on their turn, has 3 attempts to make the best dice hand they can, and score the value of the dice on the score sheet.</p><p>Players must roll 5 dice on their first turn, then either roll 1 or more, or, if they&#39;re happy with their score, submit their score to the sheet early.</p><p>Once a player has scored a category, they may not score that category again.</p><h2>Scores</h2><hr><p>Each category scores different points:</p>
+<table class="table">
+<tbody><tr>
 <th>Category</th>
 <th>Points</th>
 </tr>
-
-            <tr>
+</tbody>
+<tbody><tr>
 <td>Aces</td>
 <td>Sum of dice with 1&#39;s</td>
 </tr>
@@ -173,17 +173,16 @@
 <td>YACHT (5-of-a-Kind)</td>
 <td>+50</td>
 </tr>
-
-        </table>
-        <p>If a player cannot score any category, they must choose one category to score 0 in.</p><h2>House Rule</h2><hr><p>The player who isn&#39;t rolling wears a blindfold, and the player who is rolling takes their turn as normal, then announces the category they scored. This player may choose to lie. The blindfolded player then decides if the rolling player is telling the truth, and announces their decision.</p><p>The scoring differs slightly with the possibility of lying:</p>
-        <table class="table">
-            <tr>
+</tbody>
+</table><p>If a player cannot score any category, they must choose one category to score 0 in.</p><h2>House Rule</h2><hr><p>The player who isn&#39;t rolling wears a blindfold, and the player who is rolling takes their turn as normal, then announces the category they scored. This player may choose to lie. The blindfolded player then decides if the rolling player is telling the truth, and announces their decision.</p><p>The scoring differs slightly with the possibility of lying:</p>
+<table class="table">
+<tbody><tr>
 <th>Rolling player</th>
 <th>Blindfolded player</th>
 <th>then...</th>
 </tr>
-
-            <tr>
+</tbody>
+<tbody><tr>
 <td>is truthful</td>
 <td>thinks it&#39;s the truth</td>
 <td>Rolling player scores category as normal</td>
@@ -203,10 +202,16 @@
 <td>thinks it&#39;s a lie</td>
 <td>Rolling player scores category as negative</td>
 </tr>
-
-        </table>
-        <p>* in this scenario, the blindfolded player&#39;s category is not scored, but instead is scored as negative at the end of the game</p>
+</tbody>
+</table><p>* in this scenario, the blindfolded player&#39;s category is not scored, but instead is scored as negative at the end of the game</p>
             </div>
         </div>
     </body>
 </html>
+<style>
+    svg {
+        position: fixed;
+        inset: 0;
+        z-index: -1;
+    }
+</style>

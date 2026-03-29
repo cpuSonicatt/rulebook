@@ -13,10 +13,11 @@
         <link href="../../assets/bootstrap.min.css" rel="stylesheet">
         <link href="../../style.css" rel="stylesheet">
     </head>
+
     <body class="bg-light-red container my-5">
-        <svg style="position: fixed; inset: 0; z-index: -1;" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+        <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
             <defs>
-                <pattern id="bg" patternUnits="userSpaceOnUse"patternContentUnits="userSpaceOnUse" width="40" height="40">
+                <pattern id="bg" patternUnits="userSpaceOnUse" patternContentUnits="userSpaceOnUse" width="40" height="40">
                     <g fill="var(--lighter-red)" fill-opacity='0.4' fill-rule='evenodd'><path d='M0 40L40 0H20L0 20M40 40V20L20 40'/></g>
                 </pattern>
             </defs>
@@ -25,7 +26,7 @@
 
         <div class="bg-light col-xl-8 mx-auto pb-2 shaadow">
             <div class="ps-4 mb-2">
-                <a href="../../"><span class="retbut" style="font-size: 3em;"><b>⤦</b><span class="visually-hidden">Return home</span></span></a>
+                <a href="../../"><span class="retbut"><b>⤦</b><span class="visually-hidden">Return home</span></span></a>
             </div>
             <div class="box">
                 <div class="d-flex flex-row justify-content-center align-items-center m-4">
@@ -37,16 +38,21 @@
 <ul>
 <li>A standard 52-card deck</li>
 </ul>
-<h2>Deal</h2><hr><p>Choose a dealer by whichever means.</p><p class='indent'><strong>For 2 players</strong>: Deal 8 cards to each player.</p><p class='indent'><strong>For 3-4 players</strong>: Deal 7 cards to each player.</p><p class='indent'><strong>For 5-6 players</strong>: Deal 6 cards to each player.</p><p>Place the rest of the cards in the middle to form the stock pile. Reveal the top card and place it face-up next to the pile.</p><h2>Play</h2><hr><p>Each player, on their turn, picks up a card, make or add to one or more sets if possible, and discards a card.</p><p>You must pick up one card either from the top of the stock pile, or from the most recent card from the discard pile.</p><p>To make a set, you must have 3 cards that either run in a consecutive sequence in the same suit, or a group of the same value.</p>
-        <div class="callout c-example">
-            <p><b>Example</b>: You can make a run of 3<span class='r'>♥</span>, 4<span class='r'>♥</span>, 5<span class='r'>♥</span> , or a group of 6<span class='r'>♥</span>, 6<span class='r'>♦</span>, 6♣.</p>
-        </div>
-        
-        <div class="callout note">
-            <p><b>Note</b>: Ace is high, meaning runs of cards can&#39;t wrap around from Ace to 2.</p>
-        </div>
-        <p>If you want to play a set from your hand, place the set out in the middle. You don&#39;t have to play any sets during your turn, even if you&#39;re able to.</p><p>You can also add a card to an existing run or group.</p><p>You then must discard a card to the discard pile, face-up. You may discard the card you picked up in the same turn.</p><p>If you run out of cards from the stock pile, place the top discarded card aside, shuffle the rest of the discarded cards and form a new stock, and start a new discard pile with the card left out.</p><p>The winner is the player who ends up with no cards in their hand at the end of their turn, or has no cards to discard.</p><h2>Scoring</h2><hr><p>Total up the value of your hand. Value cards are scored by their number, or pip value. Aces are worth 11, and face cards are worth 10. Players score that amount of points.</p><p>If the winning player played all 8 of their cards at once, then they have &#39;gone rummy&#39; and the points that the other players have scored is doubled.</p><p>The player with the lowest score after 5 rounds wins.</p>
+<h2>Deal</h2><hr><p>Choose a dealer by whichever means.</p><p class="indent"><strong>For 2 players</strong>: Deal 8 cards to each player.</p><p class="indent"><strong>For 3-4 players</strong>: Deal 7 cards to each player.</p><p class="indent"><strong>For 5-6 players</strong>: Deal 6 cards to each player.</p><p>Place the rest of the cards in the middle to form the stock pile. Reveal the top card and place it face-up next to the pile.</p><h2>Play</h2><hr><p>Each player, on their turn, picks up a card, make or add to one or more sets if possible, and discards a card.</p><p>You must pick up one card either from the top of the stock pile, or from the most recent card from the discard pile.</p><p>To make a set, you must have 3 cards that either run in a consecutive sequence in the same suit, or a group of the same value.</p>
+<div class="callout c-example">
+<p><b>Example</b>: You can make a run of 3<span class="r">♥</span>, 4<span class="r">♥</span>, 5<span class="r">♥</span> , or a group of 6<span class="r">♥</span>, 6<span class="r">♦</span>, 6♣.</p>
+</div>
+<div class="callout note">
+<p><b>Note</b>: Ace is high, meaning runs of cards can&#39;t wrap around from Ace to 2.</p>
+</div><p>If you want to play a set from your hand, place the set out in the middle. You don&#39;t have to play any sets during your turn, even if you&#39;re able to.</p><p>You can also add a card to an existing run or group.</p><p>You then must discard a card to the discard pile, face-up. You may discard the card you picked up in the same turn.</p><p>If you run out of cards from the stock pile, place the top discarded card aside, shuffle the rest of the discarded cards and form a new stock, and start a new discard pile with the card left out.</p><p>The winner is the player who ends up with no cards in their hand at the end of their turn, or has no cards to discard.</p><h2>Scoring</h2><hr><p>Total up the value of your hand. Value cards are scored by their number, or pip value. Aces are worth 11, and face cards are worth 10. Players score that amount of points.</p><p>If the winning player played all 8 of their cards at once, then they have &#39;gone rummy&#39; and the points that the other players have scored is doubled.</p><p>The player with the lowest score after 5 rounds wins.</p>
             </div>
         </div>
     </body>
 </html>
+<style>
+    svg {
+        position: fixed;
+        inset: 0;
+        z-index: -1;
+    }
+</style>

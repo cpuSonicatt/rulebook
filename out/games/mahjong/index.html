@@ -13,10 +13,11 @@
         <link href="../../assets/bootstrap.min.css" rel="stylesheet">
         <link href="../../style.css" rel="stylesheet">
     </head>
+
     <body class="bg-green container my-5">
-        <svg style="position: fixed; inset: 0; z-index: -1;" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+        <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
             <defs>
-                <pattern id="bg" patternUnits="userSpaceOnUse"patternContentUnits="userSpaceOnUse" width="40" height="40">
+                <pattern id="bg" patternUnits="userSpaceOnUse" patternContentUnits="userSpaceOnUse" width="40" height="40">
                     <g fill="var(--accent-green)" fill-opacity='0.4' fill-rule='evenodd'><path d='M0 40L40 0H20L0 20M40 40V20L20 40'/></g>
                 </pattern>
             </defs>
@@ -25,7 +26,7 @@
 
         <div class="bg-light col-xl-8 mx-auto pb-2 shaadow">
             <div class="ps-4 mb-2">
-                <a href="../../"><span class="retbut" style="font-size: 3em;"><b>⤦</b><span class="visually-hidden">Return home</span></span></a>
+                <a href="../../"><span class="retbut"><b>⤦</b><span class="visually-hidden">Return home</span></span></a>
             </div>
             <div class="box">
                 <div class="d-flex flex-row justify-content-center align-items-center m-4">
@@ -39,10 +40,9 @@
 <li><em>Optional</em>: 3 six-sided dice.</li>
 </ul>
 <h2>Terms</h2><hr>
-        <div class="callout note">
-            <p><b>Note</b>: This ruleset uses the literal words for terms like Chows (&#39;<strong>Runs</strong>&#39;), Pungs (&#39;<strong>Triplets</strong>&#39;), and Kongs (&#39;<strong>Quads</strong>&#39;), for ease of learning.</p>
-        </div>
-        
+<div class="callout note">
+<p><b>Note</b>: This ruleset uses the literal words for terms like Chows (&#39;<strong>Runs</strong>&#39;), Pungs (&#39;<strong>Triplets</strong>&#39;), and Kongs (&#39;<strong>Quads</strong>&#39;), for ease of learning.</p>
+</div>
 <ul>
 <li>the <strong>wall</strong> - the pile of tiles not yet drawn.</li>
 <li>the <strong>live end</strong> - the end of the wall tiles are normally drawn from.</li>
@@ -63,19 +63,17 @@
 <li><strong>rooted</strong> - a hand containing <strong>triplets</strong>/<strong>quads</strong> including only <strong>terminals</strong>, e.g. &quot;111&quot; and &quot;999&quot;.</li>
 </ul>
 <h2>Deal</h2><hr>
-        <div class="callout note">
-            <p><b>Note</b>: This is the traditional method of dealing, used in competitive play to prevent cheating. For casual games, players can take tiles from right-most side of the dealer&#39;s wall.</p>
-        </div>
-        <p>Shuffle the tiles by <a href="https://en.wikipedia.org/wiki/Shuffling#Corgi">&quot;washing&quot; them</a> on the table, and choose a player to be East. Going counter-clockwise, the other players will be South, West, and North.</p><p>Make 4 walls of 17 tiles long and 2 high in a square shape.</p><p>The East player rolls 3d6 and, moving counter-clockwise starting with themselves, counts the sum of the roll to choose a wall to &quot;break&quot;.</p><p>The player whose wall is chosen then rolls 3d6 again to choose a break point, counting right-to-left the sum of the roll.</p><p>At the break point each player, starting with the East player and moving counter-clockwise, takes chunks of 4 tiles (2 by 2) to form their hand.</p><p>Once each player has 12 tiles, each player takes 1 tile to reach 13, and the East player takes 1 more to reach 14. The East player can take both tiles at the same time, so long as the order of who would take the tiles is the same.</p><p>Play then begins when the East player discards a tile.</p><h2>Play</h2><hr><p>Play starts with the South player and moves counter-clockwise.</p><p>Each player at the beginning of their turn may either:</p>
+<div class="callout note">
+<p><b>Note</b>: This is the traditional method of dealing, used in competitive play to prevent cheating. For casual games, players can take tiles from right-most side of the dealer&#39;s wall.</p>
+</div><p>Shuffle the tiles by <a href="https://en.wikipedia.org/wiki/Shuffling#Corgi">&quot;washing&quot; them</a> on the table, and choose a player to be East. Going counter-clockwise, the other players will be South, West, and North.</p><p>Make 4 walls of 17 tiles long and 2 high in a square shape.</p><p>The East player rolls 3d6 and, moving counter-clockwise starting with themselves, counts the sum of the roll to choose a wall to &quot;break&quot;.</p><p>The player whose wall is chosen then rolls 3d6 again to choose a break point, counting right-to-left the sum of the roll.</p><p>At the break point each player, starting with the East player and moving counter-clockwise, takes chunks of 4 tiles (2 by 2) to form their hand.</p><p>Once each player has 12 tiles, each player takes 1 tile to reach 13, and the East player takes 1 more to reach 14. The East player can take both tiles at the same time, so long as the order of who would take the tiles is the same.</p><p>Play then begins when the East player discards a tile.</p><h2>Play</h2><hr><p>Play starts with the South player and moves counter-clockwise.</p><p>Each player at the beginning of their turn may either:</p>
 <ol>
 <li>Draw a tile from the live end of the wall</li>
 <li>Claim the most recent discarded tile to make a Melded Run, Melded Triplet, or Big Melded Quad</li>
 </ol>
 <p>Claiming a discarded tile is a special move, of which there are steps listed below to follow.</p><p>Otherwise, a player should draw a tile from the wall. If they want to they may declare a Concealed Quad or a Small Melded Quad, which are also special moves.</p><p>If a player has a winning hand (4 runs/triplets/quads and a pair, or an irregular hand), they may call Mahjong and win the round.</p>
-        <div class="callout note">
-            <p><b>Note</b>: If there&#39;s a conflict in claims, then Mahjong beats Quads/Triplets, beats Runs. To tiebreak, the player closest to the dealer by turn order takes precedence.</p>
-        </div>
-        <p>If no special move is played and the player can&#39;t or decides not to call Mahjong, then the player discards a tile to the center and their turn is over.</p><p>If there are no more tiles to draw at the beginning of a player&#39;s turn, then no player wins and the game goes into the next round.</p><p>The game lasts 4 to 12 rounds, and the role of the dealer rotates counter-clockwise after every round.</p><p>Additionally:</p>
+<div class="callout note">
+<p><b>Note</b>: If there&#39;s a conflict in claims, then Mahjong beats Quads/Triplets, beats Runs. To tiebreak, the player closest to the dealer by turn order takes precedence.</p>
+</div><p>If no special move is played and the player can&#39;t or decides not to call Mahjong, then the player discards a tile to the center and their turn is over.</p><p>If there are no more tiles to draw at the beginning of a player&#39;s turn, then no player wins and the game goes into the next round.</p><p>The game lasts 4 to 12 rounds, and the role of the dealer rotates counter-clockwise after every round.</p><p>Additionally:</p>
 <ul>
 <li>Only score the hand of the player that calls Mahjong, even if other players have winning hands.</li>
 <li>If a winning hand&#39;s value exceeds 320 points, they score 320 points or the value of the highest-valued pattern in the hand, whichever is higher.</li>
@@ -118,13 +116,12 @@
 <li>Discard a tile</li>
 </ol>
 <h2>Patterns</h2><hr><p>Patterns are sorted into categories and series (e.g. &quot;Three Identical Runs&quot; is notated as 5.1.3, or 5th category, 1st series, 3rd pattern). Only the highest scoring pattern in each series counts towards a player&#39;s score. i.e. you can&#39;t score on both 4.2.1 and 4.2.2.</p><p>If the winning player wins by self-draw, the losing players pays the winning player the value of the winning hand.</p><p>If the winning player wins by discard or by robbing a quad, the player that discarded/melded the required tile pays the winning player 3 times the value of the winning hand.</p>
-        <div class="callout note">
-            <p><b>Note</b>: You&#39;re free to arrange your hand to however you want to match patterns. Hands can ony be scored on one arrangement. For example, a hand can be arranged to score either Three Consecutive Triplets (7.2.1) or Three Identical Runs (5.1.3), but not both.</p>
-        </div>
-        <h3>1. Trivial</h3>
-        <table class="table mb-5">
-            <th class='col-1'>#</th><th class='col-9'>Name</th><th class='col-2'>Points</th>
-            <tr>
+<div class="callout note">
+<p><b>Note</b>: You&#39;re free to arrange your hand to however you want to match patterns. Hands can ony be scored on one arrangement. For example, a hand can be arranged to score either Three Consecutive Triplets (7.2.1) or Three Identical Runs (5.1.3), but not both.</p>
+</div><h3>1. Trivial</h3>
+<table class="table mb-5">
+<tbody><tr><th scope="rowgroup" class="col-1">#</th><th scope="rowgroup" class="col-9">Name</th><th scope="rowgroup" class="col-2">Points</th></tr>
+<tr>
 <td><strong>1.1</strong></td>
 <td><strong>All Runs</strong></td>
 <td>5</td>
@@ -139,12 +136,11 @@
 <td><strong>No Terminals</strong></td>
 <td>5</td>
 </tr>
-
-        </table>
-        <h3>2. One-suit</h3>
-        <table class="table mb-5">
-            <th class='col-1'>#</th><th class='col-9'>Name</th><th class='col-2'>Points</th>
-            <tr>
+</tbody>
+</table><h3>2. One-suit</h3>
+<table class="table mb-5">
+<tbody><tr><th scope="rowgroup" class="col-1">#</th><th scope="rowgroup" class="col-9">Name</th><th scope="rowgroup" class="col-2">Points</th></tr>
+<tr>
 <td><strong>2.1.1</strong></td>
 <td><strong>Mixed One-suit</strong></td>
 <td>40</td>
@@ -159,12 +155,11 @@
 <td><strong>Nine Gates</strong><br>A &quot;1112345678999&quot; in a single suit, and another tile in the same suit</td>
 <td>480</td>
 </tr>
-
-        </table>
-        <h3>3. Honour</h3>
-        <table class="table mb-5">
-            <th class='col-1'>#</th><th class='col-9'>Name</th><th class='col-2'>Points</th>
-            <tr>
+</tbody>
+</table><h3>3. Honour</h3>
+<table class="table mb-5">
+<tbody><tr><th scope="rowgroup" class="col-1">#</th><th scope="rowgroup" class="col-9">Name</th><th scope="rowgroup" class="col-2">Points</th></tr>
+<tr>
 <td><strong>3.1</strong></td>
 <td><strong>Value Honour</strong><br>A triplet/quad of your own Wind, or any Dragons</td>
 <td>10 per set</td>
@@ -204,12 +199,11 @@
 <td><strong>All Honours</strong></td>
 <td>320</td>
 </tr>
-
-        </table>
-        <h3>4. Triplet/Quad</h3>
-        <table class="table mb-5">
-            <th class='col-1'>#</th><th class='col-9'>Name</th><th class='col-2'>Points</th>
-            <tr>
+</tbody>
+</table><h3>4. Triplet/Quad</h3>
+<table class="table mb-5">
+<tbody><tr><th scope="rowgroup" class="col-1">#</th><th scope="rowgroup" class="col-9">Name</th><th scope="rowgroup" class="col-2">Points</th></tr>
+<tr>
 <td><strong>4.1</strong></td>
 <td><strong>All Triplets</strong></td>
 <td>30</td>
@@ -249,12 +243,11 @@
 <td><strong>Four Quads</strong></td>
 <td>480</td>
 </tr>
-
-        </table>
-        <h3>5. Identical</h3>
-        <table class="table mb-5">
-            <th class='col-1'>#</th><th class='col-9'>Name</th><th class='col-2'>Points</th>
-            <tr>
+</tbody>
+</table><h3>5. Identical</h3>
+<table class="table mb-5">
+<tbody><tr><th scope="rowgroup" class="col-1">#</th><th scope="rowgroup" class="col-9">Name</th><th scope="rowgroup" class="col-2">Points</th></tr>
+<tr>
 <td><strong>5.1.1</strong></td>
 <td><strong>Two Identical Runs</strong><br>Two runs of the same suit, of the same values</td>
 <td>10</td>
@@ -274,12 +267,11 @@
 <td><strong>Four Identical Runs</strong><br>Four runs of the same suit, of the same values</td>
 <td>480</td>
 </tr>
-
-        </table>
-        <h3>6. Similar</h3>
-        <table class="table mb-5">
-            <th class='col-1'>#</th><th class='col-9'>Name</th><th class='col-2'>Points</th>
-            <tr>
+</tbody>
+</table><h3>6. Similar</h3>
+<table class="table mb-5">
+<tbody><tr><th scope="rowgroup" class="col-1">#</th><th scope="rowgroup" class="col-9">Name</th><th scope="rowgroup" class="col-2">Points</th></tr>
+<tr>
 <td><strong>6.1</strong></td>
 <td><strong>Three Similar Runs</strong><br>Three runs of the same value, in all three suits</td>
 <td>35</td>
@@ -294,12 +286,11 @@
 <td><strong>Big Three Similar Runs</strong><br>Three triplets/quads of the same value, in all three suits</td>
 <td>120</td>
 </tr>
-
-        </table>
-        <h3>7. Consecutive</h3>
-        <table class="table mb-5">
-            <th class='col-1'>#</th><th class='col-9'>Name</th><th class='col-2'>Points</th>
-            <tr>
+</tbody>
+</table><h3>7. Consecutive</h3>
+<table class="table mb-5">
+<tbody><tr><th scope="rowgroup" class="col-1">#</th><th scope="rowgroup" class="col-9">Name</th><th scope="rowgroup" class="col-2">Points</th></tr>
+<tr>
 <td><strong>7.1</strong></td>
 <td><strong>Nine-tile straight</strong><br>A &quot;123-456-789&quot; of the same suit</td>
 <td>40</td>
@@ -314,12 +305,11 @@
 <td><strong>Four Consecutive Triplets/Quads</strong><br>Four triplets/quads of consecutive values, of the same suit</td>
 <td>200</td>
 </tr>
-
-        </table>
-        <h3>8. Terminal</h3>
-        <table class="table mb-5">
-            <th class='col-1'>#</th><th class='col-9'>Name</th><th class='col-2'>Points</th>
-            <tr>
+</tbody>
+</table><h3>8. Terminal</h3>
+<table class="table mb-5">
+<tbody><tr><th scope="rowgroup" class="col-1">#</th><th scope="rowgroup" class="col-9">Name</th><th scope="rowgroup" class="col-2">Points</th></tr>
+<tr>
 <td><strong>8.1.1</strong></td>
 <td><strong>Mixed Branching Terminals</strong><br>Each set contains Terminals and Honours</td>
 <td>40</td>
@@ -339,12 +329,11 @@
 <td><strong>Pure Rooted Terminals</strong><br>all sets are exclusively Terminals</td>
 <td>400</td>
 </tr>
-
-        </table>
-        <h3>9. Incidental</h3>
-        <table class="table mb-5">
-            <th class='col-1'>#</th><th class='col-9'>Name</th><th class='col-2'>Points</th>
-            <tr>
+</tbody>
+</table><h3>9. Incidental</h3>
+<table class="table mb-5">
+<tbody><tr><th scope="rowgroup" class="col-1">#</th><th scope="rowgroup" class="col-9">Name</th><th scope="rowgroup" class="col-2">Points</th></tr>
+<tr>
 <td>9.1.1</td>
 <td><strong>Final Draw</strong><br>Winning by self-draw on the last tile</td>
 <td>10</td>
@@ -374,12 +363,11 @@
 <td><strong>Blessing of Earth</strong><br>Non-East winning on East&#39;s first discard without a concealed quad</td>
 <td>155</td>
 </tr>
-
-        </table>
-        <h3>10. Irregular</h3>
-        <table class="table mb-5">
-            <th class='col-1'>#</th><th class='col-9'>Name</th><th class='col-2'>Points</th>
-            <tr>
+</tbody>
+</table><h3>10. Irregular</h3>
+<table class="table mb-5">
+<tbody><tr><th scope="rowgroup" class="col-1">#</th><th scope="rowgroup" class="col-9">Name</th><th scope="rowgroup" class="col-2">Points</th></tr>
+<tr>
 <td>10.1</td>
 <td><strong>Thirteen Wonders</strong><br>All 13 Terminals nd Honours, plus an additional Terminal or Honour</td>
 <td>160</td>
@@ -389,10 +377,18 @@
 <td><strong>Seven pairs</strong><br>Pairs only</td>
 <td>30</td>
 </tr>
-
-        </table>
-        <h2>Tile list</h2><hr><h4>Characters</h4><p><div class='row align-items-center my-3'><img class='w-75 mx-auto mb-3' src='./resources/character.png' alt='9 Mahjong tiles: the 1 to 9 of Characters' title='9 Mahjong tiles: the 1 to 9 of Characters'></div></p><h4>Pins</h4><p><div class='row align-items-center my-3'><img class='w-75 mx-auto mb-3' src='./resources/pin.png' alt='9 Mahjong tiles: the 1 to 9 of Pins' title='9 Mahjong tiles: the 1 to 9 of Pins'></div></p><h4>Bamboo</h4><p><div class='row align-items-center my-3'><img class='w-75 mx-auto mb-3' src='./resources/bamboo.png' alt='9 Mahjong tiles: the 1 to 9 of Bamboo' title='9 Mahjong tiles: the 1 to 9 of Bamboo'></div></p><h4>Dragons</h4><p><div class='row align-items-center my-3'><img class='w-75 mx-auto mb-3' src='./resources/dragon.png' alt='3 Mahjong tiles: the Green, Red, and White Dragon' title='3 Mahjong tiles: the Green, Red, and White Dragon'></div></p><p class='text-center mb-4'>Green • Red • White</p><h4>Winds</h4><p><div class='row align-items-center my-3'><img class='w-75 mx-auto mb-3' src='./resources/wind.png' alt='4 Mahjong tiles: East, South, North, and West Winds' title='4 Mahjong tiles: East, South, North, and West Winds'></div></p><p class='text-center mb-4'>East • South • North • West</p>
+</tbody>
+</table><h2>Tile list</h2><hr><p><strong>Characters</strong></p><p><img class="w-100 mx-auto mb-3" src="./resources/character.png" alt="9 Mahjong tiles: the 1 to 9 of Characters" title="9 Mahjong tiles: the 1 to 9 of Characters"></p><p><strong>Pins</strong></p><p><img class="w-100 mx-auto mb-3" src="./resources/pin.png" alt="9 Mahjong tiles: the 1 to 9 of Pins" title="9 Mahjong tiles: the 1 to 9 of Pins"></p><p><strong>Bamboo</strong></p><p><img class="w-100 mx-auto mb-3" src="./resources/bamboo.png" alt="9 Mahjong tiles: the 1 to 9 of Bamboo" title="9 Mahjong tiles: the 1 to 9 of Bamboo"></p><p><strong>Dragons</strong></p><p class="text-center mb-4"><img class="w-100 mx-auto mb-3" src="./resources/dragon.png" alt="3 Mahjong tiles: the Green, Red, and White Dragon" title="3 Mahjong tiles: the Green, Red, and White Dragon">
+Green • Red • White</p><p><strong>Winds</strong></p><p class="text-center mb-4"><img class="w-100 mx-auto mb-3" src="./resources/wind.png" alt="4 Mahjong tiles: East, South, North, and West Winds" title="4 Mahjong tiles: East, South, North, and West Winds">
+East • South • North • West</p>
             </div>
         </div>
     </body>
 </html>
+<style>
+    svg {
+        position: fixed;
+        inset: 0;
+        z-index: -1;
+    }
+</style>

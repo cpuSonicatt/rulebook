@@ -1,8 +1,6 @@
 ## You will need
 - A copy of Container
 
-!tip: You could print the game pieces if you don't own a copy of Container.
-
 ## Setup
 Place the Auction Island in the center of the table. Place each Player Island such that the harbour faces out toward the center/other players. The rest of your table is 'open sea'.
 

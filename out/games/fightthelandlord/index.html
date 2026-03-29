@@ -13,10 +13,11 @@
         <link href="../../assets/bootstrap.min.css" rel="stylesheet">
         <link href="../../style.css" rel="stylesheet">
     </head>
+
     <body class="bg-dark-green container my-5">
-        <svg style="position: fixed; inset: 0; z-index: -1;" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+        <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
             <defs>
-                <pattern id="bg" patternUnits="userSpaceOnUse"patternContentUnits="userSpaceOnUse" width="40" height="40">
+                <pattern id="bg" patternUnits="userSpaceOnUse" patternContentUnits="userSpaceOnUse" width="40" height="40">
                     <g fill="var(--darker-green)" fill-opacity='0.4' fill-rule='evenodd'><path d='M0 40L40 0H20L0 20M40 40V20L20 40'/></g>
                 </pattern>
             </defs>
@@ -25,7 +26,7 @@
 
         <div class="bg-light col-xl-8 mx-auto pb-2 shaadow">
             <div class="ps-4 mb-2">
-                <a href="../../"><span class="retbut" style="font-size: 3em;"><b>⤦</b><span class="visually-hidden">Return home</span></span></a>
+                <a href="../../"><span class="retbut"><b>⤦</b><span class="visually-hidden">Return home</span></span></a>
             </div>
             <div class="box">
                 <div class="d-flex flex-row justify-content-center align-items-center m-4">
@@ -39,23 +40,22 @@
 <li><em>Optional</em>: Coins/chips/tokens to represent bids (around 25 units per player), or a pen-and-paper</li>
 </ul>
 <h2>Deal</h2><hr>
-        <div class="callout rank">
-            <p><b>Cards rank (from low to high)</b>: 3, 4, 5, 6, 7, 8, 9, 10, J, Q, K, A, 2, Black Joker, Red Joker.</p>
-        </div>
-        <p>Choose a dealer by whichever means.</p><p>Shuffle and deal 17 cards to each player. Place the remaining 3 cards aside face-down for later.</p><h2>Auction</h2><hr><p>The players enter an auction and bid to determine who the landlord will be. You&#39;re bidding for how strong you think your hand is.</p><p>The possible bids are 1, 2, and 3. The dealer starts the bid, or may pass, and continues counter-clockwise until 2 players pass, or 1 player bids 3. If all 3 players pass, re-deal.</p><p>The winner of the auction is the landlord, and add the 3 cards that were set aside to their hand. The two other players are the tenants.</p><h2>Play</h2><hr><p>The landlord begins by playing a single card, or a legal combination. Each subsequent player, going counter-clockwise, much either pass, or play a higher rank in the same combination of cards. For example, a pair of 6s can be followed by a pair of 7s, but not a pair of 5s (or a triplet of 8s, etc.)</p><p>There are two exceptions to this:</p>
+<div class="callout rank">
+<p><b>Cards rank (from low to high)</b>: 3, 4, 5, 6, 7, 8, 9, 10, J, Q, K, A, 2, Black Joker, Red Joker.</p>
+</div><p>Choose a dealer by whichever means.</p><p>Shuffle and deal 17 cards to each player. Place the remaining 3 cards aside face-down for later.</p><h2>Auction</h2><hr><p>The players enter an auction and bid to determine who the landlord will be. You&#39;re bidding for how strong you think your hand is.</p><p>The possible bids are 1, 2, and 3. The dealer starts the bid, or may pass, and continues counter-clockwise until 2 players pass, or 1 player bids 3. If all 3 players pass, re-deal.</p><p>The winner of the auction is the landlord, and add the 3 cards that were set aside to their hand. The two other players are the tenants.</p><h2>Play</h2><hr><p>The landlord begins by playing a single card, or a legal combination. Each subsequent player, going counter-clockwise, much either pass, or play a higher rank in the same combination of cards. For example, a pair of 6s can be followed by a pair of 7s, but not a pair of 5s (or a triplet of 8s, etc.)</p><p>There are two exceptions to this:</p>
 <ol>
 <li>If you play &#39;bomb&#39;</li>
 <li>If you play a &#39;rocket&#39;</li>
 </ol>
 <p>If either a bomb or a rocket, the bid is doubled.</p><p>When 2 players pass consecutively, then the player who played cards last may lead with a new combination. Play continues until 1 player has discarded all their cards.</p><p>If the landlord wins, the tenants must each pay the landlord the bid amount. If either tenant wins, the landlord pays each tenant the bid amount.</p><h2>Combinations</h2><hr><p>The combinations of cards are as follows, ordered by their strength:</p>
-        <table class="table">
-            <tr>
+<table class="table">
+<tbody><tr>
 <th>Combination</th>
 <th>Description</th>
 <th>Example</th>
 </tr>
-
-            <tr>
+</tbody>
+<tbody><tr>
 <td>Rocket</td>
 <td>A Pair of Jokers</td>
 <td>Red Joker-Black Joker</td>
@@ -115,14 +115,19 @@
 <td>Any single card</td>
 <td>3</td>
 </tr>
-
-        </table>
-        
-        <div class="callout note">
-            <p><b>Note</b>: 2&#39;s and Jokers cannot be used in any <strong>consecutive</strong> combination. A higher-ranked Bomb can beat a lower-ranked Bomb.</p>
-        </div>
-        
+</tbody>
+</table>
+<div class="callout note">
+<p><b>Note</b>: 2&#39;s and Jokers cannot be used in any <strong>consecutive</strong> combination. A higher-ranked Bomb can beat a lower-ranked Bomb.</p>
+</div>
             </div>
         </div>
     </body>
 </html>
+<style>
+    svg {
+        position: fixed;
+        inset: 0;
+        z-index: -1;
+    }
+</style>

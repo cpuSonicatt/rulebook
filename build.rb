@@ -31,13 +31,13 @@ class Style < Redcarpet::Render::HTML
 
     @@indent = /~ /
     def to_indent(t)
-        %_<p class='indent'>#{t.gsub(@@indent, "")}</p>_
+        %_<p class="indent">#{t.gsub(@@indent, "")}</p>_
     end
 
     @@center = /!center: /
     def paragraph(text)
-        text.gsub!("♥", "<span class='r'>♥</span>")
-        text.gsub!("♦", "<span class='r'>♦</span>")
+        text.gsub!("♥", "<span class=\"r\">♥</span>")
+        text.gsub!("♦", "<span class=\"r\">♦</span>")
 
         case text
         when @@note then to_callout(text, @@note, "note", "Note")
@@ -46,7 +46,7 @@ class Style < Redcarpet::Render::HTML
         when @@example then to_callout(text, @@example, "c-example", "Example")
         when @@tip then to_callout(text, @@tip, "tip", "Tip")
         when @@indent then to_indent(text)
-        when @@center then "<p class='text-center mb-4'>#{text.gsub(@@center, "")}</p>"
+        when @@center then "<p class=\"text-center mb-4\">#{text.gsub(@@center, "")}</p>"
         else "<p>#{text}</p>"
         end
     end
@@ -58,17 +58,16 @@ class Style < Redcarpet::Render::HTML
     @@tip = /!tip: / # green
     def to_callout(t, reg, type, pretty)
         %_
-        <div class="callout #{type}">
-            <p><b>#{pretty}</b>: #{t.gsub(reg, "")}</p>
-        </div>
-        _
+<div class="callout #{type}">
+<p><b>#{pretty}</b>: #{t.gsub(reg, "")}</p>
+</div>_
     end
 
     @@hf = /hf: /
     def image(link, title, alt_text)
         case title
-        when @@hf then "<img class='w-100 mx-auto mb-3' src='#{link}' alt='#{alt_text}' title='#{title.gsub(@@hf, "")}'>"
-        else "<img src='#{link}' alt='#{alt_text}' title='#{title}'>"
+        when @@hf then "<img class=\"w-100 mx-auto mb-3\" src=\"#{link}\" alt=\"#{alt_text}\" title=\"#{title.gsub(@@hf, "")}\">"
+        else "<img src=\"#{link}\" alt=\"#{alt_text}\" title=\"#{title}\">"
         end
     end
 
@@ -77,33 +76,24 @@ class Style < Redcarpet::Render::HTML
     end
 
     def table(header, body)
-        body.gsub!("♥", "<span class='r'>♥</span>")
-        body.gsub!("♦", "<span class='r'>♦</span>")
+        body.gsub!("♥", "<span class=\"r\">♥</span>")
+        body.gsub!("♦", "<span class=\"r\">♦</span>")
+
         %_
-        <table class="table">
-            #{header}
-            #{body}
-        </table>
-        _
+<table class="table">
+<tbody>#{header}</tbody>
+<tbody>#{body}</tbody>
+</table>_
     end
 end
 
 class Mahjong < Style
     def table(_, body)
         %_
-        <table class="table mb-5">
-            <th class='col-1'>#</th><th class='col-9'>Name</th><th class='col-2'>Points</th>
-            #{body}
-        </table>
-        _
-    end
-
-    @@hf = /hf: /
-    def image(link, title, alt_text)
-        case title
-        when @@hf then "<div class='row align-items-center my-3'><img class='w-75 mx-auto mb-3' src='#{link}' alt='#{alt_text}' title='#{title.gsub(@@hf, "")}'></div>"
-        else "<img src='#{link}' alt='#{alt_text}' title='#{title}'>"
-        end
+<table class="table mb-5">
+<tbody><tr><th scope="rowgroup" class="col-1">#</th><th scope="rowgroup" class="col-9">Name</th><th scope="rowgroup" class="col-2">Points</th></tr>
+#{body}</tbody>
+</table>_
     end
 end
 

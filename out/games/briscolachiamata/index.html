@@ -13,10 +13,11 @@
         <link href="../../assets/bootstrap.min.css" rel="stylesheet">
         <link href="../../style.css" rel="stylesheet">
     </head>
+
     <body class="bg-light-teal container my-5">
-        <svg style="position: fixed; inset: 0; z-index: -1;" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+        <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
             <defs>
-                <pattern id="bg" patternUnits="userSpaceOnUse"patternContentUnits="userSpaceOnUse" width="40" height="40">
+                <pattern id="bg" patternUnits="userSpaceOnUse" patternContentUnits="userSpaceOnUse" width="40" height="40">
                     <g fill="var(--lighter-teal)" fill-opacity='0.4' fill-rule='evenodd'><path d='M0 40L40 0H20L0 20M40 40V20L20 40'/></g>
                 </pattern>
             </defs>
@@ -25,7 +26,7 @@
 
         <div class="bg-light col-xl-8 mx-auto pb-2 shaadow">
             <div class="ps-4 mb-2">
-                <a href="../../"><span class="retbut" style="font-size: 3em;"><b>⤦</b><span class="visually-hidden">Return home</span></span></a>
+                <a href="../../"><span class="retbut"><b>⤦</b><span class="visually-hidden">Return home</span></span></a>
             </div>
             <div class="box">
                 <div class="d-flex flex-row justify-content-center align-items-center m-4">
@@ -38,47 +39,41 @@
 <li>A standard 52-card deck</li>
 </ul>
 <h2>Deal</h2><hr><p>Discard all 7&#39;s, 8&#39;s, and 9&#39;s from the deck. These cards aren&#39;t required for play.</p><p>Choose a dealer by whichever means.</p><p>The dealer deals out all cards to every player.</p>
-        <div class="callout rank">
-            <p><b>Cards rank (from low to high)</b>: 2, 3, 4, 5, 6, J, Q, K, 10, A.</p>
-        </div>
-        
-        <div class="callout note">
-            <p><b>Note</b>: This game is usually played with an Italian 40-card deck, where there are no 8&#39;s, 9&#39;s, or 10&#39;s.</p>
-        </div>
-        <h2>Auction</h2><hr><p>The player left of the dealer starts the bidding by naming any rank. Subsequent bids must be lower in rank. If a player bids &#39;2&#39;, players may bid &#39;2&#39; with a point value between 60 and 120. This number represents the number of points a player thinks their team will win (which they will then need to achieve in order to win). These subsequent point bids must be higher in value.</p><p>Players may also pass, and sit out the rest of the auction.</p>
-        <div class="callout c-example">
-            <p><b>Example</b>: Alice bids &#39;Ace&#39;, Bob passes, Charlie bids &#39;5&#39;, David bids &#39;2&#39;, Elliot bids &#39;2, 70&#39;, Alice bids &#39;2, 71&#39;, etc.</p>
-        </div>
-        <p>The player that wins the auction gets to name the trump suit for the round.</p><p>The players are then split into 2 teams:</p>
+<div class="callout rank">
+<p><b>Cards rank (from low to high)</b>: 2, 3, 4, 5, 6, J, Q, K, 10, A.</p>
+</div>
+<div class="callout note">
+<p><b>Note</b>: This game is usually played with an Italian 40-card deck, where there are no 8&#39;s, 9&#39;s, or 10&#39;s.</p>
+</div><h2>Auction</h2><hr><p>The player left of the dealer starts the bidding by naming any rank. Subsequent bids must be lower in rank. If a player bids &#39;2&#39;, players may bid &#39;2&#39; with a point value between 60 and 120. This number represents the number of points a player thinks their team will win (which they will then need to achieve in order to win). These subsequent point bids must be higher in value.</p><p>Players may also pass, and sit out the rest of the auction.</p>
+<div class="callout c-example">
+<p><b>Example</b>: Alice bids &#39;Ace&#39;, Bob passes, Charlie bids &#39;5&#39;, David bids &#39;2&#39;, Elliot bids &#39;2, 70&#39;, Alice bids &#39;2, 71&#39;, etc.</p>
+</div><p>The player that wins the auction gets to name the trump suit for the round.</p><p>The players are then split into 2 teams:</p>
 <ol>
 <li>The auction winner, and the player who holds the card that matches the winning rank, and chosen suit.</li>
 <li>The other players.</li>
 </ol>
 <p>The player who holds the matching card must not reveal themselves to anyone. This person may also be the auction winner.</p>
-        <div class="callout c-example">
-            <p><b>Example</b>: #1 - Alice wins the bid with &#39;J&#39;, and chooses &#39;Hearts&#39; as the trump suit. David has the Jack of Hearts, so is secretly on Alice&#39;s team.</p>
-        </div>
-        
-        <div class="callout c-example">
-            <p><b>Example</b>: #2 - Charlie wins the bid with &#39;5&#39;, and chooses &#39;Clubs&#39; as the trump suit. Charlie has the 5 of Clubs, so is secretly in a team on their own.</p>
-        </div>
-        <h2>Play</h2><hr><p>The auction winner starts the first trick by placing a card from their hand to the center of the table. This card is the turn suit.</p><p>Each player then, in turn going clockwise, places a card from their hand to the center of the table in an attempt to win the trick.</p>
-        <div class="callout note">
-            <p><b>Note</b>: Unlike other trick-taking games, any card can be played following the lead card.</p>
-        </div>
-        <p>Once everyone has placed 1 card, determine the winner of that round&#39;s trick:</p>
+<div class="callout c-example">
+<p><b>Example</b>: #1 - Alice wins the bid with &#39;J&#39;, and chooses &#39;Hearts&#39; as the trump suit. David has the Jack of Hearts, so is secretly on Alice&#39;s team.</p>
+</div>
+<div class="callout c-example">
+<p><b>Example</b>: #2 - Charlie wins the bid with &#39;5&#39;, and chooses &#39;Clubs&#39; as the trump suit. Charlie has the 5 of Clubs, so is secretly in a team on their own.</p>
+</div><h2>Play</h2><hr><p>The auction winner starts the first trick by placing a card from their hand to the center of the table. This card is the turn suit.</p><p>Each player then, in turn going clockwise, places a card from their hand to the center of the table in an attempt to win the trick.</p>
+<div class="callout note">
+<p><b>Note</b>: Unlike other trick-taking games, any card can be played following the lead card.</p>
+</div><p>Once everyone has placed 1 card, determine the winner of that round&#39;s trick:</p>
 <ol>
 <li>The player who played the highest-ranking trump-suited card.</li>
 <li>If no trump-suited cards were played, the player who played the highest-ranking turn-suited card.</li>
 </ol>
 <h2>Scoring</h2><hr><p>Once 8 rounds have been played, players reveal themselves as to which team they were on, and score their tricks. The amount of tricks doesn&#39;t matter. Instead, scoring is based on the card ranks in the tricks:</p>
-        <table class="table">
-            <tr>
+<table class="table">
+<tbody><tr>
 <th>Rank</th>
 <th>Points</th>
 </tr>
-
-            <tr>
+</tbody>
+<tbody><tr>
 <td>Ace</td>
 <td>11</td>
 </tr>
@@ -98,18 +93,17 @@
 <td>Jack</td>
 <td>2</td>
 </tr>
-
-        </table>
-        <p>All other ranks score 0.</p><p>The total amount of points in a deck is 120, so the team with a combined trick score of at least 61 points, or the number of points bid, scores game points. The winning team scores positive points, and the losing team scores negative points.</p>
-        <table class="table">
-            <tr>
+</tbody>
+</table><p>All other ranks score 0.</p><p>The total amount of points in a deck is 120, so the team with a combined trick score of at least 61 points, or the number of points bid, scores game points. The winning team scores positive points, and the losing team scores negative points.</p>
+<table class="table">
+<tbody><tr>
 <th>Bid Points</th>
 <th>AW&#39;s team (with teammate)*</th>
 <th>AW&#39;s team (alone)*</th>
 <th>Other team</th>
 </tr>
-
-            <tr>
+</tbody>
+<tbody><tr>
 <td>61-70</td>
 <td>±2</td>
 <td>±4</td>
@@ -139,14 +133,19 @@
 <td>±20</td>
 <td>±5</td>
 </tr>
-
-        </table>
-        
-        <div class="callout note">
-            <p><b>Note</b>: *AW = Auction Winner</p>
-        </div>
-        
+</tbody>
+</table>
+<div class="callout note">
+<p><b>Note</b>: *AW = Auction Winner</p>
+</div>
             </div>
         </div>
     </body>
 </html>
+<style>
+    svg {
+        position: fixed;
+        inset: 0;
+        z-index: -1;
+    }
+</style>

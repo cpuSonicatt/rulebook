@@ -13,10 +13,11 @@
         <link href="../../assets/bootstrap.min.css" rel="stylesheet">
         <link href="../../style.css" rel="stylesheet">
     </head>
+
     <body class="bg-teal container my-5">
-        <svg style="position: fixed; inset: 0; z-index: -1;" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+        <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
             <defs>
-                <pattern id="bg" patternUnits="userSpaceOnUse"patternContentUnits="userSpaceOnUse" width="40" height="40">
+                <pattern id="bg" patternUnits="userSpaceOnUse" patternContentUnits="userSpaceOnUse" width="40" height="40">
                     <g fill="var(--accent-teal)" fill-opacity='0.4' fill-rule='evenodd'><path d='M0 40L40 0H20L0 20M40 40V20L20 40'/></g>
                 </pattern>
             </defs>
@@ -25,7 +26,7 @@
 
         <div class="bg-light col-xl-8 mx-auto pb-2 shaadow">
             <div class="ps-4 mb-2">
-                <a href="../../"><span class="retbut" style="font-size: 3em;"><b>⤦</b><span class="visually-hidden">Return home</span></span></a>
+                <a href="../../"><span class="retbut"><b>⤦</b><span class="visually-hidden">Return home</span></span></a>
             </div>
             <div class="box">
                 <div class="d-flex flex-row justify-content-center align-items-center m-4">
@@ -40,10 +41,9 @@
 <li>A Poch board, or 9 labelled cups.</li>
 </ul>
 <h2>Setup</h2><hr><p>If you don&#39;t have a Poch board, place 8 cups in a circle, and the 9th in the center. Label the 8 outside cups as: &#39;Ace&#39;, &#39;King&#39;, &#39;Queen&#39;, &#39;Jack&#39;, &#39;Ten&#39;, &#39;Marriage&#39;, &#39;Sequence&#39;, and &#39;Pocher&#39;. The center cup remains unlabelled.</p><h2>Deal</h2><hr>
-        <div class="callout rank">
-            <p><b>Cards rank (from low to high)</b>: 7, 8, 9, 10, J, Q, K, A.</p>
-        </div>
-        <p>Discard all 2&#39;s, 3&#39;s, 4&#39;s, 5&#39;s, and 6&#39;s from the deck. These cards aren&#39;t required for play.</p><p>Each player antes 1 chip in each cup.</p><p>Choose a dealer by whichever means. The dealer deals all the cards, and places the last card face up on the table, as the trump card. Some players may end up with more cards than others, but that doesn&#39;t matter.</p><p>There are 3 stages to play:</p><h4>Melding</h4><p>Players show cards or combinations of cards in the trump suit that match the labels on the cups, and win the chips from that cup.</p><p>For example, a player with a King of the trump suit wins the chips from the King cup.</p><p>Players with a King and Queen of the trump suit win the chips from the King cup, Queen cup, and the Marriage cup.</p><p>Players with a 7, 8, and 9 of the trump suit win the chips from the 7 cup, 8 cup, 9 cup, and the Sequence cup.</p><p>Any chips not won are carried forward to the next round.</p><h4>Pochen</h4><p>Players bet on who has the best set of cards of the same rank in their hand. Going clockwise starting with the dealer, players bet 1 or more chips, placing them in front of themselves, if they believe they have a better set of cards, or may pass if they don&#39;t. Subsequent bets must be equal to or higher than the previous (like &#39;calling&#39; and &#39;raising&#39; in traditional poker).</p><p>The sets of cards are:</p>
+<div class="callout rank">
+<p><b>Cards rank (from low to high)</b>: 7, 8, 9, 10, J, Q, K, A.</p>
+</div><p>Discard all 2&#39;s, 3&#39;s, 4&#39;s, 5&#39;s, and 6&#39;s from the deck. These cards aren&#39;t required for play.</p><p>Each player antes 1 chip in each cup.</p><p>Choose a dealer by whichever means. The dealer deals all the cards, and places the last card face up on the table, as the trump card. Some players may end up with more cards than others, but that doesn&#39;t matter.</p><p>There are 3 stages to play:</p><h4>Melding</h4><p>Players show cards or combinations of cards in the trump suit that match the labels on the cups, and win the chips from that cup.</p><p>For example, a player with a King of the trump suit wins the chips from the King cup.</p><p>Players with a King and Queen of the trump suit win the chips from the King cup, Queen cup, and the Marriage cup.</p><p>Players with a 7, 8, and 9 of the trump suit win the chips from the 7 cup, 8 cup, 9 cup, and the Sequence cup.</p><p>Any chips not won are carried forward to the next round.</p><h4>Pochen</h4><p>Players bet on who has the best set of cards of the same rank in their hand. Going clockwise starting with the dealer, players bet 1 or more chips, placing them in front of themselves, if they believe they have a better set of cards, or may pass if they don&#39;t. Subsequent bets must be equal to or higher than the previous (like &#39;calling&#39; and &#39;raising&#39; in traditional poker).</p><p>The sets of cards are:</p>
 <ul>
 <li>Four-of-a-kind, which beats...</li>
 <li>Three-of-a-kind, which beats...</li>
@@ -54,3 +54,10 @@
         </div>
     </body>
 </html>
+<style>
+    svg {
+        position: fixed;
+        inset: 0;
+        z-index: -1;
+    }
+</style>
