@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>How to play Royal Flush Solitaire</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👑</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300..800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&amp;display=swap" rel="stylesheet">
+    <link href="../../assets/bootstrap.min.css" rel="stylesheet">
+    <link href="../../style.css" rel="stylesheet">
+</head>
+<body class="bg-dark-purple container my-5">
+    <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+            <pattern id="bg" patternUnits="userSpaceOnUse" patternContentUnits="userSpaceOnUse" width="40" height="40">
+                <g fill="var(--darker-purple)" fill-opacity='0.4' fill-rule='evenodd'><path d='M0 40L40 0H20L0 20M40 40V20L20 40'/></g>
+            </pattern>
+        </defs>
+        <rect fill="url(#bg)" width="100%" height="100%"></rect>
+    </svg>
+    <div class="bg-light col-xl-8 mx-auto pb-2 shaadow">
+        <div class="ps-4 mb-2">
+            <a href="../../"><span class="retbut"><b>⤦</b><span class="visually-hidden">Return home</span></span></a>
+        </div>
+        <div class="box">
+            <div class="d-flex flex-row justify-content-center align-items-center">
+                <div class="icon">👑</div>
+                <h1 class="text-start fw-light m-4">How to play<br>
+                    <b>Royal Flush Solitaire</b></h1>
+            </div>
+            <h2>You will need</h2>
+            <hr>
+            <ul>
+                <li>A standard 52-card deck.</li>
+            </ul>
+            <h2>Deal</h2>
+            <hr>
+            <p>To form the tableau, deal the cards into 4 columns of 13. Make sure there&#39;s space for a 5th column, as well as space for 5 cards to form a play area.</p>
+            <h2>Play</h2>
+            <hr>
+            <div class="callout rank">
+                <p><b>Cards rank (from low to high)</b>: 2, 3, 4, 5, 6, 7, 8, 9, 10, J, Q, K, A</p>
+            </div>
+            <p>The objective is to make sets of 5 cards that form a poker hand by moving cards, one at a time, to the play area. Once you move a card to the play area, you cannot move it again. Once the play area has 5 cards, note down how much they score under the relevant category, and discard them.</p>
+            <div class="callout tip">
+                <p><b>Tip</b>: If you prefer, you can instead move them to one side and calculate the score at the end of the game.</p>
+            </div>
+            <p>Cards can be stacked in decending order provided that the top card of the stack and the card you wish to place it on do not share the same suit. Stacks may be split if desired.</p>
+            <div class="callout example">
+                <p><b>Example</b>: You can place a 7<span class="r">♦</span> (a stack of one) on an 8♠, 8<span class="r">♥</span>, or an 8♣, but cannot be placed on an 8<span class="r">♦</span>. The same applies to a stack of 7<span class="r">♦</span>, 6♣, 5<span class="r">♥</span>.</p>
+            </div>
+            <p>You can also move any card stack to any empty space.</p>
+            <p>Once it&#39;s no longer possible to play 5 cards to the play area, the game is over, and your score is calculated.</p>
+            <h2>Score</h2>
+            <hr>
+            <p>For each &#39;poker hand&#39;, evaluate it&#39;s score and add it to your total. If you get 240 points or more, you win.</p>
+            <p>Each card is valued by their pip. Jacks are 11, Queens are 12, Kings are 13, Aces are 14.</p>
+            <p>There are 10 categories to score, which corrospond to each type of poker hand. Only the cards that contribute to the hand are counted. The total of their values is the hand&#39;s score.</p>
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <th>Hand</th>
+                        <th>Description</th>
+                        <th>Example</th>
+                        <th>... would score</th>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td>Royal Flush</td>
+                        <td>10, J, Q, K, A in the same suit</td>
+                        <td>[10<span class="r">♥</span> J<span class="r">♥</span> Q<span class="r">♥</span> K<span class="r">♥</span> A<span class="r">♥</span>]</td>
+                        <td>60</td>
+                    </tr>
+                    <tr>
+                        <td>Straight Flush</td>
+                        <td>5 consecutive cards in the same suit</td>
+                        <td>[4♠ 5♠ 6♠ 7♠ 8♠]</td>
+                        <td>30</td>
+                    </tr>
+                    <tr>
+                        <td>Four-of-a-kind</td>
+                        <td>4 cards of the same value</td>
+                        <td>[3♣ 3<span class="r">♥</span> 3<span class="r">♦</span> 3♠] Q<span class="r">♥</span></td>
+                        <td>12</td>
+                    </tr>
+                    <tr>
+                        <td>Full House</td>
+                        <td>A pair, and a three-of-a-kind</td>
+                        <td>[7<span class="r">♥</span> 7♣ J♣ J<span class="r">♥</span> J♠]</td>
+                        <td>47</td>
+                    </tr>
+                    <tr>
+                        <td>Flush</td>
+                        <td>5 cards in the same suit</td>
+                        <td>[3<span class="r">♦</span> 6<span class="r">♦</span> 7<span class="r">♦</span> K<span class="r">♦</span> A<span class="r">♦</span>]</td>
+                        <td>43</td>
+                    </tr>
+                    <tr>
+                        <td>Straight</td>
+                        <td>5 consecutive cards</td>
+                        <td>[2♣ 3<span class="r">♥</span> 4<span class="r">♦</span> 5♣ 6<span class="r">♦</span>]</td>
+                        <td>20</td>
+                    </tr>
+                    <tr>
+                        <td>Three-of-a-kind</td>
+                        <td>3 cards of the same value</td>
+                        <td>[6♣ 6♠ 6<span class="r">♦</span>] 3<span class="r">♥</span> A♠</td>
+                        <td>18</td>
+                    </tr>
+                    <tr>
+                        <td>Two Pair</td>
+                        <td>2 cards of the same value, twice</td>
+                        <td>[8♣ 8<span class="r">♦</span> A♠ A♣] 10<span class="r">♥</span></td>
+                        <td>44</td>
+                    </tr>
+                    <tr>
+                        <td>Pair</td>
+                        <td>2 cards of the same value</td>
+                        <td>[5<span class="r">♥</span> 5<span class="r">♦</span>] 6<span class="r">♦</span> 3<span class="r">♥</span> 7♣</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>High Card</td>
+                        <td>The highest valued card</td>
+                        <td>[Q♣] 5<span class="r">♥</span> 6♠ 3<span class="r">♦</span> 8<span class="r">♦</span></td>
+                        <td>12</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>Only the highest scoring hand counts towards a category, and if a hand can be multiple categories, it&#39;s scored against whichever category is higher-valued.</p>
+        </div>
+    </div>
+</body>
+</html>
+<style>
+    svg {
+        position: fixed;
+        inset: 0;
+        z-index: -1;
+    }
+</style>

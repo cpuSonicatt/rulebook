@@ -1,21 +1,23 @@
 ## You will need
+
 - A set of hanafuda
 
 !note: The rules to Koi-koi are similar to [Hana-awase](../hanaawase/index.html).
 
 ## Terms
 
-- **hanafuda** - the name of the deck of cards.
-- a **month** - 1 of the 12 ranks that makes up the deck.
-- the **Oya** (親, parent) - the dealer.
-- **Field** - the face-up cards in the middle of the table.
-- **Draw pile** - the pile of cards remaining from the deal, placed next to the field.
-- **Point pile** - where you put your matched cards on the table.
-- **"koi-koi"** (こいこい, "Come on!") - the signifier to continue playing the round.
-- **"stop"** - the signifier to stop playing the round.
-- a **yaku** - special combinations of cards that score points.
+- **hanafuda** - the name of the deck of cards
+- a **month** - 1 of the 12 ranks that makes up the deck
+- the **Oya** (親, parent) - the dealer
+- **Field** - the face-up cards in the middle of the table
+- **Draw pile** - the pile of cards remaining from the deal, placed next to the field
+- **Point pile** - where you put your matched cards on the table
+- **"koi-koi"** (こいこい, "Come on!") - the signifier to continue playing the round
+- **"stop"** - the signifier to stop playing the round
+- a **yaku** - special combinations of cards that score points
 
 ## Deal
+
 Choose an Oya by having both players pick a random card from the deck. Whichever player has the earliest Month is the Oya. Retry on a draw.
 
 The Oya deals 8 cards to the other player face down, then 8 cards to the field face up, and then 8 cards face down to themselves. This can be done in any way but is typically done in 2- or 4-card chunks. Set aside the rest of the cards to form a draw pile.
@@ -30,6 +32,7 @@ Before starting the round, check for the following 'lucky deals' on the field, a
 If a player's hand contains a 'lucky deal', they win 6 points and deal the next round as the dealer. If the field contains a 'luck deal', the round is void and the next round is dealt with the dealer swapping to the other player.
 
 ## Play
+
 The game is played across 12 rounds, corresponding to each month (round 1 is January, round 2 is February, etc.).
 
 Play begins with the Oya, with each turn having two stages:
@@ -46,10 +49,10 @@ Matched cards then go to your point pile, face up.
 
 At the end of your turn, if there is a new yaku present, or an improvement to any existing yaku, in your point pile and a player hasn't previously declared "koi-koi" in the current round, you must choose to either "koi-koi" or "stop":
 
-- "koi-koi" - The player calls "koi-koi", and the round continues.
+- "Koi-koi" - The player calls "koi-koi", and the round continues.
   - By calling "koi-koi", you attempt to make a better yaku for yourself at the risk of your opponent making a new yaku too.
   - If either player had called "koi-koi" in the current round and either player makes a new yaku, or improves upon existing yaku, then the round is over.
-- "stop" - The player calls "stop", and the round ends.
+- "Stop" - The player calls "stop", and the round ends.
   - By calling "stop", you bank the value of your yaku.
 
 If there's no yaku present, then play continues to the next player.
@@ -61,6 +64,7 @@ When the round is over, the winning player scores the cards in their point pile,
 !tip: It's a good idea to organise your point pile into the different Types to help you identify yaku.
 
 ## Scoring
+
 A player's score for the round is based on all the yaku in the point pile. There are a couple of special modifiers which may apply as well:
 
 - If a player's score is worth 7 points or more, their score for that round doubles.
@@ -69,9 +73,11 @@ A player's score for the round is based on all the yaku in the point pile. There
 Both of these conditions may apply, meaning a score could be quadrupled.
 
 ## Yaku
+
 !note: The Light yaku is the only group where its yaku are mutually exclusive, meaning only the highest-valued Light yaku counts towards scoring. This doesn't apply to Slip, Animal, or Other yaku.
 
 ### Light Yaku
+
 **Five Lights (all light cards)** - 10 points
 
 ![Five hanafuda cards: the Crane, the Curtain, the Moon, the Rain, and the Dragon](./resources/yaku/5lights.png "hf: Five Lights")
@@ -91,6 +97,7 @@ Both of these conditions may apply, meaning a score could be quadrupled.
 ---
 
 ### Slip Yaku
+
 **Red Poetry** - 5 points, plus 1 for each additional Slip card
 
 ![Three hanafuda cards, each with red poetry slips with writing behind various plants](./resources/yaku/redslips.png "hf: Red Poetry")
@@ -106,6 +113,7 @@ Both of these conditions may apply, meaning a score could be quadrupled.
 ---
 
 ### Animal Yaku
+
 **Boar-Deer-Butterfly** - 5 points, plus 1 for each additional Animal card
 
 ![Three hanafuda cards, one with a Boar, one with a Deer, and one with Butterflies behind various plants](./resources/yaku/bdb.png "hf: Boar-Deer-Butterfly")
@@ -193,10 +201,11 @@ Both of these conditions may apply, meaning a score could be quadrupled.
 
 **December** - Paulownia
 
-![Four hanafuda cards, each with pawlownia plants](./resources/list/dec.png "hf: December")
+![Four hanafuda cards, each with paulownia plants](./resources/list/dec.png "hf: December")
 !center: Light (Dragon) • Chaff • Chaff • Chaff
 
 ## Note-worthy cards
+
 There are 3 note-worthy cards:
 
 ![Three hanafuda cards: the Eight-Plank Bridge, the Sake Cup, and the Lightning](./resources/noteworthy.png "hf: Noteworthy cards")

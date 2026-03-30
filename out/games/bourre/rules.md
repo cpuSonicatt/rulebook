@@ -1,8 +1,10 @@
 ## You will need
+
 - A standard 52-card deck
 - Coins/chips/tokens (around 50 per person)
 
 ## Deal
+
 Choose a dealer by whichever means.
 
 Each player antes 1 chip to the pot, unless required to pay more from a previous round.
@@ -12,6 +14,7 @@ The dealer deals 5 cards to each player face-down. The dealer's last card is dea
 !rank: 2, 3, 4, 5, 6, 7, 8, 9, 10, J, Q, K, A.
 
 ## Decide
+
 Players look at their cards and decide whether to play or pass.
 
 Once everyone is ready to decide, everyone simultaneously reveals their decision by placing either a chip (for play), or nothing (for pass) in their hand, and showing everyone else after a countdown.
@@ -23,6 +26,7 @@ If a player decides to pass, they forfeit the round. They place the cards face d
 If only 1 player remains in play, they automatically win the pot. The round is then over.
 
 ## Play
+
 !note: If new to Bourré, it may be a good idea for the dealer to keep a note of the trump suit.
 
 The player left of the dealer leads the first trick by placing a card face-up in the center. This card's suit is the turn suit. Players must then, in turn going clockwise, place a card to try and win the trick.
@@ -43,6 +47,7 @@ Trump cards beat turn cards. Higher-ranking trump cards beat lower-ranking trump
 Play then continues to the next turn.
 
 ## Score
+
 Once there are no more cards to play, the round can be scored.
 
 The player who wins the most tricks wins the pot.

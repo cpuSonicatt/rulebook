@@ -1,4 +1,5 @@
 ## You will need
+
 - A standard 52-card deck.
 
 ## Deal
@@ -24,4 +25,3 @@ The winner of the trick then takes the upturned card from the talon and leads th
 When the talon is exhausted, play continues with the card in each player's hand until all cards have been played.
 
 The winner of the game is the player who wins the most tricks from this point.
-

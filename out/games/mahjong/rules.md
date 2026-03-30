@@ -7,23 +7,23 @@
 
 !note: This ruleset uses the literal words for terms like Chows ('**Runs**'), Pungs ('**Triplets**'), and Kongs ('**Quads**'), for ease of learning.
 
-- the **wall** - the pile of tiles not yet drawn.
-- the **live end** - the end of the wall tiles are normally drawn from.
-- the **dead end** - the (other) end of the wall where supplement tiles are drawn from, when calling a "quad".
-- a **terminal** - a 1 or a 9 tile.
-- a **middle** - a 2 to 8 tile.
-- an **honour** - a wind or dragon tile.
-- a **run** - a set of 3 consecutive numbered tiles.
-- a **pair**, **triplet**, **quad** - a set of 2, 3, 4 identical tiles.
-- **pattern** - a combination of tiles that make points.
-- **concealed** - a set made inside the hand.
-- **melded** - a set made outside the hand.
-- **small** - a set of **triplets**/**quads**, where one set is a pair instead.
-- **big** - a set of **triplets**/**quads**, where all sets are **triplets**/**quads**.
-- **mixed** - a set including **honours**.
-- **pure** - a set excluding **honours**.
-- **branching** - a hand containing **runs** that "branch" from a **terminal**, e.g. "123" and "789".
-- **rooted** - a hand containing **triplets**/**quads** including only **terminals**, e.g. "111" and "999".
+- the **wall** - the pile of tiles not yet drawn
+- the **live end** - the end of the wall tiles are normally drawn from
+- the **dead end** - the (other) end of the wall where supplement tiles are drawn from, when calling a "quad"
+- a **terminal** - a 1 or a 9 tile
+- a **middle** - a 2 to 8 tile
+- an **honour** - a wind or dragon tile
+- a **run** - a set of 3 consecutive numbered tiles
+- a **pair**, **triplet**, **quad** - a set of 2, 3, 4 identical tiles
+- **pattern** - a combination of tiles that make points
+- **concealed** - a set made inside the hand
+- **melded** - a set made outside the hand
+- **small** - a set of **triplets**/**quads**, where one set is a pair instead
+- **big** - a set of **triplets**/**quads**, where all sets are **triplets**/**quads**
+- **mixed** - a set including **honours**
+- **pure** - a set excluding **honours**
+- **branching** - a hand containing **runs** that "branch" from a **terminal**, e.g. "123" and "789"
+- **rooted** - a hand containing **triplets**/**quads** including only **terminals**, e.g. "111" and "999"
 
 ## Deal
 
@@ -58,7 +58,7 @@ Otherwise, a player should draw a tile from the wall. If they want to they may d
 
 If a player has a winning hand (4 runs/triplets/quads and a pair, or an irregular hand), they may call Mahjong and win the round.
 
-!note: If there's a conflict in claims, then Mahjong beats Quads/Triplets, beats Runs. To tiebreak, the player closest to the dealer by turn order takes precedence.
+!note: If there's a conflict in claims, then Mahjong beats Quads/Triplets, beats Runs. To tie-break, the player closest to the dealer by turn order takes precedence.
 
 If no special move is played and the player can't or decides not to call Mahjong, then the player discards a tile to the center and their turn is over.
 
@@ -78,7 +78,7 @@ As soon as a player has a winning hand, they may call Mahjong to win the round.
 
 If you draw a tile to make a winning hand, you win by self-draw.
 
-If another player discard a tile that's needed by you to make a winning hand, you win by discard.
+If another player discards a tile that's needed by you to make a winning hand, you win by discard.
 
 If another player makes a Small Melded Quad, and you require that tile to make a winning hand, you win by robbing a quad.
 
@@ -130,11 +130,11 @@ There are a few special moves players can make instead of drawing a tile from th
 
 Patterns are sorted into categories and series (e.g. "Three Identical Runs" is notated as 5.1.3, or 5th category, 1st series, 3rd pattern). Only the highest scoring pattern in each series counts towards a player's score. i.e. you can't score on both 4.2.1 and 4.2.2.
 
-If the winning player wins by self-draw, the losing players pays the winning player the value of the winning hand.
+If the winning player wins by self-draw, the losing players pay the winning player the value of the winning hand.
 
 If the winning player wins by discard or by robbing a quad, the player that discarded/melded the required tile pays the winning player 3 times the value of the winning hand.
 
-!note: You're free to arrange your hand to however you want to match patterns. Hands can ony be scored on one arrangement. For example, a hand can be arranged to score either Three Consecutive Triplets (7.2.1) or Three Identical Runs (5.1.3), but not both.
+!note: You're free to arrange your hand to however you want to match patterns. Hands can only be scored on one arrangement. For example, a hand can be arranged to score either Three Consecutive Triplets (7.2.1) or Three Identical Runs (5.1.3), but not both.
 
 ### 1. Trivial
 
@@ -158,7 +158,7 @@ If the winning player wins by discard or by robbing a quad, the player that disc
 | --------- | --------------------------------------------------------------------- | ---------- |
 | **3.1**   | **Value Honour**<br>A triplet/quad of your own Wind, or any Dragons   | 10 per set |
 | **3.2.1** | **Small Three Dragons**<br>Two triplets/quads and one pair of Dragons | 40         |
-| **3.2.2** | **Big Three Dragons**<br>Three triplets.quads of Dragons              | 130        |
+| **3.2.2** | **Big Three Dragons**<br>Three triplets/quads of Dragons              | 130        |
 | **3.3.1** | **Small Three Winds**<br>Two triplets/quads and one pair of Winds     | 30         |
 | **3.3.2** | **Big Three Winds**<br>Three triplets/quads of Winds                  | 120        |
 | **3.3.3** | **Small Four Winds**<br>Three triplets/quads and one pair of Winds    | 320        |
@@ -189,11 +189,11 @@ If the winning player wins by discard or by robbing a quad, the player that disc
 
 ### 6. Similar
 
-| #         | Name                                                                                                                 | Points |
-| --------- | -------------------------------------------------------------------------------------------------------------------- | ------ |
-| **6.1**   | **Three Similar Runs**<br>Three runs of the same value, in all three suits                                           | 35     |
-| **6.1.1** | **Small Three Similar Runs**<br>Two triplets/quads in two suits, and a pair in the third suit, all of the same value | 30     |
-| **6.1.2** | **Big Three Similar Runs**<br>Three triplets/quads of the same value, in all three suits                             | 120    |
+| #         | Name                                                                                                              | Points |
+| --------- | ----------------------------------------------------------------------------------------------------------------- | ------ |
+| **6.1**   | **Three Similar Runs**<br>Three runs of the same value, in all three suits                                        | 35     |
+| **6.1.1** | **Small Three Similar Runs**<br>Two triplets/quads in two suits, and a pair in the third suit, all the same value | 30     |
+| **6.1.2** | **Big Three Similar Runs**<br>Three triplets/quads of the same value, in all three suits                          | 120    |
 
 ### 7. Consecutive
 

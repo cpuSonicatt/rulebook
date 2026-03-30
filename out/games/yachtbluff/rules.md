@@ -30,7 +30,7 @@ Choose a starting player by any means.
 
 The game follows the same rules as regular Yacht Dice.
 
-Each player, on their turn, has 3 attempts to make the best dice hand they can, and score the value of the dice on the score sheet.
+Each player, on their turn, has 3 attempts to make the best dice hand they can, and score the value of the dice on the scoresheet.
 
 Players must roll 5 dice on their first turn, then either roll 1 or more, or, if they're happy with their score, submit their score to the sheet early.
 
@@ -66,9 +66,9 @@ The scoring differs slightly with the possibility of lying:
 
 | Rolling player | Blindfolded player    | then...                                           |
 | -------------- | --------------------- | ------------------------------------------------- |
-| is truthful    | thinks it's the truth | Rolling player scores category as normal          |
-| is truthful    | thinks it's a lie     | Blindfolded player scores _penalty_ as negative\* |
-| is lying       | thinks it's the truth | Rolling player scores category as normal          |
-| is lying       | thinks it's a lie     | Rolling player scores category as negative        |
+| Is truthful    | thinks it's the truth | Rolling player scores category as normal          |
+| Is truthful    | thinks it's a lie     | Blindfolded player scores _penalty_ as negative\* |
+| Is lying       | thinks it's the truth | Rolling player scores category as normal          |
+| Is lying       | thinks it's a lie     | Rolling player scores category as negative        |
 
 \* in this scenario, the blindfolded player's category is not scored, but instead is scored as negative at the end of the game

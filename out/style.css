@@ -140,7 +140,7 @@ body {
     border-left: 0.25rem solid var(--purple);
 }
 
-.c-example {
+.example {
     background-color: var(--lighter-yellow);
     border-left: 0.25rem solid var(--yellow);
 }
@@ -154,7 +154,7 @@ body {
 }
 
 .box h2:not(:first-child) {
-    margin-top: 3rem;
+    margin-top: 2rem;
 }
 
 .box h4 {
@@ -235,7 +235,7 @@ p.indent {
 
 .hr {
     color: var(--dark-grey);
-    padding-left: 3em;
+    padding-left: 4em;
     font-weight: bold;
 }
 
@@ -259,7 +259,7 @@ p.hr {
 }
 
 p.hr:before {
-    border-top: 1px solid var(--dark);
+    border-top: 2px solid var(--dark);
     opacity: 0.25;
     content: "";
     margin: 0 auto;

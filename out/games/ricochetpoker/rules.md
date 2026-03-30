@@ -1,13 +1,16 @@
 ## You will need
+
 - A standard 52-card deck.
 - 25 betting chips per player, or similar.
 
 ## Setup
+
 Choose a dealer by whichever means.
 
 Each player gets 25 chips.
 
 ## Play
+
 Each player antes one chip and the dealer deals them 1 card face up in front of them.
 
 Play starts with the person who has the worst poker hand. They choose how many more cards they want to 'buy' (1 chip for 1 card) which goes into the pot, or if they wish to fold.
@@ -19,10 +22,11 @@ Any cards that a player has bought are dealt to their and one at a time. As soon
 !note: Chips are non-refundable.
 
 ## Poker Hands
+
 !rank: 2, 3, 4, 5, 6, 7, 8, 9, 10, J, Q, K, A. In the event of a tie, Clubs beats Hearts, beats Diamonds, beats Spades.
 
 | Hand            | Description                          | Example         |
-|-----------------|--------------------------------------|-----------------|
+| --------------- | ------------------------------------ | --------------- |
 | Royal Flush     | 10, J, Q, K, A in the same suit      | 10♥ J♥ Q♥ K♥ A♥ |
 | Straight Flush  | 5 consecutive cards in the same suit | 4♠ 5♠ 6♠ 7♠ 8♠  |
 | Four-of-a-kind  | 4 cards of the same value            | 3♣ 3♥ 3♦ 3♠     |
@@ -33,4 +37,3 @@ Any cards that a player has bought are dealt to their and one at a time. As soon
 | Two Pair        | 2 cards of the same value, twice     | 8♣ 8♦ A♠ A♣     |
 | Pair            | 2 cards of the same value            | 5♥ 5♦           |
 | High Card       | The highest valued card              | Q♣              |
-

@@ -1,7 +1,9 @@
 ## You will need
+
 - Multiple standard 52-card decks with distinct backs (one deck per player)
 
 ## Deal
+
 Each player deals their deck of cards in front of them to form their tableau, like so:
 
 - Deal 4 cards face up side-by-side. These are the Work piles.
@@ -11,7 +13,8 @@ Each player deals their deck of cards in front of them to form their tableau, li
 There should be space in the middle of the table for the Common Area, which is where foundations are placed.
 
 ## Play
-Have someone count down to start the game. There are no turns in Nerts.
+
+Have a player count down to start the game. There are no turns in Nerts.
 
 Nerts plays a lot like Patience solitaire, where the foundations are instead common across all players.
 
@@ -34,6 +37,7 @@ If every player is stuck (cannot, or decides not to make a legal move), then eve
 Once the player's Nerts pile is exhausted, they may call "Nerts!" to end the game.
 
 ## Scoring
+
 Scoring is calculated with the following formula:
 
 - **total cards played to the foundations** - (2 x **total cards in Nerts pile**)

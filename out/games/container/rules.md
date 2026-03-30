@@ -1,7 +1,9 @@
 ## You will need
+
 - A copy of Container
 
 ## Setup
+
 Place the Auction Island in the center of the table. Place each Player Island such that the harbour faces out toward the center/other players. The rest of your table is 'open sea'.
 
 Sort the containers by colour, and make a pile of them to one side. For each colour, the supply should be 4 times the number of players.
@@ -14,7 +16,7 @@ Each player receives $20 (5x $1, 1x $5, and 1x $10), 1 warehouse, and 1 uniquely
 
 Each player's pile of money should be hidden from others.
 
-Deal 1 score card to each player. This card should remain hidden from others.
+Deal 1 scorecard to each player. This card should remain hidden from others.
 
 ## Play
 
@@ -29,12 +31,14 @@ Each turn, players perform at most 2 actions from the following list, in any ord
 Players may also take out a loan, as a free action.
 
 #### 1. Buy a Factory/Warehouse
+
 Pay the bank the cheapest available factory slot your island. You must not own two factories of the same colour.
 
 #### 2. Produce containers for your factory store, and set/adjust their prices
+
 Pay $1 to your boss, the player on your right.
 
-Your must produce 1 container per factory, in its matching colour, up to the factory storage limit of 2 times the number of factories on the Island. If this action would produce over your limit, you may choose which factory remains idle. If the container supply for a particular factory is exhausted, that factory does nothing.
+Your must produce 1 container per factory, in its matching colour, up to the factory storage limit of 2 times the number of factories on the Island. You may choose which factory remains idle if this action results in overproduction. If the container supply for a particular factory is exhausted, that factory does nothing.
 
 Place each newly-produced containers in any factory store space. The number represents how much you're willing to sell that container to others.
 
@@ -43,6 +47,7 @@ You may optionally reprice any container in the factory store after producing. Y
 Containers cannot be discarded.
 
 #### 3. Buy containers for your harbour store, and set/adjust their prices
+
 You may only purchase from another player's factory store, never your own.
 
 You may only purchase from 1 player per action, and they may not refuse sale.
@@ -54,6 +59,7 @@ Pay the player the listed price of each container. Once purchased, containers ma
 You may optionally reprice any container in the harbour store, even without purchasing anything.
 
 #### 4. Move from open sea to another player's harbour to buy containers
+
 You may only purchase from another player's harbour store, never your own.
 
 You may purchase any number or colour of container, provided you have space for them in your boat, and they may not refuse sale.
@@ -63,9 +69,11 @@ If you begin your turn in another player's harbour and wish to purchase more goo
 Once the transaction is complete, the containers are loaded onto your boat.
 
 #### 5. Move from another player's harbour to open sea
+
 You may not move directly from one harbour to another.
 
 #### 6. Move your ship from open sea to the Auction Island to hold an auction
+
 You may not bid on your own cargo.
 
 You may not visit the Auction Island with an empty boat.
@@ -81,6 +89,7 @@ If all bids are $0, the auction holder purchases the cargo (for $0), and deposit
 In case of a tie, the ties bids make an extra bid. If there's another tie, the auction holder chooses a winner by whichever means.
 
 ## Paying Interest on Loans
+
 For each loan a player has, they must pay $1 interest before any action. Paying off your loan, which must be done in full, is a free action but still must be done after paying interest.
 
 If a player cannot pay interest on their loans, the bank seizes one or more of their containers in the following conditions for each loan:
@@ -98,13 +107,14 @@ If none of the conditions apply, the player may avoid paying interest for that l
 !note: The choice of which **containers** are seized is decided by the player's boss (the player to their right). The player may decide if they lose a factory or a warehouse, but the player's boss may decide which colour factory to seize.
 
 ## Ending and Scoring
+
 The game ends when the second container colour is exhausted. The ending player finishes their turn.
 
 The player with the most money wins. Net worth is calculated as follows:
 
 - Determine the value of your 10/5 colour. If your Auction Island division has at least 1 of each colour container, then the colour is worth $10. If not, it's worth $5.
 - Discard all containers of whatever colour you have the most of in your Auction Island division. If there's a tie, choose which colour to discard (probably the least valuable).
-- Add the value of your Auction Island division based on your score card.
+- Add the value of your Auction Island division based on your scorecard.
 - Add $2 for each container in your harbour store.
 - Add $3 for each container on your boat.
 - Subtract $11 for each outstanding loan.
