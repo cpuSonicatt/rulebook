@@ -41,7 +41,7 @@ class Style < Redcarpet::Render::HTML
         when @@note then to_callout(text, @@note, "note", "Note")
         when @@score then to_callout(text, @@score, "score", "Score")
         when @@rank then to_callout(text, @@rank, "rank", "Cards rank (from low to high)")
-        when @@example then to_callout(text, @@example, "c-example", "Example")
+        when @@example then to_callout(text, @@example, "example", "Example")
         when @@tip then to_callout(text, @@tip, "tip", "Tip")
         when @@indent then "<p class=\"indent\">#{text.gsub(@@indent, "")}</p>"
         when @@center then "<p class=\"text-center mb-4\">#{text.gsub(@@center, "")}</p>"
