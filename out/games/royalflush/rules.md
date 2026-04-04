@@ -1,6 +1,6 @@
 ## You will need
 
-- A standard 52-card deck.
+- A standard 52-card deck
 
 ## Deal
 

@@ -1,7 +1,7 @@
 ## You will need
 
-- A standard 52-card deck.
-- 25 betting chips per player, or similar.
+- A standard 52-card deck
+- 25 betting chips per player, or similar
 
 ## Setup
 

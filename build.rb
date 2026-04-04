@@ -4,16 +4,16 @@ require "redcarpet"
 require "htmlbeautifier"
 
 class Game
-    attr_accessor :id, :pretty, :icon, :colour
-    def initialize(id, pretty, icon, colour, accent)
+    attr_accessor :id, :pretty, :icon, :colour, :subtext
+    def initialize(id, pretty, icon, subtext, colour, accent)
         @id = id
         @pretty = pretty
         @icon = icon
+        @subtext = subtext
         @colour = colour
         @accent = accent
         @rc = Redcarpet::Markdown.new(Style, tables: true)
         if id == "mahjong"
-            # mahjong has some special cases that require an override to the usual styling
             @rc = Redcarpet::Markdown.new(Mahjong, tables: true)
         end
     end
@@ -21,6 +21,9 @@ class Game
     def make_page()
         puts "building [#{id}]"
         render = @rc.render(File.read("out/games/#{id}/rules.md"))
+        render.gsub!("♥", "<span class=\"r\">♥</span>")
+        render.gsub!("♦", "<span class=\"r\">♦</span>")
+
         template = ERB.new(File.read("templates/game.erb"))
         File.open("out/games/#{id}/index.html", "w") do |f|
             r = template.result(binding)
@@ -34,9 +37,6 @@ class Style < Redcarpet::Render::HTML
     @@indent = /~ /
     @@center = /!center: /
     def paragraph(text)
-        text.gsub!("♥", "<span class=\"r\">♥</span>")
-        text.gsub!("♦", "<span class=\"r\">♦</span>")
-
         case text
         when @@note then to_callout(text, @@note, "note", "Note")
         when @@score then to_callout(text, @@score, "score", "Score")
@@ -74,9 +74,6 @@ class Style < Redcarpet::Render::HTML
     end
 
     def table(header, body)
-        body.gsub!("♥", "<span class=\"r\">♥</span>")
-        body.gsub!("♦", "<span class=\"r\">♦</span>")
-
         %_
 <table class="table">
 <tbody>#{header}</tbody>
@@ -85,6 +82,8 @@ class Style < Redcarpet::Render::HTML
     end
 end
 
+# There are a lot of tables in the Mahjong page, and the width of each column is inconsistent across each table. This
+# override ensures a consistent width.
 class Mahjong < Style
     def table(_, body)
         %_
@@ -109,6 +108,7 @@ def games()
     Dir.each_child("out/games/") do |f|
         g = JSON.parse(File.read("out/games/#{f}/meta.json"))
         g["id"] = f
+        g["subtext"] = [g["type"], g["players"] + " player" + (g["players"] == "1" ? "" : "s")].join(" • ")
         games.push(g)
     end
     return games
@@ -124,7 +124,7 @@ File.open("out/index.html", "w") do |f|
 end
 
 # write games
-rc = Redcarpet::Markdown.new(Style, extensions = {})
+rc = Redcarpet::Markdown.new(Style)
 
 root = {"light-pink" => [],
     "pink" => [],
@@ -171,7 +171,7 @@ games.each do |g|
         accent = "accent-#{colour}"
     end
 
-    Game.new(g["id"], g["name"], g["icon"], colour, accent).make_page
+    Game.new(g["id"], g["name"], g["icon"], g["subtext"], colour, accent).make_page
 end
 
 puts "available colours: #{root.select {|k, v| v.empty?}.keys}"

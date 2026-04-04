@@ -1,8 +1,8 @@
 ## You will need
 
-- A standard 52-card deck.
-- Coins/chips/tokens for bets (around 100 per player).
-- A Poch board, or 9 labelled cups.
+- A standard 52-card deck
+- Coins/chips/tokens for bets (around 100 per player)
+- A Poch board, or 9 labelled cups
 
 ## Setup
 

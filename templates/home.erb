@@ -40,7 +40,7 @@
                                 <div class="icon"><%= game["icon"] %></div>
                                 <div class="mx-4">
                                     <div class="fs-4 hover"><b><%= game["name"] %></b></div>
-                                    <%= [game["type"], game["players"] + " player" + (game["players"] == "1" ? "" : "s")].join(" • ") %>
+                                    <%= game["subtext"] %>
                                 </div>
                             </div>
                         </a>
@@ -54,7 +54,7 @@
                 <p>
                     <a href="https://getbootstrap.com/">Bootstrap v5</a> • <a href="https://fonts.google.com/specimen/Manrope">Manrope</a> • <a href="https://fonts.google.com/noto/specimen/Noto+Color+Emoji">Noto Color Emoji</a>
                 </p>
-                <div class="nolig text-center">
+                <div id="madewith" class="nolig text-center">
                     <span>Made with</span>
                     <span id="madewithp" class="r"></span>
                     <span>by Jack</span>
@@ -207,6 +207,8 @@ window.onload = function() {
         "RTFM",
         "the cool S",
         "ROFLcopters",
+        "fhqwhgads",
+        "hunter2",
 
         // other
         "lots of swearing",
@@ -227,6 +229,8 @@ window.onload = function() {
         "urrmmm...",
         "no added sugar",
         "no artificial colours",
+        "trans rights 🏳️‍⚧️",
+        "rainbows 🏳️‍🌈",
 
         // special
         "trans rights 🏳️‍⚧️",
