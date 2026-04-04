@@ -1,0 +1,8 @@
+{
+  "name": "Sawayama Solitaire",
+  "category": "solitaire",
+  "icon": "🪚",
+  "type": "Solitaire",
+  "players": "1",
+  "colour": "light-orange"
+}
